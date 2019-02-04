@@ -1,0 +1,25 @@
+// Fonts
+$main: 'Oswald',
+sans-serif;
+$second:'Montserrat',
+sans-serif;
+
+// Colors
+$blue: #4c51f7;
+$green: #319236;
+$gold: #f3af19;
+$purple: #9d4dbb;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main;
+}
+
+p {
+  font-family: $second;
+}

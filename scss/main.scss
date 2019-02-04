@@ -1,0 +1,167 @@
+@import 'settings';
+
+nav {
+  img {
+    width: 200px;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        position: relative;
+        text-decoration: none;
+        color: #333;
+        margin-left: 20px;
+        font-family: $main;
+        font-size: 20px;
+        font-weight: 700;
+        transition: color 0.2s ease;
+        padding: 3px 0;
+
+        &:hover {
+          color: #000;
+
+          &::after,
+          &::before {
+            width: 100%;
+            left: 0;
+          }
+        }
+
+        &::after,
+        &::before {
+          content: '';
+          position: absolute;
+          top: calc(100% + 5px);
+          width: 0;
+          right: 0;
+          height: 3px;
+        }
+
+        &::before {
+          transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+          background: $purple;
+        }
+
+        &::after {
+          transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+          background: $blue;
+        }
+      }
+
+      .active {
+        color: $blue;
+      }
+    }
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+
+
+  }
+
+  .btn-outline-success {
+    margin-left: 20px;
+    color: $blue;
+    font-family: $main;
+    font-weight: 700;
+    font-size: 20px;
+    border: $blue solid 2px;
+
+    &:hover {
+      background: $green;
+      border: #000 solid 2px;
+    }
+  }
+
+  .modal {
+    .modal-content {
+      background: $gold;
+
+      .modal-header {
+        border: none;
+
+        .modal-title {
+          margin: 0px auto;
+          color: white;
+          font-weight: 700;
+        }
+
+        .close {
+          margin-left: 0px;
+        }
+      }
+
+      .modal-body {
+        margin: 0px auto;
+        border: none;
+      }
+
+      .modal-footer {
+        margin: 0px auto;
+        border: none;
+        padding-top: 0px;
+
+        .btn {
+          background: $blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#sec1 {
+  .row {
+    padding: 100px 0px;
+
+    .col-md-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 1s ease-in-out;
+
+
+      h1 {
+        font-weight: 700;
+        text-align: left;
+        font-size: 3.5rem;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+      }
+
+      img {
+        width: 300px;
+        margin: 25px auto;
+
+      }
+
+      .btn {
+        background: $green;
+        width: 25%;
+        font-family: $main;
+        color: white;
+        font-weight: bold;
+        padding: 10px 10px;
+
+        &:hover {
+          background: lighten($green, $amount: 20);
+        }
+
+      }
+
+      #show {
+        background: $blue;
+
+        &:hover {
+          background: lighten($blue, $amount: 10);
+        }
+      }
+    }
+  }
+}
