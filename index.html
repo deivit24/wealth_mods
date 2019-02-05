@@ -1,195 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-      crossorigin="anonymous"
-    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous" />
 
-    <!-- Google Fonts -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,700"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts -->
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="dist/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,700" rel="stylesheet" />
 
-    <title>Hello, world!</title>
-  </head>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="dist/css/main.css" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="dist/img/wealthmods.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#wealthmodNav"
-          aria-controls="wealthmodNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="dist/img/wealthmods.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wealthmodNav" aria-controls="wealthmodNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="wealthmodNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">MODs</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown07">
+              <a class="dropdown-item" href="#">Wealth MODs 101</a>
+              <a class="dropdown-item" href="#">Retirement MOD Calculator</a>
+              <a class="dropdown-item disabled" href="#">Risk Profile MOD Calculator</a>
+              <a class="dropdown-item" href="#">Financial Planning MODs</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Start Here</a>
+          </li>
+        </ul>
+        <!-- Button trigger modal -->
+        <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#modModal">
+          I Want Wealth MODs
         </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="wealthmodNav"
-        >
-          <ul class="navbar-nav ">
-            <li class="nav-item active dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown07"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Blog</a
-              >
-              <div class="dropdown-menu" aria-labelledby="dropdown07">
-                <a class="dropdown-item" href="#">Wealth MODs 101</a>
-                <a class="dropdown-item" href="#">Mindset MODs</a>
-                <a class="dropdown-item disabled" href="#">Productivity Mods</a>
+        <!-- Modal -->
+        <div class="modal fade" id="modModal" tabindex="-1" role="dialog" aria-labelledby="modModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="modModalLabel">
+                  Add MODs To Your Wealth
+                </h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Start Here</a>
-            </li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button
-            class="btn btn-outline-success my-2 my-sm-0"
-            data-toggle="modal"
-            data-target="#modModal"
-          >
-            I Want Wealth MODs
-          </button>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="modModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="modModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="modModalLabel">
-                    Add MODs To Your Wealth
-                  </h2>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Subscribe to free weekly updates..</p>
-                </div>
-                <div class="modal-footer">
-                  <form id="subForm" class="form-inline my-2 my-lg-0">
-                    <input
-                      class="form-control mr-sm-2"
-                      type="email"
-                      placeholder="email"
-                      aria-label="email"
-                    />
+              <div class="modal-body">
+                <p>Subscribe to free weekly updates..</p>
+              </div>
+              <div class="modal-footer">
+                <form id="subForm" class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="email" placeholder="email" aria-label="email" />
 
-                    <button
-                      class="btn btn-outline-success my-2 my-sm-0"
-                      type="submit"
-                    >
-                      Subscribe
-                    </button>
-                  </form>
-                </div>
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    Subscribe
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section id="sec1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>What are MODs?</h1>
-            <p>
-              Redefine a new approach to growing your wealth. A new way
-              baby-boomers and traditional education never showed you.
-            </p>
-            <a href="" class="btn ">Show Me</a>
-          </div>
-          <div class="col-md-6">
-            <img src="dist/img/stats.png" alt="" />
-          </div>
+  <section id="sec1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>What are MODs?</h1>
+          <p>
+            Redefine a new approach to growing your wealth. A new way
+            baby-boomers and traditional education never showed you.
+          </p>
+          <a href="" id="show" class="btn ">Show Me</a>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="dist/img/cheat.png" alt="" />
-          </div>
-          <div class="col-md-6">
-            <h1>Let's See The MODs</h1>
-            <p>
-              Check out our BEST Tools and Resources to add MODs to your wealth.
-            </p>
-            <a href="" id="show" class="btn">Learn More</a>
-          </div>
+        <div class="col-md-6">
+          <img src="dist/img/stats.png" alt="" />
         </div>
       </div>
-    </section>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="dist/img/cheat.png" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h1>Let's See The MODs</h1>
+          <p>
+            Check out our BEST Tools and Resources to add MODs to your wealth.
+          </p>
+          <a href="" id="learn" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Why Wealth MODs Was Created?</h1>
+          <p>
+            Uncover the reason why Wealth MODs was created and why it benefits you.
+          </p>
+          <a href="" id="discover" class="btn ">Discover</a>
+        </div>
+        <div class="col-md-6">
+          <img src="dist/img/script.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sec2">
+    <div class="container">
+      <h1>Start Adding MODs to your Wealth!</h1>
+      <p>These cards provide some guidence on where to begin!</p>
+      <div class="row">
+        <div id="wmod" class="col-md-4">
+          <h3>Wealth MODs 101</h3>
+          <p>Discover some basic Wealth Hacks</p>
+        </div>
+        <div id="rmod" class="col-md-4">
+          <h3>Retirement MOD Calculator</h3>
+          <p>Simple but powerful tool</p>
+        </div>
+        <div id="rskmod" class="col-md-4">
+          <h3>Risk Profile MOD Calculator</h3>
+          <p>Risk is 50% subjective 50% objective</p>
+        </div>
+        <div id="fmod" class="col-md-6">
+          <h3>Financial Planning MODs</h3>
+          <p>Financial Planning shouldn't be a headache</p>
+        </div>
+        <div id="armismod" class="col-md-6">
+          <h3>Wealth Management MOD</h3>
+          <p>Don't have time and need personalized help?</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript -->
-    <script src="dist/js/main.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <script src="dist/js/main.js"></script>
+</body>
+
 </html>
