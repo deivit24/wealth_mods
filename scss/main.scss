@@ -5,7 +5,7 @@ nav {
     width: 200px;
   }
 
-  border-bottom:2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
 
   .navbar-nav {
     .nav-item {
@@ -59,8 +59,6 @@ nav {
     .dropdown-toggle::after {
       display: none;
     }
-
-
   }
 
   .btn-outline-success {
@@ -115,7 +113,7 @@ nav {
 }
 
 #sec1 {
-  background: url("../img/background.png");
+  background: url('../img/background.png');
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -127,7 +125,6 @@ nav {
       flex-direction: column;
       justify-content: center;
       transition: all 1s ease-in-out;
-
 
       h1 {
         font-weight: 700;
@@ -144,17 +141,14 @@ nav {
       img {
         width: 300px;
         margin: 25px auto;
-
       }
 
       .btn {
-
         width: 30%;
         font-family: $main;
         color: black;
         font-weight: 700;
         padding: 10px 10px;
-
       }
 
       #show {
@@ -188,8 +182,9 @@ nav {
 }
 
 #sec2 {
-  background: url("../img/background2.png");
+  background: url('../img/background2.png');
   background-size: cover;
+  padding-bottom: 50px;
 
   h1 {
     text-align: center;
@@ -213,33 +208,47 @@ nav {
   .col-md-6 {
     height: 400px;
     margin-bottom: 50px;
+    padding: 20px;
+
+    transition: box-shadow 0.3s ease-in-out;
 
     p {
       font-size: 1.25rem;
     }
 
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
   }
 
   #wmod {
-    background: url("../img/wmod101.png");
+    background: url('../img/wmod101.png');
     background-position: bottom center;
     background-size: cover;
+
   }
 
   #rmod {
-    background: url("../img/rmod.png");
+    background: url('../img/rmod.png');
     background-position: bottom center;
     background-size: cover;
+
   }
 
   #rskmod {
-    background: url("../img/riskmod.png");
+    background: url('../img/riskmod.png');
     background-position: bottom center;
     background-size: cover;
   }
 
   #fmod {
-    background: url("../img/fmod.png");
+    background: url('../img/fmod.png');
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+  #armismod {
+    background: url('../img/wmanage.png');
     background-position: bottom center;
     background-size: cover;
   }

@@ -122,7 +122,8 @@ nav {
 
 #sec2 {
   background: url("../img/background2.png");
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 50px; }
   #sec2 h1 {
     text-align: center;
     font-weight: 700;
@@ -138,10 +139,15 @@ nav {
   #sec2 .col-md-4,
   #sec2 .col-md-6 {
     height: 400px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out; }
     #sec2 .col-md-4 p,
     #sec2 .col-md-6 p {
       font-size: 1.25rem; }
+    #sec2 .col-md-4:hover,
+    #sec2 .col-md-6:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
   #sec2 #wmod {
     background: url("../img/wmod101.png");
     background-position: bottom center;
@@ -156,5 +162,9 @@ nav {
     background-size: cover; }
   #sec2 #fmod {
     background: url("../img/fmod.png");
+    background-position: bottom center;
+    background-size: cover; }
+  #sec2 #armismod {
+    background: url("../img/wmanage.png");
     background-position: bottom center;
     background-size: cover; }
