@@ -9,6 +9,9 @@ h6 {
 p {
   font-family: "Montserrat", sans-serif; }
 
+body {
+  background: #f4f4f4; }
+
 nav {
   border-bottom: 2px solid #f4f4f4; }
   nav img {
@@ -43,6 +46,25 @@ nav {
       background: #4c51f7; }
   nav .navbar-nav .nav-item .active {
     color: #4c51f7; }
+  nav .navbar-nav .nav-item .dropdown-menu {
+    width: 340px; }
+    nav .navbar-nav .nav-item .dropdown-menu .col-4,
+    nav .navbar-nav .nav-item .dropdown-menu .col-8 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      nav .navbar-nav .nav-item .dropdown-menu .col-4 img,
+      nav .navbar-nav .nav-item .dropdown-menu .col-8 img {
+        width: 100px; }
+      nav .navbar-nav .nav-item .dropdown-menu .col-4 p,
+      nav .navbar-nav .nav-item .dropdown-menu .col-8 p {
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-align: center; }
+      nav .navbar-nav .nav-item .dropdown-menu .col-4:hover,
+      nav .navbar-nav .nav-item .dropdown-menu .col-8:hover {
+        color: #4c51f7; }
   nav .navbar-nav .dropdown-toggle::after {
     display: none; }
   nav .btn-outline-success {
@@ -77,7 +99,8 @@ nav {
         color: white; }
 
 #sec1 {
-  background: url("../img/background.png");
+  background: white;
+  background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat; }
   #sec1 .row {
@@ -86,7 +109,9 @@ nav {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      transition: all 1s ease-in-out; }
+      transition: all 1s ease-in-out;
+      opacity: 0;
+      transform: translateX(-300px); }
       #sec1 .row .col-md-6 h1 {
         font-weight: 700;
         text-align: left;
@@ -119,6 +144,9 @@ nav {
         #sec1 .row .col-md-6 #discover:hover {
           background: #9d4dbb;
           color: white; }
+    #sec1 .row .card-appear {
+      opacity: 1;
+      transform: translateX(0px); }
 
 #sec2 {
   background: url("../img/background2.png");
@@ -128,7 +156,8 @@ nav {
     text-align: center;
     font-weight: 700;
     font-size: 4rem;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    color: #319236; }
   #sec2 h3 {
     text-align: center;
     margin-bottom: 20px; }
@@ -140,14 +169,17 @@ nav {
   #sec2 .col-md-6 {
     height: 400px;
     margin-bottom: 50px;
-    padding: 20px;
+    padding: 25px 20px;
+    transition: all 1s ease-in-out;
     transition: box-shadow 0.3s ease-in-out; }
     #sec2 .col-md-4 p,
     #sec2 .col-md-6 p {
       font-size: 1.25rem; }
     #sec2 .col-md-4:hover,
     #sec2 .col-md-6:hover {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      background: white; }
   #sec2 #wmod {
     background: url("../img/wmod101.png");
     background-position: bottom center;
@@ -168,3 +200,29 @@ nav {
     background: url("../img/wmanage.png");
     background-position: bottom center;
     background-size: cover; }
+
+footer {
+  background: #4c51f7;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 25px; }
+  footer .row {
+    margin-bottom: 30px; }
+    footer .row a {
+      text-decoration: none;
+      color: white;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem; }
+      footer .row a:hover {
+        color: #eee;
+        text-decoration: none;
+        font-weight: 700; }
+  footer p {
+    text-align: left;
+    font-size: .8rem; }
+    footer p a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      font-size: .8rem; }

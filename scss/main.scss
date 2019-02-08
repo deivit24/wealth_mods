@@ -1,5 +1,9 @@
 @import 'settings';
 
+body {
+  background: #f4f4f4;
+}
+
 nav {
   img {
     width: 200px;
@@ -53,6 +57,34 @@ nav {
 
       .active {
         color: $blue;
+      }
+
+      .dropdown-menu {
+        width: 340px;
+
+        .col-4,
+        .col-8 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          img {
+            width: 100px;
+          }
+
+          p {
+            font-family: $main;
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-align: center;
+          }
+
+          &:hover {
+            color: $blue;
+          }
+        }
+
+
       }
     }
 
@@ -113,7 +145,8 @@ nav {
 }
 
 #sec1 {
-  background: url('../img/background.png');
+  background: white;
+  background-image: url('../img/background.png');
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -125,6 +158,8 @@ nav {
       flex-direction: column;
       justify-content: center;
       transition: all 1s ease-in-out;
+      opacity: 0;
+      transform: translateX(-300px);
 
       h1 {
         font-weight: 700;
@@ -178,6 +213,11 @@ nav {
         }
       }
     }
+
+    .card-appear {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
 }
 
@@ -191,6 +231,7 @@ nav {
     font-weight: 700;
     font-size: 4rem;
     margin-bottom: 25px;
+    color: $green;
   }
 
   h3 {
@@ -208,9 +249,10 @@ nav {
   .col-md-6 {
     height: 400px;
     margin-bottom: 50px;
-    padding: 20px;
-
+    padding: 25px 20px;
+    transition: all 1s ease-in-out;
     transition: box-shadow 0.3s ease-in-out;
+
 
     p {
       font-size: 1.25rem;
@@ -218,6 +260,8 @@ nav {
 
     &:hover {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      background: white;
     }
   }
 
@@ -251,5 +295,43 @@ nav {
     background: url('../img/wmanage.png');
     background-position: bottom center;
     background-size: cover;
+  }
+}
+
+footer {
+  background: $blue;
+
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 25px;
+
+  .row {
+    margin-bottom: 30px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: $main;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: #eee;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+  }
+
+  p {
+    text-align: left;
+    font-size: .8rem;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 400;
+      font-family: $second;
+      font-size: .8rem;
+    }
   }
 }
