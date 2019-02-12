@@ -11,6 +11,17 @@ $('.col-md-6').each(function () {
     .addTo(slides);
 });
 
+var sec4slide = new ScrollMagic.Controller();
+
+$('.col-4').each(function () {
+  var cardSlide = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.7
+    })
+    .setClassToggle(this, 'card-appear')
+    .addIndicators()
+    .addTo(sec4slide);
+});
 // Clickable cards that go to different links
 
 document.getElementById("wmod").onclick = function () {
