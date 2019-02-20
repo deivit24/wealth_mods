@@ -239,6 +239,7 @@ nav {
       transform: translateX(0px); }
 
 #sec4 {
+  background: #fff;
   text-align: center;
   padding: 25px;
   transition: all 1s ease-in-out; }
@@ -266,6 +267,34 @@ nav {
     font-size: 1.2rem;
     margin-bottom: 25px;
     padding: 20px 0px; }
+  #sec4 #accordionBox {
+    width: 90%;
+    margin: 0 auto;
+    transition: all 1s ease-in-out; }
+    #sec4 #accordionBox .card {
+      background: white;
+      border: none;
+      width: 90%;
+      margin: 0 auto; }
+      #sec4 #accordionBox .card .card-header {
+        background: #4c51f7;
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transform: translateX(-300px);
+        opacity: 0; }
+        #sec4 #accordionBox .card .card-header:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          width: 95%; }
+        #sec4 #accordionBox .card .card-header .btn {
+          color: white;
+          text-decoration: none;
+          text-transform: capitalize; }
+      #sec4 #accordionBox .card .card-appear {
+        transform: translateX(0px);
+        opacity: 1; }
 
 footer {
   background: #4c51f7;

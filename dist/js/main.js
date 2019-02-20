@@ -22,6 +22,21 @@ $('.col-4').each(function () {
     .addIndicators()
     .addTo(sec4slide);
 });
+
+// Accordian cards slide
+var accordslide = new ScrollMagic.Controller();
+
+
+$('.card-header').each(function () {
+  var accordSlide = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.7
+    })
+    .setClassToggle(this, 'card-appear')
+    .addIndicators()
+    .addTo(accordslide);
+});
+
 // Clickable cards that go to different links
 
 document.getElementById("wmod").onclick = function () {
