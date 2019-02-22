@@ -19,7 +19,7 @@ $('.col-4').each(function () {
       triggerHook: 0.7
     })
     .setClassToggle(this, 'card-appear')
-    .addIndicators()
+
     .addTo(sec4slide);
 });
 
@@ -33,7 +33,7 @@ $('.card-header').each(function () {
       triggerHook: 0.7
     })
     .setClassToggle(this, 'card-appear')
-    .addIndicators()
+
     .addTo(accordslide);
 });
 
