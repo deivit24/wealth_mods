@@ -1,4 +1,5 @@
 @import 'settings';
+@import 'mobil';
 
 body {
   background: #f4f4f4;
@@ -418,8 +419,9 @@ nav {
 
   #accordionBox {
     width: 90%;
-    margin: 0 auto;
+    margin: 25px auto;
     transition: all 1s ease-in-out;
+
 
     .card {
       background: white;
@@ -454,6 +456,100 @@ nav {
         transform: translateX(0px);
         opacity: 1;
       }
+    }
+  }
+}
+
+.rules {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+}
+
+#rule1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rule1.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+
+  img {
+    width: 100px;
+    margin: 25px 0 0 25px;
+    position: absolute;
+  }
+
+
+}
+
+#rule2 {
+  img {
+    width: 100px;
+    margin: 25px 0 0 25px;
+    position: absolute;
+  }
+
+  .container {
+    h1 {
+      text-align: left;
+    }
+
+    .row {
+      .col-md-6 {
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        img {
+          width: 400px;
+          margin: 100px auto 0 auto;
+
+
+        }
+      }
+
+      .card-appear {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#rule3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule3.jpeg);
+  background-size: cover;
+  background-position: top;
+
+  color: white;
+
+  img {
+    width: 100px;
+    margin: 25px 0 0 25px;
+    position: absolute;
+  }
+
+  .container {
+    h3 {
+      text-align: right;
+      margin-bottom: 50px;
     }
   }
 }

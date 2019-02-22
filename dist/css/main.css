@@ -9,6 +9,23 @@ h6 {
 p {
   font-family: "Montserrat", sans-serif; }
 
+@media screen and (max-width: 500px) {
+  nav img {
+    width: 150px !important; }
+  #sec2 .container h1 {
+    font-size: 2.5rem; }
+  #sec2 .container p {
+    font-size: 1.2rem; }
+  #sec4 .container h1 {
+    font-size: 2rem; }
+  #sec4 .container .card p {
+    font-size: .8rem;
+    margin-bottom: -10px; }
+  .rules h1 {
+    font-size: 2.5rem !important; }
+  .rules P {
+    font-size: 1rem !important; } }
+
 body {
   background: #f4f4f4; }
 
@@ -269,7 +286,7 @@ nav {
     padding: 20px 0px; }
   #sec4 #accordionBox {
     width: 90%;
-    margin: 0 auto;
+    margin: 25px auto;
     transition: all 1s ease-in-out; }
     #sec4 #accordionBox .card {
       background: white;
@@ -295,6 +312,66 @@ nav {
       #sec4 #accordionBox .card .card-appear {
         transform: translateX(0px);
         opacity: 1; }
+
+.rules {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: all 1s ease-in-out; }
+  .rules h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 700; }
+  .rules p {
+    font-size: 1.5rem;
+    margin-bottom: 25px; }
+
+#rule1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rule1.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  #rule1 img {
+    width: 100px;
+    margin: 25px 0 0 25px;
+    position: absolute; }
+
+#rule2 img {
+  width: 100px;
+  margin: 25px 0 0 25px;
+  position: absolute; }
+
+#rule2 .container h1 {
+  text-align: left; }
+
+#rule2 .container .row .col-md-6 {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #rule2 .container .row .col-md-6 img {
+    width: 400px;
+    margin: 100px auto 0 auto; }
+
+#rule2 .container .row .card-appear {
+  opacity: 1; }
+
+#rule3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule3.jpeg);
+  background-size: cover;
+  background-position: top;
+  color: white; }
+  #rule3 img {
+    width: 100px;
+    margin: 25px 0 0 25px;
+    position: absolute; }
+  #rule3 .container h3 {
+    text-align: right;
+    margin-bottom: 50px; }
 
 footer {
   background: #4c51f7;
