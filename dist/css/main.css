@@ -12,6 +12,9 @@ p {
 @media screen and (max-width: 500px) {
   nav img {
     width: 150px !important; }
+  nav .navbar-nav .nav-item .dropdown-menu .col-4 img,
+  nav .navbar-nav .nav-item .dropdown-menu .col-8 img {
+    width: 75px !important; }
   #sec2 .container h1 {
     font-size: 2.5rem; }
   #sec2 .container p {
