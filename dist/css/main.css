@@ -28,6 +28,8 @@ p {
     font-size: 1.5rem !important; }
   .rules P {
     font-size: 1rem !important; }
+  .rules img {
+    width: 75px !important; }
   #rule3 h1 {
     width: 100%; } }
 
@@ -323,7 +325,8 @@ nav {
   display: grid;
   justify-items: center;
   align-items: center;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  background: white; }
   .rules h1 {
     text-align: center;
     font-size: 4rem;
@@ -343,15 +346,6 @@ nav {
   background-size: cover;
   background-position: center;
   color: white; }
-  #rule1 img {
-    width: 100px;
-    margin: 25px 0 0 25px;
-    position: absolute; }
-
-#rule2 img {
-  width: 100px;
-  margin: 25px 0 0 25px;
-  position: absolute; }
 
 #rule2 .container h1 {
   text-align: left;
@@ -376,10 +370,6 @@ nav {
   background-size: cover;
   background-position: top;
   color: white; }
-  #rule3 img {
-    width: 100px;
-    margin: 25px 0 0 25px;
-    position: absolute; }
   #rule3 .container h1 {
     text-align: left;
     width: 75%;
@@ -410,6 +400,52 @@ nav {
   background-size: cover;
   background-position: top;
   color: white; }
+
+#rule6 {
+  text-align: center; }
+  #rule6 h3 {
+    text-align: center;
+    border-left: 5px solid #319236;
+    display: inline;
+    padding-left: 10px; }
+
+#rule7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule7.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  #rule7 h1 {
+    width: 60%;
+    text-align: left;
+    border-left: 5px solid white;
+    padding-left: 10px; }
+
+#rule8 h1 {
+  text-align: left;
+  border-left: 5px solid #319236;
+  padding-left: 10px; }
+
+#rule9 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rule9.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  #rule9 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-bottom: 5px solid #319236;
+    transition: all 0.5s ease-in-out; }
+    #rule9 a:hover {
+      border-bottom: 6px solid #4c51f7;
+      color: #319236; }
+
+#rule10 {
+  text-align: center; }
+  #rule10 h3 {
+    text-align: left;
+    border-left: 5px solid #319236;
+    padding-left: 10px; }
 
 footer {
   background: #4c51f7;
