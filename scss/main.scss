@@ -10,7 +10,7 @@ nav {
     width: 200px;
   }
 
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 2px solid rgb(206, 206, 206);
 
   .navbar-nav {
     .nav-item {
@@ -470,14 +470,20 @@ nav {
   h1 {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     text-transform: capitalize;
     font-weight: 700;
   }
 
   p {
     font-size: 1.5rem;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+  }
+
+  img {
+    width: 100px;
+    margin: 25px 0 0 25px;
+    position: absolute;
   }
 }
 
@@ -507,6 +513,8 @@ nav {
   .container {
     h1 {
       text-align: left;
+      border-left: 5px solid $green;
+      padding-left: 10px;
     }
 
     .row {
@@ -547,11 +555,45 @@ nav {
   }
 
   .container {
-    h3 {
-      text-align: right;
-      margin-bottom: 50px;
+    h1 {
+      text-align: left;
+      width: 75%;
+      border-left: 5px solid white;
+      padding-left: 10px;
     }
   }
+}
+
+#rule4 {
+  h1 {
+    text-align: left;
+    border-left: 5px solid $green;
+    padding-left: 10px;
+  }
+
+  #date {
+    color: $green;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  #MyClockDisplay {
+    text-align: right;
+    color: $blue;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+#rule5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule5.jpg);
+  background-size: cover;
+  background-position: top;
+
+  color: white;
 }
 
 

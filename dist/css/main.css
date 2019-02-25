@@ -25,15 +25,17 @@ p {
     font-size: .8rem;
     margin-bottom: -10px; }
   .rules h1 {
-    font-size: 2.5rem !important; }
+    font-size: 1.5rem !important; }
   .rules P {
-    font-size: 1rem !important; } }
+    font-size: 1rem !important; }
+  #rule3 h1 {
+    width: 100%; } }
 
 body {
   background: #f4f4f4; }
 
 nav {
-  border-bottom: 2px solid #f4f4f4; }
+  border-bottom: 2px solid #cecece; }
   nav img {
     width: 200px; }
   nav .navbar-nav .nav-item .nav-link {
@@ -325,12 +327,16 @@ nav {
   .rules h1 {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     text-transform: capitalize;
     font-weight: 700; }
   .rules p {
     font-size: 1.5rem;
-    margin-bottom: 25px; }
+    margin-bottom: 35px; }
+  .rules img {
+    width: 100px;
+    margin: 25px 0 0 25px;
+    position: absolute; }
 
 #rule1 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rule1.jpeg);
@@ -348,7 +354,9 @@ nav {
   position: absolute; }
 
 #rule2 .container h1 {
-  text-align: left; }
+  text-align: left;
+  border-left: 5px solid #319236;
+  padding-left: 10px; }
 
 #rule2 .container .row .col-md-6 {
   transition: all 1s ease-in-out;
@@ -372,9 +380,36 @@ nav {
     width: 100px;
     margin: 25px 0 0 25px;
     position: absolute; }
-  #rule3 .container h3 {
-    text-align: right;
-    margin-bottom: 50px; }
+  #rule3 .container h1 {
+    text-align: left;
+    width: 75%;
+    border-left: 5px solid white;
+    padding-left: 10px; }
+
+#rule4 h1 {
+  text-align: left;
+  border-left: 5px solid #319236;
+  padding-left: 10px; }
+
+#rule4 #date {
+  color: #319236;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+#rule4 #MyClockDisplay {
+  text-align: right;
+  color: #4c51f7;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+#rule5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule5.jpg);
+  background-size: cover;
+  background-position: top;
+  color: white; }
 
 footer {
   background: #4c51f7;

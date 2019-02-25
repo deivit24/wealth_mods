@@ -49,11 +49,17 @@
 
   .rules {
     h1 {
-      font-size: 2.5rem !important;
+      font-size: 1.5rem !important;
     }
 
     P {
       font-size: 1rem !important;
+    }
+  }
+
+  #rule3 {
+    h1 {
+      width: 100%;
     }
   }
 }
