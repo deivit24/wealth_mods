@@ -37,6 +37,19 @@ $('.card-header').each(function () {
     .addTo(accordslide);
 });
 
+// Rules slide
+
+var rules = new ScrollMagic.Controller();
+
+$('.rules').each(function () {
+  var ruleSlide = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.7
+    })
+    .setClassToggle(this, 'rules-appear')
+
+    .addTo(rules);
+});
 // Clickable cards that go to different links
 
 document.getElementById("wmod").onclick = function () {
