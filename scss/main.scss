@@ -54,14 +54,11 @@ nav {
           transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
           background: $blue;
         }
-
-
       }
 
       .active {
         color: $blue !important;
       }
-
 
       .dropdown-menu {
         width: 340px;
@@ -87,14 +84,8 @@ nav {
             color: $blue;
           }
         }
-
-
       }
-
-
     }
-
-
 
     .dropdown-toggle::after {
       display: none;
@@ -102,7 +93,6 @@ nav {
   }
 
   .btn-outline-success {
-
     color: $blue;
     font-family: $main;
     font-weight: 700;
@@ -123,8 +113,6 @@ nav {
     font-size: 20px;
     border: $blue solid 2px;
     padding: 10px;
-
-
   }
 
   .modal {
@@ -189,8 +177,6 @@ nav {
         text-align: left;
         font-size: 3.5rem;
         margin-bottom: 25px;
-
-
       }
 
       p {
@@ -251,7 +237,6 @@ nav {
   background-size: cover;
   padding-bottom: 50px;
 
-
   h1 {
     text-align: center;
     font-weight: 700;
@@ -279,7 +264,6 @@ nav {
     transition: all 1s ease-in-out;
     transition: box-shadow 0.3s ease-in-out;
 
-
     p {
       font-size: 1.25rem;
     }
@@ -295,14 +279,12 @@ nav {
     background: url('../img/wmod101.png');
     background-position: bottom center;
     background-size: cover;
-
   }
 
   #rmod {
     background: url('../img/rmod.png');
     background-position: bottom center;
     background-size: cover;
-
   }
 
   #rskmod {
@@ -348,7 +330,6 @@ nav {
         .small {
           color: gray;
         }
-
       }
 
       p {
@@ -360,10 +341,6 @@ nav {
         width: 300px;
         margin: 25px auto;
       }
-
-
-
-
     }
 
     .card-appear {
@@ -385,7 +362,7 @@ nav {
     padding: 15px;
 
     &:nth-child(1) {
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
 
     &:nth-child(2) {
@@ -424,7 +401,6 @@ nav {
     margin: 25px auto;
     transition: all 1s ease-in-out;
 
-
     .card {
       background: white;
       border: none;
@@ -437,12 +413,13 @@ nav {
         width: 90%;
         margin-bottom: 20px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        transition: all 1s cubic-bezier(.25, .8, .25, 1);
+        transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
         transform: translateX(-300px);
         opacity: 0;
 
         &:hover {
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
           width: 95%;
         }
 
@@ -451,7 +428,6 @@ nav {
           text-decoration: none;
           text-transform: capitalize;
         }
-
       }
 
       .card-appear {
@@ -471,7 +447,6 @@ nav {
   background: white;
 
   opacity: 0;
-
 
   h1 {
     text-align: center;
@@ -494,25 +469,19 @@ nav {
 }
 
 .rules-appear {
-
   opacity: 1;
 }
 
 #rule1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rule1.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/rule1.jpeg);
   background-size: cover;
   background-position: center;
 
   color: white;
-
-
-
-
 }
 
 #rule2 {
-
-
   .container {
     h1 {
       text-align: left;
@@ -528,12 +497,9 @@ nav {
         flex-direction: column;
         justify-content: center;
 
-
         img {
           width: 400px;
           margin: 100px auto 0 auto;
-
-
         }
       }
 
@@ -545,12 +511,12 @@ nav {
 }
 
 #rule3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule3.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/rule3.jpeg);
   background-size: cover;
   background-position: top;
 
   color: white;
-
 
   .container {
     h1 {
@@ -587,7 +553,8 @@ nav {
 }
 
 #rule5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule5.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/rule5.jpg);
   background-size: cover;
   background-position: top;
 
@@ -606,7 +573,8 @@ nav {
 }
 
 #rule7 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rule7.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/rule7.jpg);
   background-size: cover;
   background-position: center;
 
@@ -629,7 +597,8 @@ nav {
 }
 
 #rule9 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rule9.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/rule9.jpeg);
   background-size: cover;
   background-position: center;
 
@@ -668,7 +637,6 @@ nav {
     border-left: 5px solid white;
     padding-left: 10px;
     width: 75%;
-
   }
 
   a {
@@ -699,8 +667,6 @@ nav {
       color: black;
       width: 175px;
     }
-
-
   }
 
   #joinModalCenter {
@@ -723,7 +689,6 @@ nav {
 
     .modal-header {
       border: none;
-
     }
 
     .modal-body {
@@ -734,8 +699,6 @@ nav {
         font-size: 1rem;
         text-align: center;
         margin-bottom: 5px;
-
-
 
         span {
           font-weight: 700;
@@ -750,17 +713,12 @@ nav {
         flex-direction: column;
         align-items: center;
 
-
-
         img {
           margin: auto 0;
         }
       }
 
-
       form {
-
-
         #email1 {
           border: 2px lightgray solid;
           text-align: center;
@@ -770,7 +728,6 @@ nav {
 
           &:active {
             outline: 0 !important;
-
           }
 
           &:focus {
@@ -790,7 +747,6 @@ nav {
 
       button {
         width: 100%;
-
       }
 
       .btn-secondary {
@@ -805,13 +761,87 @@ nav {
           background: white;
           border: 4px solid $blue;
           color: black;
-
         }
       }
 
       .btn-primary {
         border: 4px solid $green;
       }
+    }
+  }
+}
+
+#explore {
+  background: $green;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h3 {
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}
+
+#links {
+  .col-md-4 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all .5s ease-in-out;
+
+    h3 {
+      color: white;
+      font-weight: 700;
+    }
+
+  }
+
+  #blog {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/blog-link.jpeg);
+    background-size: cover;
+    background-position: center;
+
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/blog-link.jpeg);
+      background-size: cover;
+      background-position: top;
+    }
+  }
+
+  #tool {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/tool-link.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/tool-link.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+  }
+
+  #about {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/bio.png);
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/bio.png);
+      background-size: cover;
+      background-position: top;
     }
   }
 }
@@ -848,14 +878,14 @@ footer {
 
   p {
     text-align: left;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     a {
       text-decoration: none;
       color: #000;
       font-weight: 400;
       font-family: $second;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 }

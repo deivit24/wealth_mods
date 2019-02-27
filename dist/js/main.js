@@ -68,6 +68,8 @@ document.getElementById("armismod").onclick = function () {
   location.href = "https://armisfinancial.com";
 };
 
+
+
 // Scoll Magic Smooth Scrolling
 var controller = new ScrollMagic.Controller();
 
