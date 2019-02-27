@@ -61,6 +61,16 @@
     }
   }
 
+  #rule2 {
+    .container {
+      .row {
+        .col-md-8 {
+          padding-left: 15px !important;
+        }
+      }
+    }
+  }
+
   #rule3 {
     h1 {
       width: 100%;
