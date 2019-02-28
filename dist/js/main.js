@@ -53,16 +53,16 @@ $('.rules').each(function () {
 // Clickable cards that go to different links
 
 document.getElementById("wmod").onclick = function () {
-  location.href = "wealth-mods-101.html";
+  location.href = "mods/wealth-mods-101.html";
 };
 document.getElementById("rmod").onclick = function () {
-  location.href = "retirement-mod-calculator";
+  location.href = "mods/retirement-mod-calculator.html";
 };
 document.getElementById("rskmod").onclick = function () {
-  location.href = "risk-profile-mod-calculator.html";
+  location.href = "mods/risk-profile-mod-calculator.html";
 };
 document.getElementById("fmod").onclick = function () {
-  location.href = "financial-planning-mods.html";
+  location.href = "mods/financial-planning-mods.html";
 };
 document.getElementById("armismod").onclick = function () {
   location.href = "https://armisfinancial.com";

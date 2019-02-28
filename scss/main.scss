@@ -256,53 +256,17 @@ nav {
     margin-bottom: 50px;
   }
 
-  .col-md-4,
-  .col-md-6 {
-    height: 400px;
-    margin-bottom: 50px;
-    padding: 25px 20px;
-    transition: all 1s ease-in-out;
-    transition: box-shadow 0.3s ease-in-out;
-
-    p {
-      font-size: 1.25rem;
-    }
+  .card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 98%;
 
     &:hover {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
       cursor: pointer;
-      background: white;
+      width: 100%
     }
-  }
-
-  #wmod {
-    background: url('../img/wmod101.png');
-    background-position: bottom center;
-    background-size: cover;
-  }
-
-  #rmod {
-    background: url('../img/rmod.png');
-    background-position: bottom center;
-    background-size: cover;
-  }
-
-  #rskmod {
-    background: url('../img/riskmod.png');
-    background-position: bottom center;
-    background-size: cover;
-  }
-
-  #fmod {
-    background: url('../img/fmod.png');
-    background-position: bottom center;
-    background-size: cover;
-  }
-
-  #armismod {
-    background: url('../img/wmanage.png');
-    background-position: bottom center;
-    background-size: cover;
   }
 }
 
@@ -793,6 +757,7 @@ nav {
   }
 }
 
+
 #links {
   .col-md-4 {
     height: 400px;
@@ -840,19 +805,37 @@ nav {
 
   #about {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/bio.png);
+      url(../img/bio.jpg);
     background-size: cover;
     background-position: center;
 
     &:hover {
       cursor: pointer;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../img/bio.png);
+        url(../img/bio.jpg);
       background-size: cover;
       background-position: top;
     }
   }
 }
+
+//======================
+//= About Page Begins! =
+//======================
+
+.jumbotron {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/jumbo.jpeg);
+  background-size: cover;
+  background-position: top;
+
+  color: white;
+}
+
 
 footer {
   background: $blue;
