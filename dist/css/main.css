@@ -11,7 +11,12 @@ p {
 
 @media screen and (max-width: 500px) {
   nav img {
-    width: 150px !important; }
+    width: 150px; }
+  nav #black {
+    width: 0px;
+    opacity: 0; }
+  nav .appear {
+    opacity: 1 !important; }
   nav .navbar-nav .nav-item .dropdown-menu .col-4 img,
   nav .navbar-nav .nav-item .dropdown-menu .col-8 img {
     width: 75px !important; }
@@ -41,7 +46,7 @@ body {
   background: #f4f4f4; }
 
 nav {
-  border-bottom: 2px solid #cecece; }
+  transition: all 1s ease-in-out; }
   nav img {
     width: 200px; }
   nav .navbar-nav .nav-item .nav-link {
@@ -543,7 +548,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  transition: all .5s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
   #links .col-md-4 h3 {
     color: white;
     font-weight: 700; }
@@ -578,6 +583,21 @@ nav {
     background-size: cover;
     background-position: top; }
 
+#white {
+  transition: all .5s ease-in-out; }
+
+#black {
+  opacity: 0;
+  width: 0px;
+  transition: all 1s ease-in-out; }
+
+.invisible {
+  width: 0px !important; }
+
+.appear {
+  opacity: 1 !important;
+  width: 200px !important; }
+
 .jumbotron {
   height: 500px;
   display: flex;
@@ -585,7 +605,7 @@ nav {
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/jumbo.jpeg);
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   color: white; }
 
 footer {

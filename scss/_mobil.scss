@@ -2,8 +2,19 @@
 @include mediaSm {
   nav {
     img {
-      width: 150px !important;
+      width: 150px;
     }
+
+    #black {
+      width: 0px;
+      opacity: 0;
+    }
+
+    .appear {
+
+      opacity: 1 !important;
+    }
+
 
     .navbar-nav {
       .nav-item {
@@ -82,4 +93,8 @@
       font-size: .9rem;
     }
   }
+
+
+
+
 }

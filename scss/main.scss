@@ -10,7 +10,7 @@ nav {
     width: 200px;
   }
 
-  border-bottom: 2px solid rgb(206, 206, 206);
+  transition: all 1s ease-in-out;
 
   .navbar-nav {
     .nav-item {
@@ -265,7 +265,7 @@ nav {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
       cursor: pointer;
-      width: 100%
+      width: 100%;
     }
   }
 }
@@ -553,7 +553,6 @@ nav {
   color: white;
 
   h1 {
-
     text-align: left;
     border-left: 5px solid white;
     padding-left: 10px;
@@ -757,7 +756,6 @@ nav {
   }
 }
 
-
 #links {
   .col-md-4 {
     height: 400px;
@@ -765,24 +763,24 @@ nav {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     h3 {
       color: white;
       font-weight: 700;
     }
-
   }
 
   #blog {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/blog-link.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/blog-link.jpeg);
     background-size: cover;
     background-position: center;
 
-
     &:hover {
       cursor: pointer;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/blog-link.jpeg);
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/blog-link.jpeg);
       background-size: cover;
       background-position: top;
     }
@@ -822,6 +820,24 @@ nav {
 //======================
 //= About Page Begins! =
 //======================
+#white {
+  transition: all .5s ease-in-out;
+}
+
+#black {
+  opacity: 0;
+  width: 0px;
+  transition: all 1s ease-in-out;
+}
+
+.invisible {
+  width: 0px !important;
+}
+
+.appear {
+  opacity: 1 !important;
+  width: 200px !important;
+}
 
 .jumbotron {
   height: 500px;
@@ -831,11 +847,10 @@ nav {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/jumbo.jpeg);
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
 
   color: white;
 }
-
 
 footer {
   background: $blue;
