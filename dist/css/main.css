@@ -17,6 +17,8 @@ p {
     opacity: 0; }
   nav .appear {
     opacity: 1 !important; }
+  nav .btn-outline-success {
+    margin-left: 20px; }
   nav .navbar-nav .nav-item .white {
     transition: all 0.5s ease-in-out;
     color: #333 !important; }
