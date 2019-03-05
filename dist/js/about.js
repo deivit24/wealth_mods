@@ -18,7 +18,7 @@ var navscene = new ScrollMagic.Scene({
     triggerHook: .1
   })
   .setClassToggle(".navbar", "bg-white")
-  .addIndicators()
+
   .addTo(nav);
 
 
@@ -29,7 +29,7 @@ var blacknav = new ScrollMagic.Scene({
     triggerHook: .1
   })
   .setClassToggle("#black", "appear")
-  .addIndicators()
+
   .addTo(black);
 
 var white = new ScrollMagic.Controller();
@@ -39,5 +39,29 @@ var whitenav = new ScrollMagic.Scene({
     triggerHook: .1
   })
   .setClassToggle("#white", "invisible")
-  .addIndicators()
+
   .addTo(white);
+
+
+var navcolors = new ScrollMagic.Controller();
+
+
+$('.nav-link').each(function () {
+  var navColors = new ScrollMagic.Scene({
+      triggerElement: ".jumbotron h1",
+      triggerHook: 0.0
+    })
+    .setClassToggle(this, 'dark')
+
+    .addTo(navcolors);
+});
+
+var aboutActive = new ScrollMagic.Controller();
+
+var aboutActivenav = new ScrollMagic.Scene({
+    triggerElement: ".jumbotron h1",
+    triggerHook: .0
+  })
+  .setClassToggle(".about-active", "about-active-dark")
+
+  .addTo(aboutActive);

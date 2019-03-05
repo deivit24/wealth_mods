@@ -17,6 +17,13 @@ p {
     opacity: 0; }
   nav .appear {
     opacity: 1 !important; }
+  nav .navbar-nav .nav-item .white {
+    transition: all 0.5s ease-in-out;
+    color: #333 !important; }
+  nav .navbar-nav .nav-item .active {
+    color: #4c51f7 !important; }
+  nav .navbar-nav .nav-item .about-active {
+    color: #4c51f7 !important; }
   nav .navbar-nav .nav-item .dropdown-menu .col-4 img,
   nav .navbar-nav .nav-item .dropdown-menu .col-8 img {
     width: 75px !important; }
@@ -79,6 +86,17 @@ nav {
       background: #4c51f7; }
   nav .navbar-nav .nav-item .active {
     color: #4c51f7 !important; }
+  nav .navbar-nav .nav-item .about-active {
+    transition: all 0.5s ease-in-out;
+    border-bottom: white 5px solid; }
+  nav .navbar-nav .nav-item .about-active-dark {
+    transition: all 0.5s ease-in-out;
+    border-bottom: #4c51f7 5px solid; }
+  nav .navbar-nav .nav-item .white {
+    transition: all 0.5s ease-in-out;
+    color: white; }
+  nav .navbar-nav .nav-item .dark {
+    color: #333 !important; }
   nav .navbar-nav .nav-item .dropdown-menu {
     width: 340px; }
     nav .navbar-nav .nav-item .dropdown-menu .col-4,
@@ -105,7 +123,8 @@ nav {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    border: #4c51f7 solid 2px; }
+    border: #4c51f7 solid 2px;
+    background: white; }
     nav .btn-outline-success:hover {
       background: #319236;
       border: #000 solid 2px; }
@@ -584,7 +603,7 @@ nav {
     background-position: top; }
 
 #white {
-  transition: all .5s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
 
 #black {
   opacity: 0;
@@ -606,7 +625,16 @@ nav {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/jumbo.jpeg);
   background-size: cover;
   background-position: bottom;
+  text-align: center;
   color: white; }
+  .jumbotron h1 {
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    font-size: 3rem; }
+  .jumbotron h2 {
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    font-size: 2.5rem; }
 
 footer {
   background: #4c51f7;
