@@ -1,3 +1,64 @@
+// XXL Screens
+@include mediaXxl {
+  #sec6 {
+    .container-fluid {
+      .col-md-4 {
+        height: 650px !important;
+      }
+
+      .col-md-6 {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+// XL Large Screens
+
+@include mediaXl {
+  #sec6 {
+    .container-fluid {
+      .col-md-4 {
+        height: 800px !important;
+      }
+
+      .col-md-6 {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+// Large Screens
+@include mediaLg {
+  #sec6 {
+    .container-fluid {
+      .col-md-4 {
+        height: 900px !important;
+      }
+
+      .col-md-6 {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+// Tablets
+@include mediaMd {
+  #sec6 {
+    .container-fluid {
+      .col-md-4 {
+        height: 1100px !important;
+      }
+
+      .col-md-6 {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
 // Smart Phones
 @include mediaSm {
   nav {
@@ -77,6 +138,13 @@
           color: $blue !important;
         }
 
+        .about-active-dark {
+          transition: all 0.5s ease-in-out;
+
+          border-bottom: $blue 5px solid;
+          width: 20% !important;
+        }
+
         .dropdown-menu {
 
           .col-4,
@@ -153,6 +221,29 @@
     }
   }
 
+  #sec5 {
+    text-align: center;
+
+    .bio {
+      font-size: 1rem !important;
+    }
+  }
+
+  #sec6 {
+    .container-fluid {
+      .col-md-4 {
+        height: 300px !important;
+      }
+
+      .col-md-6 {
+        padding-top: 25px;
+
+        p {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
 
 
 

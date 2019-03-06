@@ -59,23 +59,28 @@ nav {
       .active {
         color: $blue !important;
       }
+
       .about-active {
         transition: all 0.5s ease-in-out;
         border-bottom: white 5px solid;
       }
+
       .about-active-dark {
         transition: all 0.5s ease-in-out;
 
         border-bottom: $blue 5px solid;
       }
+
       .white {
         transition: all 0.5s ease-in-out;
 
         color: white;
       }
+
       .dark {
         color: #333 !important;
       }
+
       .dropdown-menu {
         width: 340px;
 
@@ -471,6 +476,7 @@ nav {
     }
 
     .row {
+
       .col-md-4,
       .col-md-8 {
         transition: all 1s ease-in-out;
@@ -879,6 +885,41 @@ nav {
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
     font-size: 2.5rem;
+  }
+}
+
+#sec5 {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .hello {
+    font-size: 2.5rem;
+  }
+
+  .bio {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+#sec6 {
+  .container-fluid {
+    .col-md-4 {
+      background: url(../img/bio/bio.png);
+      height: 900px;
+      background-size: cover;
+      background-position: center top;
+
+
+    }
+
+    .col-md-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
 
