@@ -75,7 +75,7 @@ var aboutwhy = new ScrollMagic.Scene({
     triggerHook: .8
   })
   .setClassToggle("#why", "why-appear")
-  .addIndicators()
+
   .addTo(why);
 
 // Confused Picture slide
@@ -87,7 +87,7 @@ var aboutconfused = new ScrollMagic.Scene({
     triggerHook: .8
   })
   .setClassToggle("#sec7 img", "why-appear")
-  .addIndicators()
+
   .addTo(confused);
 
 var confusedWords = new ScrollMagic.Controller();
@@ -97,5 +97,5 @@ var aboutconfusedWords = new ScrollMagic.Scene({
     triggerHook: .8
   })
   .setClassToggle("#sec7 .col-md-8", "why-appear")
-  .addIndicators()
+
   .addTo(confusedWords);
