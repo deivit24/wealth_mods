@@ -65,3 +65,37 @@ var aboutActivenav = new ScrollMagic.Scene({
   .setClassToggle(".about-active", "about-active-dark")
 
   .addTo(aboutActive);
+
+// why are you here scroll magic
+
+var why = new ScrollMagic.Controller();
+
+var aboutwhy = new ScrollMagic.Scene({
+    triggerElement: "#why",
+    triggerHook: .8
+  })
+  .setClassToggle("#why", "why-appear")
+  .addIndicators()
+  .addTo(why);
+
+// Confused Picture slide
+
+var confused = new ScrollMagic.Controller();
+
+var aboutconfused = new ScrollMagic.Scene({
+    triggerElement: "#why",
+    triggerHook: .8
+  })
+  .setClassToggle("#sec7 img", "why-appear")
+  .addIndicators()
+  .addTo(confused);
+
+var confusedWords = new ScrollMagic.Controller();
+
+var aboutconfusedWords = new ScrollMagic.Scene({
+    triggerElement: "#why",
+    triggerHook: .8
+  })
+  .setClassToggle("#sec7 .col-md-8", "why-appear")
+  .addIndicators()
+  .addTo(confusedWords);

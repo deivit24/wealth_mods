@@ -92,11 +92,11 @@ p {
   #sec4 .container h1 {
     font-size: 2rem; }
   #sec4 .container .card p {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-bottom: -10px; }
   .rules h1 {
     font-size: 1.5rem !important; }
-  .rules P {
+  .rules p {
     font-size: 1rem !important; }
   .rules img {
     width: 75px !important; }
@@ -105,7 +105,7 @@ p {
   #rule3 h1 {
     width: 100%; }
   #explore h3 {
-    font-size: .9rem; }
+    font-size: 0.9rem; }
   #sec5 {
     text-align: center; }
     #sec5 .bio {
@@ -115,7 +115,13 @@ p {
   #sec6 .container-fluid .col-md-6 {
     padding-top: 25px; }
     #sec6 .container-fluid .col-md-6 p {
-      margin-bottom: 25px; } }
+      margin-bottom: 25px; }
+  #why {
+    transition: all .5s ease-in-out !important; }
+    #why h3 {
+      font-size: 1.3rem; }
+  #sec7 .row .col-md-4 {
+    height: 600px !important; } }
 
 body {
   background: #f4f4f4; }
@@ -725,6 +731,49 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+#why {
+  background: #4c51f7;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  transform: translateX(-800px);
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+  #why h3 {
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white; }
+
+.why-appear {
+  opacity: 1 !important;
+  transform: translateX(0px) !important; }
+
+#sec7 {
+  background: white; }
+  #sec7 .row .col-md-4 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #sec7 .row .col-md-4 img {
+      transform: translateY(-300px);
+      opacity: 0;
+      transition: all 2s ease-in-out; }
+  #sec7 .row .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all 2s ease-in-out; }
+    #sec7 .row .col-md-8 ul li {
+      margin-bottom: 15px; }
+    #sec7 .row .col-md-8 h4 {
+      text-align: center; }
 
 footer {
   background: #4c51f7;
