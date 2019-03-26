@@ -105,5 +105,5 @@ var abouthated = new ScrollMagic.Scene({
   triggerHook: 0.8
 })
   .setClassToggle('#hated', 'why-appear')
-  .addIndicators()
+
   .addTo(hated);
