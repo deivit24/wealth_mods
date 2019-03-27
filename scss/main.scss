@@ -1012,13 +1012,33 @@ nav {
 
 #sec8 {
   .container {
-    padding: 100px 0px;
+    padding: 20px 0px 100px 0px;
 
-    h1 {
-      font-weight: 700;
-      text-align: center;
-      font-size: 3.5rem;
+    .sad-row {
       margin-bottom: 25px;
+
+      .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        transition: all 1s ease-in-out;
+        transform: translateX(-300px);
+        opacity: 0;
+
+        h1 {
+          font-weight: 700;
+          text-align: center;
+          font-size: 3.5rem;
+          margin-bottom: 25px;
+        }
+
+        img {
+          width: 200px;
+          margin: 0px auto;
+        }
+      }
     }
 
     p {
@@ -1032,6 +1052,9 @@ nav {
 
       .col-md-6 {
         text-align: center;
+        transition: all 1s ease-in-out;
+        transform: translateY(-200px);
+        opacity: 0;
 
         button {
           width: 95%;
@@ -1050,6 +1073,11 @@ nav {
           }
         }
       }
+    }
+
+    .card-appear {
+      opacity: 1 !important;
+      transform: translateX(0px) !important;
     }
   }
 }

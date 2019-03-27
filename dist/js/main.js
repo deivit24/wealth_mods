@@ -4,7 +4,8 @@ var slides = new ScrollMagic.Controller();
 $('.col-md-6').each(function () {
   var cardSlide = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 0.7
+      triggerHook: 0.7,
+      reverse: false
     })
     .setClassToggle(this, 'card-appear')
 
