@@ -790,49 +790,64 @@ nav {
     #hated h3 span {
       font-size: 1.2rem; }
 
-#sec8 .container {
-  padding: 20px 0px 100px 0px; }
-  #sec8 .container .sad-row {
-    margin-bottom: 25px; }
-    #sec8 .container .sad-row .col-md-6 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      justify-items: center;
-      text-align: center;
-      transition: all 1s ease-in-out;
-      transform: translateX(-300px);
-      opacity: 0; }
-      #sec8 .container .sad-row .col-md-6 h1 {
-        font-weight: 700;
+#sec8 {
+  background: white; }
+  #sec8 .container {
+    padding: 20px 0px 100px 0px; }
+    #sec8 .container .sad-row {
+      margin-bottom: 25px; }
+      #sec8 .container .sad-row .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
         text-align: center;
-        font-size: 3.5rem;
-        margin-bottom: 25px; }
-      #sec8 .container .sad-row .col-md-6 img {
-        width: 200px;
-        margin: 0px auto; }
-  #sec8 .container p {
-    text-align: center; }
-  #sec8 .container .row .col-md-6 {
-    text-align: center;
-    transition: all 1s ease-in-out;
-    transform: translateY(-200px);
-    opacity: 0; }
-    #sec8 .container .row .col-md-6 button {
-      width: 95%;
-      background: #4c51f7;
-      font-family: "Oswald", sans-serif;
-      margin-bottom: 25px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-      width: 98%; }
-      #sec8 .container .row .col-md-6 button:hover {
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        cursor: pointer;
-        width: 100%; }
-  #sec8 .container .card-appear {
-    opacity: 1 !important;
-    transform: translateX(0px) !important; }
+        transition: all 1s ease-in-out;
+        transform: translateX(-300px);
+        opacity: 0; }
+        #sec8 .container .sad-row .col-md-6 h1 {
+          font-weight: 700;
+          text-align: center;
+          font-size: 3.5rem;
+          margin-bottom: 25px; }
+        #sec8 .container .sad-row .col-md-6 img {
+          width: 200px;
+          margin: 0px auto; }
+    #sec8 .container p {
+      text-align: center; }
+    #sec8 .container #accordionSad {
+      width: 90%;
+      margin: 25px auto;
+      transition: all 1s ease-in-out; }
+      #sec8 .container #accordionSad .card {
+        background: white;
+        border: none;
+        width: 95%;
+        margin: 0 auto; }
+        #sec8 .container #accordionSad .card .card-header {
+          background: #4c51f7;
+          margin: 0 auto;
+          width: 95%;
+          margin-bottom: 20px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transform: translateX(-300px);
+          opacity: 0;
+          text-align: center; }
+          #sec8 .container #accordionSad .card .card-header:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            width: 100%; }
+          #sec8 .container #accordionSad .card .card-header .btn {
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 100%; }
+        #sec8 .container #accordionSad .card .card-appear {
+          transform: translateX(0px);
+          opacity: 1; }
+    #sec8 .container .card-appear {
+      transform: translateX(0px) !important;
+      opacity: 1 !important; }
 
 .link {
   text-decoration: none !important;

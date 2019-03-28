@@ -1011,6 +1011,8 @@ nav {
 }
 
 #sec8 {
+  background: white;
+
   .container {
     padding: 20px 0px 100px 0px;
 
@@ -1047,38 +1049,54 @@ nav {
 
     }
 
-    .row {
+    #accordionSad {
+      width: 90%;
+      margin: 25px auto;
+      transition: all 1s ease-in-out;
 
+      .card {
+        background: white;
+        border: none;
+        width: 95%;
+        margin: 0 auto;
 
-      .col-md-6 {
-        text-align: center;
-        transition: all 1s ease-in-out;
-        transform: translateY(-200px);
-        opacity: 0;
-
-        button {
-          width: 95%;
+        .card-header {
           background: $blue;
-          font-family: $main;
-          margin-bottom: 25px;
+          margin: 0 auto;
+          width: 95%;
+          margin-bottom: 20px;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-          width: 98%;
+          transform: translateX(-300px);
+          opacity: 0;
+          text-align: center;
 
           &:hover {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
               0 10px 10px rgba(0, 0, 0, 0.22);
-            cursor: pointer;
             width: 100%;
           }
+
+          .btn {
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 100%;
+          }
+        }
+
+        .card-appear {
+          transform: translateX(0px);
+          opacity: 1;
         }
       }
     }
 
     .card-appear {
-      opacity: 1 !important;
       transform: translateX(0px) !important;
+      opacity: 1 !important;
     }
+
   }
 }
 
