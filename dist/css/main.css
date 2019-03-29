@@ -121,7 +121,11 @@ p {
     #why h3 {
       font-size: 1.3rem; }
   #sec7 .row .col-md-4 {
-    height: 600px !important; } }
+    height: 600px !important; }
+  #hated h3 {
+    font-size: 1rem; }
+  #sec8 .container #accordionSad .card .card-header .btn {
+    font-size: 1.2rem !important; } }
 
 body {
   background: #f4f4f4; }
@@ -793,7 +797,7 @@ nav {
 #sec8 {
   background: white; }
   #sec8 .container {
-    padding: 20px 0px 100px 0px; }
+    padding: 20px 5px 100px 5px; }
     #sec8 .container .sad-row {
       margin-bottom: 25px; }
       #sec8 .container .sad-row .col-md-6 {
@@ -841,7 +845,8 @@ nav {
             color: white;
             text-decoration: none;
             text-transform: capitalize;
-            width: 100%; }
+            width: 100%;
+            font-size: 2rem; }
         #sec8 .container #accordionSad .card .card-appear {
           transform: translateX(0px);
           opacity: 1; }

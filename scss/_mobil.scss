@@ -262,4 +262,24 @@
       }
     }
   }
+
+  #hated {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  #sec8 {
+    .container {
+      #accordionSad {
+        .card {
+          .card-header {
+            .btn {
+              font-size: 1.2rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
