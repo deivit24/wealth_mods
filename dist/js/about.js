@@ -1,21 +1,21 @@
 // making cards in start here page a link!
 
-document.getElementById('about').onclick = function() {
+document.getElementById('about').onclick = function () {
   location.href = 'about.html';
 };
-document.getElementById('tool').onclick = function() {
+document.getElementById('tool').onclick = function () {
   location.href = 'tool.html';
 };
-document.getElementById('blog').onclick = function() {
+document.getElementById('blog').onclick = function () {
   location.href = 'mods/wealth-mods-101.html';
 };
 
 var nav = new ScrollMagic.Controller();
 
 var navscene = new ScrollMagic.Scene({
-  triggerElement: '.jumbotron h1',
-  triggerHook: 0.1
-})
+    triggerElement: '.jumbotron h1',
+    triggerHook: 0.1
+  })
   .setClassToggle('.navbar', 'bg-white')
 
   .addTo(nav);
@@ -23,9 +23,9 @@ var navscene = new ScrollMagic.Scene({
 var black = new ScrollMagic.Controller();
 
 var blacknav = new ScrollMagic.Scene({
-  triggerElement: '.jumbotron h1',
-  triggerHook: 0.1
-})
+    triggerElement: '.jumbotron h1',
+    triggerHook: 0.1
+  })
   .setClassToggle('#black', 'appear')
 
   .addTo(black);
@@ -33,20 +33,20 @@ var blacknav = new ScrollMagic.Scene({
 var white = new ScrollMagic.Controller();
 
 var whitenav = new ScrollMagic.Scene({
-  triggerElement: '.jumbotron h1',
-  triggerHook: 0.1
-})
+    triggerElement: '.jumbotron h1',
+    triggerHook: 0.1
+  })
   .setClassToggle('#white', 'invisible')
 
   .addTo(white);
 
 var navcolors = new ScrollMagic.Controller();
 
-$('.nav-link').each(function() {
+$('.nav-link').each(function () {
   var navColors = new ScrollMagic.Scene({
-    triggerElement: '.jumbotron h1',
-    triggerHook: 0.0
-  })
+      triggerElement: '.jumbotron h1',
+      triggerHook: 0.0
+    })
     .setClassToggle(this, 'dark')
 
     .addTo(navcolors);
@@ -55,9 +55,9 @@ $('.nav-link').each(function() {
 var aboutActive = new ScrollMagic.Controller();
 
 var aboutActivenav = new ScrollMagic.Scene({
-  triggerElement: '.jumbotron h1',
-  triggerHook: 0.0
-})
+    triggerElement: '.jumbotron h1',
+    triggerHook: 0.0
+  })
   .setClassToggle('.about-active', 'about-active-dark')
 
   .addTo(aboutActive);
@@ -67,9 +67,9 @@ var aboutActivenav = new ScrollMagic.Scene({
 var why = new ScrollMagic.Controller();
 
 var aboutwhy = new ScrollMagic.Scene({
-  triggerElement: '#why',
-  triggerHook: 0.8
-})
+    triggerElement: '#why',
+    triggerHook: 0.8
+  })
   .setClassToggle('#why', 'why-appear')
 
   .addTo(why);
@@ -79,9 +79,9 @@ var aboutwhy = new ScrollMagic.Scene({
 var confused = new ScrollMagic.Controller();
 
 var aboutconfused = new ScrollMagic.Scene({
-  triggerElement: '#why',
-  triggerHook: 0.8
-})
+    triggerElement: '#why',
+    triggerHook: 0.8
+  })
   .setClassToggle('#sec7 img', 'why-appear')
 
   .addTo(confused);
@@ -89,9 +89,9 @@ var aboutconfused = new ScrollMagic.Scene({
 var confusedWords = new ScrollMagic.Controller();
 
 var aboutconfusedWords = new ScrollMagic.Scene({
-  triggerElement: '#why',
-  triggerHook: 0.8
-})
+    triggerElement: '#why',
+    triggerHook: 0.8
+  })
   .setClassToggle('#sec7 .col-md-8', 'why-appear')
 
   .addTo(confusedWords);
@@ -101,9 +101,36 @@ var aboutconfusedWords = new ScrollMagic.Scene({
 var hated = new ScrollMagic.Controller();
 
 var abouthated = new ScrollMagic.Scene({
-  triggerElement: '#hated',
-  triggerHook: 0.8
-})
+    triggerElement: '#hated',
+    triggerHook: 0.8
+  })
   .setClassToggle('#hated', 'why-appear')
 
   .addTo(hated);
+
+// Why I loved it
+
+var love = new ScrollMagic.Controller();
+
+var aboutlove = new ScrollMagic.Scene({
+    triggerElement: '#loved',
+    triggerHook: 0.8
+  })
+  .setClassToggle('#loved', 'why-appear')
+
+  .addTo(love);
+
+function expand1() {
+  var element = document.getElementById("headingOne");
+  element.classList.toggle("expand");
+}
+
+function expand2() {
+  var element = document.getElementById("headingTwo");
+  element.classList.toggle("expand");
+}
+
+function expand3() {
+  var element = document.getElementById("headingThree");
+  element.classList.toggle("expand");
+}

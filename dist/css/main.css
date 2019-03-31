@@ -841,6 +841,10 @@ nav {
           #sec8 .container #accordionSad .card .card-header:hover {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             width: 100%; }
+          #sec8 .container #accordionSad .card .card-header:active {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+          #sec8 .container #accordionSad .card .card-header:focus {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
           #sec8 .container #accordionSad .card .card-header .btn {
             color: white;
             text-decoration: none;
@@ -851,6 +855,82 @@ nav {
           transform: translateX(0px);
           opacity: 1; }
     #sec8 .container .card-appear {
+      transform: translateX(0px) !important;
+      opacity: 1 !important; }
+    #sec8 .container .expand {
+      background: #1b22f5 !important; }
+
+#loved {
+  background: #319236;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  transform: translateX(-800px);
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+  #loved h3 {
+    text-transform: capitalize;
+    color: white; }
+
+#sec9 {
+  background: white; }
+  #sec9 .container {
+    padding: 20px 5px 100px 5px; }
+    #sec9 .container .happy-row {
+      margin-bottom: 25px; }
+      #sec9 .container .happy-row .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        transition: all 1s ease-in-out;
+        transform: translateX(-300px);
+        opacity: 0; }
+        #sec9 .container .happy-row .col-md-6 h1 {
+          font-weight: 700;
+          text-align: center;
+          font-size: 3.5rem;
+          margin-bottom: 25px; }
+        #sec9 .container .happy-row .col-md-6 img {
+          width: 200px;
+          margin: 0px auto; }
+    #sec9 .container p {
+      text-align: center; }
+    #sec9 .container #accordionHappy {
+      width: 90%;
+      margin: 25px auto;
+      transition: all 1s ease-in-out; }
+      #sec9 .container #accordionHappy .card {
+        background: white;
+        border: none;
+        width: 95%;
+        margin: 0 auto; }
+        #sec9 .container #accordionHappy .card .card-header {
+          background: #319236;
+          margin: 0 auto;
+          width: 95%;
+          margin-bottom: 20px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transform: translateX(-300px);
+          opacity: 0;
+          text-align: center; }
+          #sec9 .container #accordionHappy .card .card-header:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            width: 100%; }
+          #sec9 .container #accordionHappy .card .card-header .btn {
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 100%;
+            font-size: 2rem; }
+        #sec9 .container #accordionHappy .card .card-appear {
+          transform: translateX(0px);
+          opacity: 1; }
+    #sec9 .container .card-appear {
       transform: translateX(0px) !important;
       opacity: 1 !important; }
 
