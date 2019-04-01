@@ -134,3 +134,28 @@ function expand3() {
   var element = document.getElementById("headingThree");
   element.classList.toggle("expand");
 }
+
+function expand4() {
+  var element = document.getElementById("headingFour");
+  element.classList.toggle("expand");
+}
+
+function expand5() {
+  var element = document.getElementById("headingFive");
+  element.classList.toggle("expand");
+}
+
+function expand6() {
+  var element = document.getElementById("headingSix");
+  element.classList.toggle("expand");
+}
+
+function expand7() {
+  var element = document.getElementById("headingSeven");
+  element.classList.toggle("expand");
+}
+
+function expand8() {
+  var element = document.getElementById("headingEight");
+  element.classList.toggle("expand");
+}

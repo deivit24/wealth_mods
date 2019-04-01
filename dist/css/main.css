@@ -921,6 +921,10 @@ nav {
           #sec9 .container #accordionHappy .card .card-header:hover {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             width: 100%; }
+          #sec9 .container #accordionHappy .card .card-header:active {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+          #sec9 .container #accordionHappy .card .card-header:focus {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
           #sec9 .container #accordionHappy .card .card-header .btn {
             color: white;
             text-decoration: none;
@@ -933,6 +937,8 @@ nav {
     #sec9 .container .card-appear {
       transform: translateX(0px) !important;
       opacity: 1 !important; }
+    #sec9 .container .expand {
+      background: #246c28 !important; }
 
 .link {
   text-decoration: none !important;
