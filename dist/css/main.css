@@ -629,7 +629,7 @@ nav {
       border: 4px solid #319236; }
 
 #explore {
-  background: #319236;
+  background: #f3af19;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -737,7 +737,7 @@ nav {
   justify-content: center; }
 
 #why {
-  background: #4c51f7;
+  background: #f3af19;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -748,7 +748,8 @@ nav {
   transition: all 1s ease-in-out; }
   #why h3 {
     text-transform: capitalize;
-    color: white; }
+    color: black;
+    font-weight: 700; }
 
 .why-appear {
   opacity: 1 !important;
@@ -939,6 +940,47 @@ nav {
       opacity: 1 !important; }
     #sec9 .container .expand {
       background: #246c28 !important; }
+
+#mission {
+  background: #9d4dbb;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  transform: translateX(-800px);
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+  #mission h3 {
+    text-transform: capitalize;
+    color: white; }
+
+#sec10 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s ease-in-out;
+  height: 700px; }
+  #sec10 .container h1 {
+    font-weight: 700;
+    text-align: left;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    text-align: center; }
+  #sec10 .container .btn {
+    width: 30%;
+    font-family: "Oswald", sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 10px 10px;
+    border: 3px solid #9d4dbb;
+    text-align: center;
+    margin: 50px auto; }
+    #sec10 .container .btn:hover {
+      background: #9d4dbb;
+      color: white; }
 
 .link {
   text-decoration: none !important;

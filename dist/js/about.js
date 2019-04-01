@@ -120,6 +120,18 @@ var aboutlove = new ScrollMagic.Scene({
 
   .addTo(love);
 
+// MY MISSION 
+
+var mission = new ScrollMagic.Controller();
+
+var aboutmission = new ScrollMagic.Scene({
+    triggerElement: '#mission',
+    triggerHook: 0.8
+  })
+  .setClassToggle('#mission', 'why-appear')
+
+  .addTo(mission);
+
 function expand1() {
   var element = document.getElementById("headingOne");
   element.classList.toggle("expand");
