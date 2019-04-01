@@ -122,10 +122,17 @@ p {
       font-size: 1.3rem; }
   #sec7 .row .col-md-4 {
     height: 600px !important; }
-  #hated h3 {
-    font-size: 1rem; }
   #sec8 .container #accordionSad .card .card-header .btn {
-    font-size: 1.2rem !important; } }
+    font-size: 1.2rem !important; }
+  #sec9 .container #accordionHappy .card .card-header .btn {
+    font-size: 1.2rem !important; }
+  #sec10 .container {
+    height: 500px !important; }
+    #sec10 .container h1 {
+      font-size: 2rem !important; }
+    #sec10 .container .btn {
+      font-size: 1rem !important;
+      width: 60% !important; } }
 
 body {
   background: #f4f4f4; }
@@ -955,32 +962,35 @@ nav {
     text-transform: capitalize;
     color: white; }
 
-#sec10 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#sec10 {
   transition: all 1s ease-in-out;
-  height: 700px; }
-  #sec10 .container h1 {
-    font-weight: 700;
-    text-align: left;
-    font-size: 3.5rem;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-    text-align: center; }
-  #sec10 .container .btn {
-    width: 30%;
-    font-family: "Oswald", sans-serif;
-    color: black;
-    font-weight: 700;
-    font-size: 2rem;
-    padding: 10px 10px;
-    border: 3px solid #9d4dbb;
-    text-align: center;
-    margin: 50px auto; }
-    #sec10 .container .btn:hover {
-      background: #9d4dbb;
-      color: white; }
+  transform: translateX(-300px);
+  opacity: 0; }
+  #sec10 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px; }
+    #sec10 .container h1 {
+      font-weight: 700;
+      text-align: left;
+      font-size: 3.5rem;
+      margin-bottom: 25px;
+      text-transform: capitalize;
+      text-align: center; }
+    #sec10 .container .btn {
+      width: 30%;
+      font-family: "Oswald", sans-serif;
+      color: black;
+      font-weight: 700;
+      font-size: 2rem;
+      padding: 10px 10px;
+      border: 3px solid #9d4dbb;
+      text-align: center;
+      margin: 50px auto; }
+      #sec10 .container .btn:hover {
+        background: #9d4dbb;
+        color: white; }
 
 .link {
   text-decoration: none !important;

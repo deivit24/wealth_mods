@@ -1259,11 +1259,15 @@ nav {
 }
 
 #sec10 {
+  transition: all 1s ease-in-out;
+  transform: translateX(-300px);
+  opacity: 0;
+
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: all 1s ease-in-out;
+
     height: 700px;
 
     h1 {

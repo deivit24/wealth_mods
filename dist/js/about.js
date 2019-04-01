@@ -132,6 +132,16 @@ var aboutmission = new ScrollMagic.Scene({
 
   .addTo(mission);
 
+var sec10 = new ScrollMagic.Controller();
+
+var aboutsec10 = new ScrollMagic.Scene({
+    triggerElement: '#sec10',
+    triggerHook: 0.8
+  })
+  .setClassToggle('#sec10', 'why-appear')
+
+  .addTo(sec10);
+
 function expand1() {
   var element = document.getElementById("headingOne");
   element.classList.toggle("expand");

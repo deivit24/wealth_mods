@@ -263,11 +263,7 @@
     }
   }
 
-  #hated {
-    h3 {
-      font-size: 1rem;
-    }
-  }
+
 
   #sec8 {
     .container {
@@ -279,6 +275,35 @@
             }
           }
         }
+      }
+    }
+  }
+
+  #sec9 {
+    .container {
+      #accordionHappy {
+        .card {
+          .card-header {
+            .btn {
+              font-size: 1.2rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #sec10 {
+    .container {
+      height: 500px !important;
+
+      h1 {
+        font-size: 2rem !important;
+      }
+
+      .btn {
+        font-size: 1rem !important;
+        width: 60% !important;
       }
     }
   }
