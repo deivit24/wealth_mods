@@ -312,4 +312,63 @@
       }
     }
   }
+
+  #retirement-calc {
+    .coming-soon {
+
+      img {
+        width: 250px !important;
+      }
+
+      .container {
+        .row {
+          width: 100% !important;
+
+          .col-6 {
+            img {
+              width: 150px !important;
+            }
+
+            h1 {
+              font-size: 1rem !important;
+            }
+          }
+        }
+
+        .progress {
+
+          width: 100% !important;
+          margin: 0 auto;
+
+          .progress-bar {
+            font-family: $second;
+            font-weight: 700;
+            font-size: 1.3rem;
+
+          }
+        }
+
+        p {
+          font-size: 1rem !important;
+          width: 100% !important;
+        }
+
+        form {
+          .form-group {
+            width: 75% !important;
+
+            input {
+              width: 100% !important;
+
+            }
+
+            button {
+              width: 100% !important;
+
+            }
+          }
+        }
+      }
+    }
+  }
 }

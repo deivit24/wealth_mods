@@ -1,5 +1,6 @@
 @import 'settings';
 @import 'mobil';
+@import 'mods';
 
 body {
   background: #f4f4f4;
@@ -890,7 +891,7 @@ nav {
 // }
 
 #sec5 {
-  height: 350px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
