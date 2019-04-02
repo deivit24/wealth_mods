@@ -31,6 +31,63 @@
 
 // Large Screens
 @include mediaLg {
+  #sec2 {
+    .container {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .box {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+        width: 98%;
+        margin: 0px auto;
+
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+          cursor: pointer;
+          width: 100%;
+        }
+
+        .row {
+          margin-bottom: 25px;
+
+          .col-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+              width: 200px;
+              margin: 0 auto;
+            }
+          }
+
+          .col-8 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h2 {
+              font-size: 1.8rem;
+            }
+
+            h3 {
+              font-size: 1.2rem;
+              font-family: $second;
+            }
+          }
+        }
+      }
+    }
+  }
+
   #sec6 {
     .container-fluid {
       .col-md-4 {
@@ -46,6 +103,63 @@
 
 // Tablets
 @include mediaMd {
+  #sec2 {
+    .container {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .box {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+        width: 98%;
+        margin: 0px auto;
+
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+          cursor: pointer;
+          width: 100%;
+        }
+
+        .row {
+          margin-bottom: 25px;
+
+          .col-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+              width: 100px;
+              margin: 0 auto;
+            }
+          }
+
+          .col-8 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h2 {
+              font-size: 1.2rem;
+            }
+
+            h3 {
+              font-size: 1rem;
+              font-family: $second;
+            }
+          }
+        }
+      }
+    }
+  }
+
   #sec6 {
     .container-fluid {
       .col-md-4 {
