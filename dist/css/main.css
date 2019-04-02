@@ -89,6 +89,34 @@ p {
     font-size: 2.5rem; }
   #sec2 .container p {
     font-size: 1.2rem; }
+  #sec2 .container .box {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 98%;
+    margin: 0px auto; }
+    #sec2 .container .box:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      cursor: pointer;
+      width: 100%; }
+    #sec2 .container .box .row {
+      margin-bottom: 25px; }
+      #sec2 .container .box .row .col-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #sec2 .container .box .row .col-4 img {
+          width: 100px;
+          margin: 0 auto; }
+      #sec2 .container .box .row .col-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; }
+        #sec2 .container .box .row .col-8 h2 {
+          font-size: 1.2rem; }
+        #sec2 .container .box .row .col-8 h3 {
+          font-size: 1rem;
+          font-family: "Montserrat", sans-serif; }
   #sec4 .container h1 {
     font-size: 2rem; }
   #sec4 .container .card p {
@@ -388,7 +416,7 @@ nav {
 #sec2 {
   background: url("../img/background2.png");
   background-size: cover;
-  padding-bottom: 50px; }
+  padding-bottom: 250px; }
   #sec2 h1 {
     text-align: center;
     font-weight: 700;
@@ -402,14 +430,29 @@ nav {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 50px; }
-  #sec2 .card {
+  #sec2 .box {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-    width: 98%; }
-    #sec2 .card:hover {
+    width: 70%;
+    margin: 0px auto; }
+    #sec2 .box:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
       cursor: pointer;
-      width: 100%; }
+      width: 75%; }
+    #sec2 .box .row {
+      margin-bottom: 25px; }
+      #sec2 .box .row .col-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #sec2 .box .row .col-4 img {
+          width: 200px;
+          margin: 0 auto; }
+      #sec2 .box .row .col-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; }
 
 #sec3 {
   background: white; }
