@@ -99,6 +99,41 @@
       }
     }
   }
+
+  #mods101 {
+    .signup-card {
+      height: 320px;
+    }
+
+    #rprofile-card {
+      img {
+        height: 100px;
+      }
+    }
+
+    #retirecal-card {
+
+      img {
+        height: 100px;
+      }
+
+      p {
+        text-indent: -9999px;
+        line-height: 0;
+        /* Collapse the original line */
+      }
+
+      p:after {
+        content: 'Retirement Calculator';
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+
+      }
+    }
+
+
+  }
 }
 
 // Tablets
@@ -170,6 +205,33 @@
         padding-left: 25px;
       }
     }
+  }
+
+  #mods101 {
+    .signup-card {
+      height: 320px;
+    }
+
+    #retirecal-card {
+
+
+
+      p {
+        text-indent: -9999px;
+        line-height: 0;
+        /* Collapse the original line */
+      }
+
+      p:after {
+        content: 'Retirement Calculator';
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+
+      }
+    }
+
+
   }
 }
 
@@ -530,4 +592,30 @@
     }
   }
 
+  #mods101 {
+    .signup-card {
+      height: 320px;
+    }
+
+    #retirecal-card {
+
+
+
+      p {
+        text-indent: -9999px;
+        line-height: 0;
+        /* Collapse the original line */
+      }
+
+      p:after {
+        content: 'Retirement Calculator';
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+
+      }
+    }
+
+
+  }
 }
