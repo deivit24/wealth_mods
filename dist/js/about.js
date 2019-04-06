@@ -4,7 +4,7 @@ document.getElementById('about').onclick = function () {
   location.href = 'https://armisfinancial.com';
 };
 document.getElementById('tool').onclick = function () {
-  location.href = 'tool.html';
+  location.href = 'index.html#discover';
 };
 document.getElementById('blog').onclick = function () {
   location.href = 'mods/wealth-mods-101.html';

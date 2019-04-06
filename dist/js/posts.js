@@ -8,7 +8,7 @@ let post = [{
     sub: 'This is the most recent post',
     src: '../dist/img/blog/young1.jpg',
     author: 'David Salazar',
-    link: '#',
+    link: 'wealth-mods-101/who-what-is-wealth-mods-101.html',
     preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
     class: 'blog-card '
   },

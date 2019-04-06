@@ -22,6 +22,8 @@ p {
     padding-left: 50px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .navbar .navbar-collapse form {
+    display: none !important; }
   #sec2 .container h1 {
     font-size: 2.5rem; }
   #sec2 .container p {
@@ -54,6 +56,13 @@ p {
         #sec2 .container .box .row .col-8 h3 {
           font-size: 1.2rem;
           font-family: "Montserrat", sans-serif; }
+  #sec5 {
+    text-align: center; }
+    #sec5 .hello {
+      font-size: 2rem !important; }
+    #sec5 .bio {
+      font-size: 1rem !important;
+      width: 75% !important; }
   #sec6 .container-fluid .col-md-4 {
     height: 900px !important; }
   #sec6 .container-fluid .col-md-6 {
@@ -107,6 +116,13 @@ p {
         #sec2 .container .box .row .col-8 h3 {
           font-size: 1rem;
           font-family: "Montserrat", sans-serif; }
+  #sec5 {
+    text-align: center; }
+    #sec5 .hello {
+      font-size: 2rem !important; }
+    #sec5 .bio {
+      font-size: 1rem !important;
+      width: 75% !important; }
   #sec6 .container-fluid .col-md-4 {
     height: 1100px !important; }
   #sec6 .container-fluid .col-md-6 {
@@ -571,6 +587,38 @@ p {
     #rprofile-card .btn:hover {
       background: #4c51f7;
       color: #fff; }
+
+#blog-post .stuff {
+  height: 500px; }
+
+#blog-post .breadcrumbs {
+  text-align: center;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #blog-post .breadcrumbs ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 0 auto; }
+    #blog-post .breadcrumbs ul li {
+      margin-right: 10px;
+      font-size: 1.3rem;
+      font-family: "Oswald", sans-serif;
+      text-transform: capitalize;
+      color: #333; }
+      #blog-post .breadcrumbs ul li .fa-caret-right {
+        color: #4c51f7; }
+      #blog-post .breadcrumbs ul li a {
+        text-decoration: none;
+        color: #333;
+        transition: all .5s ease-in-out; }
+        #blog-post .breadcrumbs ul li a:hover {
+          color: #4c51f7;
+          font-size: 1.4rem; }
+
+#blog-post .stuff2 {
+  height: 1000px; }
 
 body {
   background: #f4f4f4; }
