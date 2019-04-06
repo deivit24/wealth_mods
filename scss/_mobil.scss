@@ -31,6 +31,14 @@
 
 // Large Screens
 @include mediaLg {
+  .navbar {
+    .navbar-collapse {
+      form {
+        display: none !important;
+      }
+    }
+  }
+
   #sec2 {
     .container {
       h1 {
@@ -88,6 +96,19 @@
     }
   }
 
+  #sec5 {
+    text-align: center;
+
+    .hello {
+      font-size: 2rem !important;
+    }
+
+    .bio {
+      font-size: 1rem !important;
+      width: 75% !important;
+    }
+  }
+
   #sec6 {
     .container-fluid {
       .col-md-4 {
@@ -138,6 +159,8 @@
 
 // Tablets
 @include mediaMd {
+
+
   #sec2 {
     .container {
       h1 {
@@ -192,6 +215,19 @@
           }
         }
       }
+    }
+  }
+
+  #sec5 {
+    text-align: center;
+
+    .hello {
+      font-size: 2rem !important;
+    }
+
+    .bio {
+      font-size: 1rem !important;
+      width: 75% !important;
     }
   }
 
