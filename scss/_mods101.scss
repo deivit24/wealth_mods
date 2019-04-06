@@ -4,7 +4,7 @@ $color_white: #fff;
 
 
 #mods101 {
-  height: 2000px;
+
 
   .blog-card {
     display: flex;
@@ -48,7 +48,7 @@ $color_white: #fff;
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url("../img/blog/young1.jpg");
+
       background-size: cover;
       background-position: top center;
       transition: transform .2s;
@@ -99,7 +99,7 @@ $color_white: #fff;
       .tags {
         ul {
           li {
-            a i {
+            i {
               margin-right: 10px;
             }
 
@@ -116,6 +116,7 @@ $color_white: #fff;
       background: $color_white;
       position: relative;
       z-index: 1;
+
 
 
 

@@ -354,141 +354,138 @@ p {
   .coming-soon .container small {
     text-align: center; }
 
-#mods101 {
-  height: 2000px; }
-  #mods101 .blog-card {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.6%;
+#mods101 .blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0; }
+  #mods101 .blog-card a {
+    color: inherit; }
+    #mods101 .blog-card a:hover {
+      color: #319236; }
+  #mods101 .blog-card:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
+    #mods101 .blog-card:hover .photo {
+      transform: scale(1.3) rotate(3deg); }
+  #mods101 .blog-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px; }
+  #mods101 .blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: top center;
+    transition: transform .2s; }
+  #mods101 .blog-card .details,
+  #mods101 .blog-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none; }
+  #mods101 .blog-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left .2s;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: .9rem;
+    font-family: "Oswald", sans-serif; }
+    #mods101 .blog-card .details ul li {
+      display: inline-block; }
+    #mods101 .blog-card .details .author i {
+      margin-right: 10px; }
+    #mods101 .blog-card .details .date i {
+      margin-right: 10px; }
+    #mods101 .blog-card .details .tags ul li i {
+      margin-right: 10px; }
+  #mods101 .blog-card .description {
+    padding: 1rem;
     background: #fff;
-    line-height: 1.4;
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 0; }
-    #mods101 .blog-card a {
-      color: inherit; }
-      #mods101 .blog-card a:hover {
-        color: #319236; }
-    #mods101 .blog-card:hover {
-      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
-      #mods101 .blog-card:hover .photo {
-        transform: scale(1.3) rotate(3deg); }
-    #mods101 .blog-card .meta {
-      position: relative;
-      z-index: 0;
-      height: 200px; }
-    #mods101 .blog-card .photo {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: url("../img/blog/young1.jpg");
-      background-size: cover;
-      background-position: top center;
-      transition: transform .2s; }
-    #mods101 .blog-card .details,
-    #mods101 .blog-card .details ul {
-      margin: auto;
-      padding: 0;
-      list-style: none; }
-    #mods101 .blog-card .details {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -100%;
-      margin: auto;
-      transition: left .2s;
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      padding: 10px;
-      width: 100%;
-      font-size: .9rem;
-      font-family: "Oswald", sans-serif; }
-      #mods101 .blog-card .details ul li {
-        display: inline-block; }
-      #mods101 .blog-card .details .author i {
-        margin-right: 10px; }
-      #mods101 .blog-card .details .date i {
-        margin-right: 10px; }
-      #mods101 .blog-card .details .tags ul li a i {
-        margin-right: 10px; }
-    #mods101 .blog-card .description {
-      padding: 1rem;
-      background: #fff;
-      position: relative;
-      z-index: 1; }
-      #mods101 .blog-card .description h1 {
-        line-height: 1;
-        margin: 0;
-        font-size: 1.7rem;
+    position: relative;
+    z-index: 1; }
+    #mods101 .blog-card .description h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.7rem;
+      font-family: "Oswald", sans-serif;
+      font-weight: 700; }
+    #mods101 .blog-card .description h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: capitalize;
+      color: #4c51f7;
+      margin-top: 5px;
+      font-family: "Montserrat", sans-serif; }
+    #mods101 .blog-card .description .read-more {
+      text-align: right; }
+      #mods101 .blog-card .description .read-more .btn {
+        border: 2px solid #319236;
+        border-radius: 2em;
+        padding: 10px 20px;
+        color: #319236;
         font-family: "Oswald", sans-serif;
         font-weight: 700; }
-      #mods101 .blog-card .description h2 {
-        font-size: 1rem;
-        font-weight: 300;
-        text-transform: capitalize;
-        color: #4c51f7;
-        margin-top: 5px;
-        font-family: "Montserrat", sans-serif; }
-      #mods101 .blog-card .description .read-more {
-        text-align: right; }
-        #mods101 .blog-card .description .read-more .btn {
-          border: 2px solid #319236;
-          border-radius: 2em;
-          padding: 10px 20px;
-          color: #319236;
-          font-family: "Oswald", sans-serif;
-          font-weight: 700; }
-          #mods101 .blog-card .description .read-more .btn:hover {
-            background: #319236;
-            color: white; }
-    #mods101 .blog-card p {
-      position: relative;
-      margin: 1rem 0 0; }
-      #mods101 .blog-card p:first-of-type {
-        margin-top: 1.25rem; }
-        #mods101 .blog-card p:first-of-type:before {
-          content: "";
-          position: absolute;
-          height: 5px;
+        #mods101 .blog-card .description .read-more .btn:hover {
           background: #319236;
-          width: 35px;
-          top: -0.75rem;
-          border-radius: 3px; }
-    #mods101 .blog-card:hover .details {
-      left: 0%; }
-    @media (min-width: 640px) {
-      #mods101 .blog-card {
-        flex-direction: row;
-        max-width: 700px; }
-        #mods101 .blog-card .meta {
-          flex-basis: 40%;
-          height: auto; }
-        #mods101 .blog-card .description {
-          flex-basis: 60%; }
-          #mods101 .blog-card .description:before {
-            transform: skewX(-3deg);
-            content: "";
-            background: #fff;
-            width: 30px;
-            position: absolute;
-            left: -10px;
-            top: 0;
-            bottom: 0;
-            z-index: -1; }
-        #mods101 .blog-card.alt {
-          flex-direction: row-reverse; }
-          #mods101 .blog-card.alt .read-more {
-            text-align: left; }
-          #mods101 .blog-card.alt .description:before {
-            left: inherit;
-            right: -10px;
-            transform: skew(3deg); }
-          #mods101 .blog-card.alt .details {
-            padding-left: 25px; } }
+          color: white; }
+  #mods101 .blog-card p {
+    position: relative;
+    margin: 1rem 0 0; }
+    #mods101 .blog-card p:first-of-type {
+      margin-top: 1.25rem; }
+      #mods101 .blog-card p:first-of-type:before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        background: #319236;
+        width: 35px;
+        top: -0.75rem;
+        border-radius: 3px; }
+  #mods101 .blog-card:hover .details {
+    left: 0%; }
+  @media (min-width: 640px) {
+    #mods101 .blog-card {
+      flex-direction: row;
+      max-width: 700px; }
+      #mods101 .blog-card .meta {
+        flex-basis: 40%;
+        height: auto; }
+      #mods101 .blog-card .description {
+        flex-basis: 60%; }
+        #mods101 .blog-card .description:before {
+          transform: skewX(-3deg);
+          content: "";
+          background: #fff;
+          width: 30px;
+          position: absolute;
+          left: -10px;
+          top: 0;
+          bottom: 0;
+          z-index: -1; }
+      #mods101 .blog-card.alt {
+        flex-direction: row-reverse; }
+        #mods101 .blog-card.alt .read-more {
+          text-align: left; }
+        #mods101 .blog-card.alt .description:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg); }
+        #mods101 .blog-card.alt .details {
+          padding-left: 25px; } }
 
 .signup-card {
   display: flex;
