@@ -588,15 +588,20 @@ p {
       background: #4c51f7;
       color: #fff; }
 
-#blog-post .stuff {
-  height: 500px; }
+#blog-post .title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding: 15px 10px; }
 
 #blog-post .breadcrumbs {
   text-align: center;
-  height: 75px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background: white;
+  z-index: 5;
+  padding: 10px 0; }
   #blog-post .breadcrumbs ul {
     list-style: none;
     display: inline-flex;
@@ -616,9 +621,6 @@ p {
         #blog-post .breadcrumbs ul li a:hover {
           color: #4c51f7;
           font-size: 1.4rem; }
-
-#blog-post .stuff2 {
-  height: 1000px; }
 
 body {
   background: #f4f4f4; }
