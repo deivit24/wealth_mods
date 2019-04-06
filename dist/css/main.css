@@ -132,7 +132,8 @@ p {
   nav .appear {
     opacity: 1 !important; }
   nav .btn-outline-success {
-    margin-left: 20px; }
+    margin-left: 20px;
+    width: 100%; }
   nav .navbar-nav .nav-item .nav-link {
     position: relative;
     text-decoration: none;
