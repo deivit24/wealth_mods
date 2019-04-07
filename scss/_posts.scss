@@ -1,4 +1,6 @@
 #blog-post {
+  padding-top: 121.45px;
+
   .title {
     font-size: 2rem;
     font-weight: 700;
@@ -8,14 +10,14 @@
 
   .breadcrumbs {
     text-align: center;
-
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: white;
+    transition: all .8s ease-in-out;
     z-index: 5;
     padding: 10px 0;
-
+    opacity: 0;
 
 
     ul {
@@ -47,6 +49,11 @@
         }
       }
     }
+  }
+
+  .white {
+    background: white;
+    opacity: 1;
   }
 
 
