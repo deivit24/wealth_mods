@@ -12,7 +12,7 @@ $(function () {
 
     .setPin(".breadcrumbs")
     .setClassToggle(".breadcrumbs", "white")
-    .addIndicators()
+
     .addTo(pinning);
 
 });
