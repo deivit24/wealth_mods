@@ -51,6 +51,16 @@ $('.rules').each(function () {
 
     .addTo(rules);
 });
+// small social
+var social = new ScrollMagic.Controller();
+
+var aboutsocial = new ScrollMagic.Scene({
+    triggerElement: '.sub',
+    triggerHook: 0
+  })
+  .setClassToggle('#social-small', 'social-appear')
+  .addIndicators()
+  .addTo(social);
 // Clickable cards that go to different links
 
 document.getElementById("wmod").onclick = function () {
