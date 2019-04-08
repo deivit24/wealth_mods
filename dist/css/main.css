@@ -602,7 +602,7 @@ p {
     text-align: left;
     padding-top: 0px;
     text-transform: capitalize;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #9598fa 20%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #aeb0fb 20%);
     display: inline; }
   #blog-post .container .sub {
     font-size: 1.8rem;
@@ -658,6 +658,59 @@ p {
   #blog-post .container .body {
     text-align: left;
     font-family: "Montserrat", sans-serif; }
+
+#sidebar {
+  height: 250px;
+  width: 10px;
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px; }
+  #sidebar .social {
+    margin-left: -200px;
+    width: 230px;
+    padding: 0;
+    display: inline-table;
+    height: 0px;
+    background-color: rgba(128, 128, 128, 0.73);
+    transition-property: margin-left;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    box-shadow: 0px 0px 6px 0px #3E3D3D;
+    cursor: pointer; }
+    #sidebar .social:hover {
+      margin-left: -30px;
+      width: 230px;
+      background-color: #3b5998; }
+    #sidebar .social a {
+      text-decoration: none;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 3; }
+    #sidebar .social p {
+      color: white;
+      position: relative;
+      left: -10px;
+      font-family: "Montserrat", sans-serif; }
+    #sidebar .social p i {
+      left: 30px;
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 30px; }
+  #sidebar .facebook:hover {
+    background-color: #3b5998; }
+  #sidebar .instagram:hover {
+    background-color: #c32aa3; }
+  #sidebar .whatsapp:hover {
+    background-color: #25d366; }
+  #sidebar .linkedin:hover {
+    background-color: #007bb5; }
+  #sidebar .linkedin p i {
+    margin-left: 10px; }
+  #sidebar .whatsapp p i {
+    margin-left: 15px; }
 
 @media screen and (max-width: 500px) {
   #blog-post .container .title {

@@ -18,7 +18,7 @@
       text-align: left;
       padding-top: 0px;
       text-transform: capitalize;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 15) 20%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 20) 20%);
       display: inline;
     }
 
@@ -113,6 +113,86 @@
     }
   }
 
+}
+
+#sidebar {
+  height: 250px;
+  width: 10px;
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+
+  .social {
+    margin-left: -200px;
+    width: 230px;
+    padding: 0;
+    display: inline-table;
+    height: 0px;
+    background-color: rgba(128, 128, 128, 0.73);
+    transition-property: margin-left;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    box-shadow: 0px 0px 6px 0px #3E3D3D;
+    cursor: pointer;
+
+    &:hover {
+      margin-left: -30px;
+      width: 230px;
+      background-color: #3b5998;
+    }
+
+    a {
+      text-decoration: none;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 3;
+    }
+
+    p {
+      color: white;
+      position: relative;
+      left: -10px;
+      font-family: $second
+    }
+
+    p i {
+      left: 30px;
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  .facebook:hover {
+    background-color: #3b5998;
+  }
+
+  .instagram:hover {
+    background-color: #c32aa3;
+  }
+
+  .whatsapp:hover {
+    background-color: #25d366;
+  }
+
+
+
+
+
+  .linkedin:hover {
+    background-color: #007bb5;
+  }
+
+  .linkedin p i {
+    margin-left: 10px;
+  }
+
+  .whatsapp p i {
+    margin-left: 15px;
+  }
 }
 
 @include mediaSm {
