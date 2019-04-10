@@ -589,7 +589,7 @@ p {
 #blog-post .container {
   max-width: 800px; }
   #blog-post .container .desc {
-    text-align: left;
+    text-align: center;
     padding-top: 15px; }
     #blog-post .container .desc i {
       margin-right: 5px;
@@ -601,6 +601,7 @@ p {
     #blog-post .container .title h1 {
       font-size: 2rem;
       font-weight: 700;
+      line-height: 45px;
       padding-top: 0px;
       text-transform: capitalize;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #aeb0fb 20%);
@@ -647,13 +648,12 @@ p {
     background: white;
     opacity: 1; }
   #blog-post .container .img-con {
-    float: left;
-    width: 30%;
-    margin: 50px 20px 0px 0px; }
+    max-width: 500px;
+    margin: 0px auto; }
     #blog-post .container .img-con img {
       margin-top: 20px;
       width: 100%;
-      margin: 0px;
+      margin: 0px auto;
       text-align: center;
       /* as the half of the width */
       border-radius: 25%;
@@ -669,7 +669,7 @@ p {
   height: 250px;
   width: 10px;
   position: fixed;
-  top: 125px;
+  top: 33%;
   text-align: center;
   padding: 10px;
   margin-left: 10px; }
@@ -790,7 +790,7 @@ nav {
   transition: all 1s ease-in-out; }
   nav img {
     width: 200px;
-    transition: all .8s ease-in-out; }
+    transition: all .5s ease-in-out; }
   nav .smallImage {
     transform: translateX(-200px);
     opacity: 0;

@@ -6,7 +6,7 @@ $(function () {
       triggerElement: ".breadcrumbs",
       duration: 0,
       triggerHook: 0,
-      offset: -121.45
+      offset: -75
 
     })
 
