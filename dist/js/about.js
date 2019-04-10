@@ -181,3 +181,27 @@ function expand8() {
   var element = document.getElementById('headingEight');
   element.classList.toggle('expand');
 }
+
+
+// Navigation Image Slide 
+
+var imageSlideSmall = new ScrollMagic.Controller();
+
+var imageSM = new ScrollMagic.Scene({
+    triggerElement: 'section',
+    triggerHook: 0
+  })
+  .setClassToggle('.smallImage', 'd-appear')
+
+  .addTo(imageSlideSmall);
+
+var imageSlideBig = new ScrollMagic.Controller();
+
+var imageSM = new ScrollMagic.Scene({
+    triggerElement: 'section',
+    triggerHook: 0
+  })
+
+  .setClassToggle('.bigImage', 'd-zero')
+
+  .addTo(imageSlideBig);

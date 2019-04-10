@@ -140,8 +140,6 @@ p {
     line-height: initial; } }
 
 @media screen and (max-width: 500px) {
-  nav img {
-    width: 100px !important; }
   nav #black {
     width: 0px;
     opacity: 0; }
@@ -671,7 +669,7 @@ p {
   height: 250px;
   width: 10px;
   position: fixed;
-  top: 50%;
+  top: 125px;
   text-align: center;
   padding: 10px;
   margin-left: 10px; }
@@ -791,7 +789,19 @@ body {
 nav {
   transition: all 1s ease-in-out; }
   nav img {
-    width: 200px; }
+    width: 200px;
+    transition: all .8s ease-in-out; }
+  nav .smallImage {
+    transform: translateX(-200px);
+    opacity: 0;
+    width: 0px; }
+  nav .d-zero {
+    opacity: 0 !important;
+    width: 0px !important; }
+  nav .d-appear {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    width: 100px !important; }
   nav .navbar-nav .nav-item .nav-link {
     position: relative;
     text-decoration: none;

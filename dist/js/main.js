@@ -59,7 +59,7 @@ var aboutsocial = new ScrollMagic.Scene({
     triggerHook: 0
   })
   .setClassToggle('#social-small', 'social-appear')
-  .addIndicators()
+
   .addTo(social);
 // Clickable cards that go to different links
 
@@ -118,3 +118,27 @@ $(document).on("click", "a[href^='#']", function (e) {
     }
   }
 });
+
+
+// Navigation Image Slide 
+
+var imageSlideSmall = new ScrollMagic.Controller();
+
+var imageSM = new ScrollMagic.Scene({
+    triggerElement: 'section',
+    triggerHook: 0
+  })
+  .setClassToggle('.smallImage', 'd-appear')
+
+  .addTo(imageSlideSmall);
+
+var imageSlideBig = new ScrollMagic.Controller();
+
+var imageSM = new ScrollMagic.Scene({
+    triggerElement: 'section',
+    triggerHook: 0
+  })
+
+  .setClassToggle('.bigImage', 'd-zero')
+
+  .addTo(imageSlideBig);

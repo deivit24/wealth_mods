@@ -11,6 +11,25 @@ body {
 nav {
   img {
     width: 200px;
+    transition: all .8s ease-in-out;
+  }
+
+  .smallImage {
+    transform: translateX(-200px);
+    opacity: 0;
+    width: 0px;
+  }
+
+  .d-zero {
+    opacity: 0 !important;
+
+    width: 0px !important;
+  }
+
+  .d-appear {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    width: 100px !important;
   }
 
   transition: all 1s ease-in-out;
