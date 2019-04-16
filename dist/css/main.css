@@ -856,7 +856,8 @@ nav {
   nav .navbar-nav .nav-item .dark {
     color: #333 !important; }
   nav .navbar-nav .nav-item .dropdown-menu {
-    width: 340px; }
+    width: 340px;
+    left: -250px; }
     nav .navbar-nav .nav-item .dropdown-menu .col-4,
     nav .navbar-nav .nav-item .dropdown-menu .col-8 {
       display: flex;
