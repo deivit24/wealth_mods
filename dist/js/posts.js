@@ -35,42 +35,6 @@ let post = [{
     link: '#',
     preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
     class: 'blog-card '
-  },
-  {
-    id: 4,
-    title: 'Fourth Post',
-    tag: 'Wealth MODs 101',
-    date: 'Dec 16 2018',
-    sub: 'This is post two',
-    src: '../dist/img/blog/retirement2.jpg',
-    author: 'David Salazar',
-    link: '#',
-    preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
-    class: 'blog-card alt'
-  },
-  {
-    id: 5,
-    title: 'Fifth Post',
-    tag: 'Wealth MODs 101',
-    date: 'Dec 16 2018',
-    sub: 'This is post three',
-    src: '../dist/img/blog/young1.jpg',
-    author: 'David Salazar',
-    link: '#',
-    preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
-    class: 'blog-card '
-  },
-  {
-    id: 6,
-    title: 'Sixth Post',
-    tag: 'Wealth MODs 101',
-    date: 'Dec 16 2018',
-    sub: 'This is post three',
-    src: '../dist/img/blog/young1.jpg',
-    author: 'David Salazar',
-    link: '#',
-    preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
-    class: 'blog-card alt'
   }
 ];
 
