@@ -2,14 +2,14 @@ let past = document.querySelector(" #blogs");
 
 let post = [{
     id: 1,
-    title: 'The difference between a Roth and a Traditional IRA',
+    title: '3 Main Differences Between Roth IRA and Traditional IRA 2019',
     tag: 'Wealth MODs 101',
-    date: 'Dec 20 2018',
-    sub: 'This is the most recent post',
+    date: 'April 19th, 2019',
+    sub: 'Which Should Millennials Choose?',
     src: '../dist/img/blog/young1.jpg',
     author: 'David Salazar',
     link: 'wealth-mods-101/who-what-is-wealth-mods-101.html',
-    preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
+    preview: 'Ever since I can remember, I would hear some guy in a suit on the news mentioned the word IRA. I would hear it from my parents every once in a while, talk about...',
     class: 'blog-card '
   },
   {
