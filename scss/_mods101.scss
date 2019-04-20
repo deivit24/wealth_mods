@@ -243,7 +243,7 @@ $color_white: #fff;
   margin-bottom: 11.672px;
   background: $color_white;
   line-height: 1.4;
-  height: 277px;
+  z-index: 5;
   border-radius: 5px;
   padding: 20px;
 
@@ -279,6 +279,19 @@ $color_white: #fff;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
   }
+
+  #mce-error-response {
+    color: red;
+    text-align: center;
+    font-family: $main;
+
+  }
+
+  #mce-success-response {
+    color: $green;
+    font-family: $main;
+  }
+
 }
 
 #retirecal-card {

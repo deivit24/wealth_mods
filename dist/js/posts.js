@@ -8,8 +8,8 @@ let post = [{
     sub: 'Which Should Millennials Choose?',
     src: '../dist/img/blog/young1.jpg',
     author: 'David Salazar',
-    link: 'wealth-mods-101/who-what-is-wealth-mods-101.html',
-    preview: 'Ever since I can remember, I would hear some guy in a suit on the news mentioned the word IRA. I would hear it from my parents every once in a while, talk about...',
+    link: 'wealth-mods-101/3-Main-Differences-Between-Roth-IRA-and-Traditional-IRA-2019.html',
+    preview: 'Ever since I can remember, I would listen to some guy in a suit on the news mentioned the word IRA. I would hear it from my parents every once in a while, talk about it as ...',
     class: 'blog-card '
   },
   {
@@ -101,3 +101,23 @@ var imageSM = new ScrollMagic.Scene({
   .setClassToggle('.bigImage', 'd-zero')
 
   .addTo(imageSlideBig);
+
+
+// var signpin = new ScrollMagic.Controller();
+
+// $(function () {
+//   // build a signpin scence
+//   var pin2 = new ScrollMagic.Scene({
+//       triggerElement: ".signup-card",
+//       duration: 0,
+//       triggerHook: 0,
+//       offset: -90
+
+//     })
+
+//     .setPin(".signup-card")
+
+
+//     .addTo(signpin);
+
+// });

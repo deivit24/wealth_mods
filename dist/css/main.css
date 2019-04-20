@@ -67,8 +67,6 @@ p {
     height: 900px !important; }
   #sec6 .container-fluid .col-md-6 {
     padding-left: 50px; }
-  #mods101 .signup-card {
-    height: 320px; }
   #mods101 #rprofile-card img {
     height: 100px; }
   #mods101 #retirecal-card img {
@@ -294,7 +292,7 @@ p {
     .coming-soon .container form .form-group button {
       width: 100% !important; }
   #mods101 .signup-card {
-    height: 320px; }
+    height: 420px; }
   #mods101 #retirecal-card p {
     text-indent: -9999px;
     line-height: 0;
@@ -522,7 +520,7 @@ p {
   margin-bottom: 11.672px;
   background: #fff;
   line-height: 1.4;
-  height: 277px;
+  z-index: 5;
   border-radius: 5px;
   padding: 20px; }
   .signup-card h4 {
@@ -544,6 +542,13 @@ p {
       color: #fff; }
   .signup-card:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
+  .signup-card #mce-error-response {
+    color: red;
+    text-align: center;
+    font-family: "Oswald", sans-serif; }
+  .signup-card #mce-success-response {
+    color: #319236;
+    font-family: "Oswald", sans-serif; }
 
 #retirecal-card {
   background: #fff;
@@ -676,86 +681,6 @@ p {
     text-align: left;
     font-family: "Montserrat", sans-serif; }
 
-#sidebar {
-  height: 250px;
-  width: 10px;
-  position: fixed;
-  top: 33%;
-  text-align: center;
-  padding: 10px;
-  margin-left: 10px; }
-  #sidebar .social {
-    margin-left: -200px;
-    width: 230px;
-    padding: 0;
-    display: inline-table;
-    height: 0px;
-    background-color: rgba(128, 128, 128, 0.73);
-    transition-property: margin-left;
-    transition-duration: 0.2s;
-    transition-delay: 0.2s;
-    box-shadow: 0px 0px 6px 0px #3E3D3D;
-    cursor: pointer; }
-    #sidebar .social:hover {
-      margin-left: -30px;
-      width: 230px;
-      background-color: #3b5998; }
-    #sidebar .social a {
-      text-decoration: none;
-      vertical-align: middle;
-      text-align: center;
-      line-height: 3; }
-    #sidebar .social p {
-      color: white;
-      position: relative;
-      left: -10px;
-      font-family: "Montserrat", sans-serif; }
-    #sidebar .social p i {
-      left: 30px;
-      position: relative;
-      vertical-align: middle;
-      text-align: center;
-      font-size: 30px; }
-  #sidebar .facebook:hover {
-    background-color: #3b5998; }
-  #sidebar .instagram:hover {
-    background-color: #c32aa3; }
-  #sidebar .whatsapp:hover {
-    background-color: #25d366; }
-  #sidebar .linkedin:hover {
-    background-color: #007bb5; }
-  #sidebar .linkedin p i {
-    margin-left: 10px; }
-  #sidebar .whatsapp p i {
-    margin-left: 15px; }
-
-#social-small {
-  height: 0;
-  transition: all 1s ease-in-out; }
-  #social-small .row .col-3 {
-    height: 50px;
-    background-color: rgba(128, 128, 128, 0.73);
-    box-shadow: 0px 0px 6px 0px #3E3D3D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    #social-small .row .col-3 a {
-      margin: 0 auto;
-      font-size: 2rem; }
-      #social-small .row .col-3 a i {
-        color: white; }
-  #social-small .row .facebook {
-    background: #3b5998; }
-  #social-small .row .instagram {
-    background-color: #c32aa3; }
-  #social-small .row .linkedin {
-    background-color: #007bb5; }
-  #social-small .row .whatsapp {
-    background-color: #25d366; }
-
-.social-appear {
-  height: 50px !important; }
-
 @media screen and (max-width: 768px) {
   #blog-post .container .img-con {
     float: none;
@@ -802,16 +727,8 @@ nav {
   nav img {
     width: 200px;
     transition: all .5s ease-in-out; }
-  nav .smallImage {
-    transform: translateX(-200px);
-    opacity: 0;
-    width: 0px; }
   nav .d-zero {
-    opacity: 0 !important;
-    width: 0px !important; }
-  nav .d-appear {
     opacity: 1 !important;
-    transform: translateX(0) !important;
     width: 100px !important; }
   nav .navbar-nav .nav-item .nav-link {
     position: relative;
