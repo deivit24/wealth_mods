@@ -16,7 +16,7 @@
     .title {
       width: 75%;
       text-align: center;
-      margin: 0 auto;
+      margin: 20px auto;
 
       h1 {
         font-size: 2rem;
@@ -124,7 +124,16 @@
       }
     }
 
+    h2 {
+      text-transform: capitalize;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 20) 20%);
+      display: inline;
 
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
 
     .body {
       text-align: left;

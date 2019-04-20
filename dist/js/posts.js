@@ -4,7 +4,7 @@ let post = [{
     id: 1,
     title: '3 Main Differences Between Roth IRA and Traditional IRA 2019',
     tag: 'Wealth MODs 101',
-    date: 'April 19th, 2019',
+    date: 'April 20th, 2019',
     sub: 'Which Should Millennials Choose?',
     src: '../dist/img/blog/young1.jpg',
     author: 'David Salazar',
@@ -14,27 +14,39 @@ let post = [{
   },
   {
     id: 2,
-    title: 'Second Post',
+    title: '3 Millennial Money Habit Stereotypes ',
     tag: 'Wealth MODs 101',
-    date: 'Dec 20 2018',
-    sub: 'This should just be a sub title ',
+    date: 'Coming Soon',
+    sub: 'that have been debunked ',
     src: '../dist/img/blog/young2.jpg',
     author: 'David Salazar',
     link: '#',
-    preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
+    preview: 'This article is coming soon.',
     class: 'blog-card alt'
   },
   {
     id: 3,
-    title: 'Third Post',
+    title: 'The Roth IRA MOD 2019',
     tag: 'Wealth MODs 101',
-    date: 'Dec 16 2018',
-    sub: 'this should be just a sub title',
+    date: 'Coming Soon',
+    sub: 'A complete guide',
     src: '../dist/img/blog/retirement1.jpg',
     author: 'David Salazar',
     link: '#',
-    preview: 'This is just a preview of the text that goes in the blog card. it just be enough to entice the reader to click on the read more button below',
+    preview: 'This article is coming soon.',
     class: 'blog-card '
+  },
+  {
+    id: 4,
+    title: 'The Traditional IRA MOD 2019',
+    tag: 'Wealth MODs 101',
+    date: 'Coming Soon',
+    sub: 'A complete guide',
+    src: '../dist/img/blog/retirement2.jpg',
+    author: 'David Salazar',
+    link: '#',
+    preview: 'This article is coming soon.',
+    class: 'blog-card alt'
   }
 ];
 
