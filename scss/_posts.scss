@@ -144,6 +144,58 @@
 
 }
 
+#sign-up-now {
+  background: $green;
+  padding: 25px 25px;
+  margin-top: 25px;
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+
+  #mc_embed_signup {
+    .btn {
+
+      color: $green;
+      font-family: $main;
+      font-weight: 700;
+      font-size: 20px;
+      border: lighten($color: $green, $amount: 10) solid 3px;
+      background: white;
+      width: 100%;
+
+      &:hover {
+        background: lighten($color: $green, $amount: 10);
+        border: white solid 3px;
+        color: white;
+      }
+
+    }
+
+    .text-muted {
+      color: whitesmoke !important;
+    }
+
+    #mce-error-response {
+      color: red;
+      text-align: left;
+      font-family: $main;
+      padding: 5px;
+      background: white;
+      margin-bottom: 10px;
+    }
+
+    #mce-success-response {
+      color: white;
+      font-family: $main;
+      margin-bottom: 10px;
+    }
+  }
+}
 
 
 @include mediaMd {

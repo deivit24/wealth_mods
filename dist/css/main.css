@@ -688,6 +688,40 @@ p {
     text-align: left;
     font-family: "Montserrat", sans-serif; }
 
+#sign-up-now {
+  background: #319236;
+  padding: 25px 25px;
+  margin-top: 25px; }
+  #sign-up-now h3 {
+    color: white; }
+  #sign-up-now p {
+    color: white; }
+  #sign-up-now #mc_embed_signup .btn {
+    color: #319236;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border: #3eb844 solid 3px;
+    background: white;
+    width: 100%; }
+    #sign-up-now #mc_embed_signup .btn:hover {
+      background: #3eb844;
+      border: white solid 3px;
+      color: white; }
+  #sign-up-now #mc_embed_signup .text-muted {
+    color: whitesmoke !important; }
+  #sign-up-now #mc_embed_signup #mce-error-response {
+    color: red;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    padding: 5px;
+    background: white;
+    margin-bottom: 10px; }
+  #sign-up-now #mc_embed_signup #mce-success-response {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px; }
+
 @media screen and (max-width: 768px) {
   #blog-post .container .img-con {
     float: none;
