@@ -867,11 +867,7 @@ nav {
       nav .modal .modal-content .modal-body {
         margin: 0px auto;
         border: none; }
-      nav .modal .modal-content .modal-footer {
-        margin: 0px auto;
-        border: none;
-        padding-top: 0px; }
-        nav .modal .modal-content .modal-footer .btn {
+        nav .modal .modal-content .modal-body .btn {
           background: #4c51f7;
           color: white; }
 
@@ -1248,38 +1244,23 @@ nav {
       align-items: center; }
       #join #joinModalCenter .modal-body .col-6 img {
         margin: auto 0; }
-    #join #joinModalCenter .modal-body form #email1 {
-      border: 2px lightgray solid;
-      text-align: center;
-      font-family: "Oswald", sans-serif;
-      font-weight: 700;
-      color: #333; }
-      #join #joinModalCenter .modal-body form #email1:active {
-        outline: 0 !important; }
-      #join #joinModalCenter .modal-body form #email1:focus {
-        outline: 0 !important; }
-  #join #joinModalCenter .modal-footer {
-    padding-top: 0px;
-    border: none;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    #join #joinModalCenter .modal-footer button {
-      width: 100%; }
-    #join #joinModalCenter .modal-footer .btn-secondary {
+    #join #joinModalCenter .modal-body form .col-6 {
+      height: 100%; }
+    #join #joinModalCenter .modal-body form .btn-secondary {
       background: #4c51f7;
       outline: none;
       border: 4px solid #4c51f7;
       font-family: "Oswald", sans-serif;
       font-weight: 700;
-      transition: all 0.5s ease-in-out; }
-      #join #joinModalCenter .modal-footer .btn-secondary:hover {
+      transition: all 0.5s ease-in-out;
+      height: 44px; }
+      #join #joinModalCenter .modal-body form .btn-secondary:hover {
         background: white;
         border: 4px solid #4c51f7;
         color: black; }
-    #join #joinModalCenter .modal-footer .btn-primary {
-      border: 4px solid #319236; }
+    #join #joinModalCenter .modal-body form .btn-primary {
+      border: 4px solid #319236;
+      width: 100%; }
 
 #explore {
   background: #f3af19;

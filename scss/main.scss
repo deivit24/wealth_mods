@@ -175,18 +175,16 @@ nav {
       .modal-body {
         margin: 0px auto;
         border: none;
-      }
 
-      .modal-footer {
-        margin: 0px auto;
-        border: none;
-        padding-top: 0px;
 
         .btn {
           background: $blue;
           color: white;
         }
+
       }
+
+
     }
   }
 }
@@ -750,55 +748,35 @@ nav {
       }
 
       form {
-        #email1 {
-          border: 2px lightgray solid;
-          text-align: center;
+        .col-6 {
+          height: 100%;
+        }
+
+        .btn-secondary {
+          background: $blue;
+          outline: none;
+          border: 4px solid $blue;
           font-family: $main;
           font-weight: 700;
-          color: #333;
+          transition: all 0.5s ease-in-out;
+          height: 44px;
 
-          &:active {
-            outline: 0 !important;
-          }
 
-          &:focus {
-            outline: 0 !important;
+          &:hover {
+            background: white;
+            border: 4px solid $blue;
+            color: black;
           }
+        }
+
+        .btn-primary {
+          border: 4px solid $green;
+          width: 100%
         }
       }
     }
 
-    .modal-footer {
-      padding-top: 0px;
-      border: none;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
 
-      button {
-        width: 100%;
-      }
-
-      .btn-secondary {
-        background: $blue;
-        outline: none;
-        border: 4px solid $blue;
-        font-family: $main;
-        font-weight: 700;
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-          background: white;
-          border: 4px solid $blue;
-          color: black;
-        }
-      }
-
-      .btn-primary {
-        border: 4px solid $green;
-      }
-    }
   }
 }
 
