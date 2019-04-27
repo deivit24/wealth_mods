@@ -35,7 +35,7 @@ let post = [{
     author: 'David Salazar',
     link: '#',
     preview: 'This article is coming soon.',
-    class: 'blog-card '
+    class: 'blog-card alt'
   },
   {
 
@@ -47,7 +47,7 @@ let post = [{
     author: 'David Salazar',
     link: '#',
     preview: 'This article is coming soon.',
-    class: 'blog-card alt'
+    class: 'blog-card'
   }
 ];
 
