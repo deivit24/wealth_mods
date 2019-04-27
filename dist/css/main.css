@@ -664,6 +664,24 @@ p {
   #blog-post .container .white {
     background: white;
     opacity: 1; }
+  #blog-post .container .debunked {
+    text-transform: capitalize;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #60c965 20%);
+    display: inline; }
+  #blog-post .container ul {
+    font-family: "Montserrat", sans-serif; }
+    #blog-post .container ul li {
+      margin-bottom: 15px;
+      padding-left: 15px; }
+  #blog-post .container ol {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    list-style: bold; }
+    #blog-post .container ol li {
+      margin-bottom: 15px;
+      padding-left: 15px; }
+      #blog-post .container ol li span {
+        font-weight: normal; }
   #blog-post .container .img-con {
     max-width: 500px;
     margin: 0px auto; }

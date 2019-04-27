@@ -95,6 +95,39 @@
 
     }
 
+    .debunked {
+
+      text-transform: capitalize;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($green, 20) 20%);
+      display: inline;
+
+    }
+
+    ul {
+      font-family: $second;
+
+      li {
+        margin-bottom: 15px;
+        padding-left: 15px;
+      }
+    }
+
+    ol {
+      font-family: $second;
+      font-weight: 700;
+      list-style: bold;
+
+      li {
+        margin-bottom: 15px;
+        padding-left: 15px;
+
+        span {
+          font-weight: normal;
+        }
+
+      }
+    }
+
     .img-con {
 
       max-width: 500px;

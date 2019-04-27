@@ -1,7 +1,19 @@
 let past = document.querySelector(" #blogs");
 
 let post = [{
-    id: 1,
+
+    title: '3 Millennial Money Habits Stereotypes That Have Been Debunked ',
+    tag: 'Wealth MODs 101',
+    date: 'April 27th, 2019',
+    sub: 'But We Can Do Better ',
+    src: 'dist/img/blog/young2.jpg',
+    author: 'David Salazar',
+    link: '3-Millennial-Money-Habits-Stereotypes-That-Have-Been-Debunked.html',
+    preview: '“Foolish when it comes to money,” “They don’t plan for the long-term,” “They are self-centered,” “They still depend on their parents.” Those are the typical stereotypes... ',
+    class: 'blog-card alt'
+  },
+  {
+
     title: '3 Main Differences Between Roth IRA and Traditional IRA 2019',
     tag: 'Wealth MODs 101',
     date: 'April 20th, 2019',
@@ -12,20 +24,9 @@ let post = [{
     preview: 'Ever since I can remember, I would listen to some guy in a suit on the news mentioned the word IRA. I would hear it from my parents every once in a while, talk about it as ...',
     class: 'blog-card '
   },
+
   {
-    id: 2,
-    title: '3 Millennial Money Habit Stereotypes ',
-    tag: 'Wealth MODs 101',
-    date: 'Coming Soon',
-    sub: 'that have been debunked ',
-    src: 'dist/img/blog/young2.jpg',
-    author: 'David Salazar',
-    link: '#',
-    preview: 'This article is coming soon.',
-    class: 'blog-card alt'
-  },
-  {
-    id: 3,
+
     title: 'The Roth IRA MOD 2019',
     tag: 'Wealth MODs 101',
     date: 'Coming Soon',
@@ -37,7 +38,7 @@ let post = [{
     class: 'blog-card '
   },
   {
-    id: 4,
+
     title: 'The Traditional IRA MOD 2019',
     tag: 'Wealth MODs 101',
     date: 'Coming Soon',
