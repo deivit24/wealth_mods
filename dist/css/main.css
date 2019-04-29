@@ -778,6 +778,36 @@ p {
     #blog-post .container .img-con img {
       width: 100%; } }
 
+#disclaimer {
+  background-image: url("../img/background.png"); }
+  #disclaimer .title {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 60px 30px; }
+  #disclaimer h2 {
+    margin-bottom: 20px; }
+  #disclaimer h1 {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: 700;
+    font-size: 3rem; }
+  #disclaimer .accordion #headingOne {
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    outline: 0;
+    border: 0;
+    background: #4c51f7; }
+    #disclaimer .accordion #headingOne button {
+      text-align: center;
+      font-size: 1rem;
+      outline: 0;
+      border: 0;
+      color: white;
+      text-decoration: none; }
+
 body {
   background: #f4f4f4; }
 
@@ -890,7 +920,6 @@ nav {
           color: white; }
 
 #sec1 {
-  background: white;
   background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat; }

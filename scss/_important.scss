@@ -1,0 +1,45 @@
+#disclaimer {
+
+  background-image: url('../img/background.png');
+
+  .title {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 60px 30px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  .accordion {
+
+
+    #headingOne {
+      padding: 0;
+      text-align: center;
+      height: 50px;
+      outline: 0;
+      border: 0;
+      background: $blue;
+
+      button {
+        text-align: center;
+        font-size: 1rem;
+        outline: 0;
+        border: 0;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

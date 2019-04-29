@@ -3,6 +3,7 @@
 @import 'mods';
 @import 'mods101';
 @import 'posts';
+@import 'important';
 
 body {
   background: #f4f4f4;
@@ -191,7 +192,7 @@ nav {
 
 // Home Page
 #sec1 {
-  background: white;
+
   background-image: url('../img/background.png');
   background-size: cover;
   background-repeat: no-repeat;
