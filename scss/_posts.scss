@@ -1,4 +1,7 @@
 #blog-post {
+  background: white;
+  padding-bottom: 25px;
+
   .container {
 
     max-width: 800px;
@@ -19,9 +22,9 @@
       margin: 20px auto;
 
       h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
-        line-height: 45px;
+        line-height: 50px;
         padding-top: 0px;
         text-transform: capitalize;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 20) 20%);
@@ -54,8 +57,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      transition: all .8s ease-out;
-
+      transition: all .5s ease-in-out;
+      z-index: 5;
       padding: 10px 0;
       opacity: 0;
 
@@ -63,6 +66,7 @@
         list-style: none;
         display: inline-flex;
         margin: 0 auto;
+        transition: all .8s ease-in-out;
 
         li {
           margin-right: 10px;
@@ -70,6 +74,7 @@
           font-family: $main;
           text-transform: capitalize;
           color: #333;
+          transition: all .8s ease-in-out;
 
           .fa-caret-right {
             color: $blue;
@@ -101,6 +106,12 @@
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($green, 20) 20%);
       display: inline;
 
+    }
+
+    .bad {
+      text-transform: capitalize;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten(red, 20) 20%);
+      display: inline;
     }
 
     ul {
@@ -171,7 +182,43 @@
     .body {
       text-align: left;
       font-family: $second;
+      color: black;
+      font-weight: 500;
 
+    }
+
+    table {
+      margin-bottom: 25px;
+
+      tr:nth-child(3) {
+        background: #f3f3f3;
+      }
+
+      th {
+        padding: 15px;
+
+        text-align: center;
+        background: $green;
+        color: white;
+
+      }
+
+      td {
+        padding: 10px;
+        border: 1px solid lightgrey;
+      }
+
+      .status {
+        font-weight: 700;
+      }
+    }
+
+    .col-sm-6 {
+      text-align: center;
+
+      ul {
+        text-align: left;
+      }
     }
   }
 
@@ -180,7 +227,7 @@
 #sign-up-now {
   background: $green;
   padding: 25px 25px;
-  margin-top: 25px;
+
 
   h3 {
     color: white;
@@ -260,7 +307,7 @@
         h1 {
           font-size: 1.5rem;
           font-weight: 700;
-
+          line-height: 30px;
           padding-top: 0px;
           text-transform: capitalize;
           background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 20) 20%);

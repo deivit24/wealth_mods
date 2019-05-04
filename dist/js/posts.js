@@ -1,6 +1,20 @@
 let past = document.querySelector(" #blogs");
 
-let post = [{
+let post = [
+
+  {
+
+    title: 'The Traditional IRA MOD 2019',
+    tag: 'Wealth MODs 101',
+    date: 'May 4th 2019',
+    sub: 'A complete guide',
+    src: 'dist/img/blog/retirement2.jpg',
+    author: 'David Salazar',
+    link: 'Traditional-IRA-MOD-2019.html',
+    preview: 'There are many investment and savings vehicles out there that are designed to help you prepare for one of the most challenging financial goals you can have - retirement. You can save... ',
+    class: 'blog-card'
+  },
+  {
 
     title: '3 Millennial Money Habits Stereotypes That Have Been Debunked ',
     tag: 'Wealth MODs 101',
@@ -36,18 +50,6 @@ let post = [{
     link: '#',
     preview: 'This article is coming soon.',
     class: 'blog-card alt'
-  },
-  {
-
-    title: 'The Traditional IRA MOD 2019',
-    tag: 'Wealth MODs 101',
-    date: 'Coming Soon',
-    sub: 'A complete guide',
-    src: 'dist/img/blog/retirement2.jpg',
-    author: 'David Salazar',
-    link: '#',
-    preview: 'This article is coming soon.',
-    class: 'blog-card'
   }
 ];
 
