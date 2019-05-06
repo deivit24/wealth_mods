@@ -606,135 +606,133 @@ p {
 #blog-post {
   background: white;
   padding-bottom: 25px; }
-  #blog-post .container {
-    max-width: 800px; }
-    #blog-post .container .desc {
-      text-align: center;
-      padding-top: 15px; }
-      #blog-post .container .desc i {
-        margin-right: 5px;
-        margin-left: 10px; }
-    #blog-post .container .title {
-      width: 75%;
-      text-align: center;
-      margin: 20px auto; }
-      #blog-post .container .title h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 50px;
-        padding-top: 0px;
-        text-transform: capitalize;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #aeb0fb 20%);
-        display: inline; }
-    #blog-post .container .sub {
-      margin-top: 10px;
-      width: 75%;
-      text-align: center;
-      margin: 0 auto; }
-      #blog-post .container .sub h3 {
-        font-size: 1.8rem;
-        color: #4c51f7;
-        text-align: center;
-        margin-bottom: 15px;
-        margin-top: 5px; }
-    #blog-post .container .breadcrumbs {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: all .5s ease-in-out;
-      z-index: 5;
-      padding: 10px 0;
-      opacity: 0; }
-      #blog-post .container .breadcrumbs ul {
-        list-style: none;
-        display: inline-flex;
-        margin: 0 auto;
-        transition: all .8s ease-in-out; }
-        #blog-post .container .breadcrumbs ul li {
-          margin-right: 10px;
-          font-size: 1rem;
-          font-family: "Oswald", sans-serif;
-          text-transform: capitalize;
-          color: #333;
-          transition: all .8s ease-in-out; }
-          #blog-post .container .breadcrumbs ul li .fa-caret-right {
-            color: #4c51f7; }
-          #blog-post .container .breadcrumbs ul li a {
-            text-decoration: none;
-            color: #333;
-            transition: all 0.5s ease-in-out; }
-            #blog-post .container .breadcrumbs ul li a:hover {
-              color: #4c51f7;
-              font-size: 1.1rem; }
-    #blog-post .container .white {
-      background: white;
-      opacity: 1; }
-    #blog-post .container .debunked {
-      text-transform: capitalize;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #60c965 20%);
-      display: inline; }
-    #blog-post .container .bad {
-      text-transform: capitalize;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #ff6666 20%);
-      display: inline; }
-    #blog-post .container ul {
-      font-family: "Montserrat", sans-serif; }
-      #blog-post .container ul li {
-        margin-bottom: 15px;
-        padding-left: 15px; }
-    #blog-post .container ol {
-      font-family: "Montserrat", sans-serif;
+  #blog-post .container .desc {
+    text-align: center;
+    padding-top: 15px; }
+    #blog-post .container .desc i {
+      margin-right: 5px;
+      margin-left: 10px; }
+  #blog-post .container .title {
+    width: 75%;
+    text-align: center;
+    margin: 20px auto; }
+    #blog-post .container .title h1 {
+      font-size: 3rem;
       font-weight: 700;
-      list-style: bold; }
-      #blog-post .container ol li {
-        margin-bottom: 15px;
-        padding-left: 15px; }
-        #blog-post .container ol li span {
-          font-weight: normal; }
-    #blog-post .container .img-con {
-      max-width: 500px;
-      margin: 0px auto; }
-      #blog-post .container .img-con img {
-        margin-top: 20px;
-        width: 100%;
-        margin: 0px auto;
-        text-align: center;
-        /* as the half of the width */
-        border-radius: 25%;
-        border-bottom: 0; }
-      #blog-post .container .img-con .small {
-        color: gray;
-        text-align: center; }
-    #blog-post .container h2 {
+      line-height: 50px;
+      padding-top: 0px;
       text-transform: capitalize;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #aeb0fb 20%);
       display: inline; }
-    #blog-post .container h3 {
-      margin-bottom: 10px; }
-    #blog-post .container .body {
-      text-align: left;
-      font-family: "Montserrat", sans-serif;
-      color: black;
-      font-weight: 500; }
-    #blog-post .container table {
-      margin-bottom: 25px; }
-      #blog-post .container table tr:nth-child(3) {
-        background: #f3f3f3; }
-      #blog-post .container table th {
-        padding: 15px;
-        text-align: center;
-        background: #319236;
-        color: white; }
-      #blog-post .container table td {
-        padding: 10px;
-        border: 1px solid lightgrey; }
-      #blog-post .container table .status {
-        font-weight: 700; }
-    #blog-post .container .col-sm-6 {
+  #blog-post .container .sub {
+    margin-top: 10px;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto; }
+    #blog-post .container .sub h3 {
+      font-size: 1.8rem;
+      color: #4c51f7;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 5px; }
+  #blog-post .container .breadcrumbs {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    z-index: 5;
+    padding: 10px 0;
+    opacity: 0; }
+    #blog-post .container .breadcrumbs ul {
+      list-style: none;
+      display: inline-flex;
+      margin: 0 auto;
+      transition: all .8s ease-in-out; }
+      #blog-post .container .breadcrumbs ul li {
+        margin-right: 10px;
+        font-size: 1rem;
+        font-family: "Oswald", sans-serif;
+        text-transform: capitalize;
+        color: #333;
+        transition: all .8s ease-in-out; }
+        #blog-post .container .breadcrumbs ul li .fa-caret-right {
+          color: #4c51f7; }
+        #blog-post .container .breadcrumbs ul li a {
+          text-decoration: none;
+          color: #333;
+          transition: all 0.5s ease-in-out; }
+          #blog-post .container .breadcrumbs ul li a:hover {
+            color: #4c51f7;
+            font-size: 1.1rem; }
+  #blog-post .container .white {
+    background: white;
+    opacity: 1; }
+  #blog-post .container .debunked {
+    text-transform: capitalize;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #60c965 20%);
+    display: inline; }
+  #blog-post .container .bad {
+    text-transform: capitalize;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #ff6666 20%);
+    display: inline; }
+  #blog-post .container ul {
+    font-family: "Montserrat", sans-serif; }
+    #blog-post .container ul li {
+      margin-bottom: 15px;
+      padding-left: 15px; }
+  #blog-post .container ol {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    list-style: bold; }
+    #blog-post .container ol li {
+      margin-bottom: 15px;
+      padding-left: 15px; }
+      #blog-post .container ol li span {
+        font-weight: normal; }
+  #blog-post .container .img-con {
+    max-width: 500px;
+    margin: 0px auto; }
+    #blog-post .container .img-con img {
+      margin-top: 20px;
+      width: 100%;
+      margin: 0px auto;
+      text-align: center;
+      /* as the half of the width */
+      border-radius: 25%;
+      border-bottom: 0; }
+    #blog-post .container .img-con .small {
+      color: gray;
       text-align: center; }
-      #blog-post .container .col-sm-6 ul {
-        text-align: left; }
+  #blog-post .container h2 {
+    text-transform: capitalize;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #aeb0fb 20%);
+    display: inline; }
+  #blog-post .container h3 {
+    margin-bottom: 10px; }
+  #blog-post .container .body {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: 500; }
+  #blog-post .container table {
+    margin-bottom: 25px; }
+    #blog-post .container table tr:nth-child(3) {
+      background: #f3f3f3; }
+    #blog-post .container table th {
+      padding: 15px;
+      text-align: center;
+      background: #319236;
+      color: white; }
+    #blog-post .container table td {
+      padding: 10px;
+      border: 1px solid lightgrey; }
+    #blog-post .container table .status {
+      font-weight: 700; }
+  #blog-post .container .col-sm-6 {
+    text-align: center; }
+    #blog-post .container .col-sm-6 ul {
+      text-align: left; }
 
 #sign-up-now {
   background: #319236;
