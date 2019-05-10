@@ -836,6 +836,226 @@ p {
       color: white;
       text-decoration: none; }
 
+#retirement-calc {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background: #f4f4f4; }
+  #retirement-calc #calc {
+    padding: 10px; }
+    #retirement-calc #calc .form-group {
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+      background: white; }
+      #retirement-calc #calc .form-group:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+      #retirement-calc #calc .form-group .form-row {
+        margin-bottom: 10px; }
+        #retirement-calc #calc .form-group .form-row label {
+          outline: none;
+          border: none;
+          font-family: "Oswald", sans-serif;
+          color: black;
+          font-size: 1.5rem; }
+        #retirement-calc #calc .form-group .form-row input {
+          text-align: right;
+          background: #f4f4f4;
+          font-family: "Oswald", sans-serif;
+          color: black;
+          font-size: 1.7rem; }
+    #retirement-calc #calc #resultButton {
+      background: #4c51f7;
+      font-family: "Oswald", sans-serif;
+      color: white;
+      padding: 10px;
+      font-size: 1.7rem; }
+      #retirement-calc #calc #resultButton:hover {
+        background: transparent;
+        color: black;
+        border: 3px solid #4c51f7; }
+      #retirement-calc #calc #resultButton:active {
+        color: #319236;
+        border: 3px solid #319236;
+        outline: none; }
+  #retirement-calc #results {
+    padding: 10px;
+    transition: all 1s ease-in-out;
+    height: 0px;
+    opacity: 0; }
+    #retirement-calc #results .boxes {
+      width: 100%;
+      background: white;
+      margin-bottom: 15px;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1); }
+      #retirement-calc #results .boxes:last-child {
+        padding: 10px !important; }
+      #retirement-calc #results .boxes:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+      #retirement-calc #results .boxes h2 {
+        font-weight: 700;
+        background: #f3af19;
+        padding: 20px;
+        margin: 0px;
+        font-size: 1.8rem; }
+      #retirement-calc #results .boxes h1 {
+        font-weight: 700;
+        padding: 0px 20px; }
+      #retirement-calc #results .boxes p {
+        padding: 10px 20px;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.2rem; }
+      #retirement-calc #results .boxes i {
+        font-size: 0.8rem;
+        padding: 20px !important; }
+    #retirement-calc #results #resultcalc {
+      padding: 20px; }
+      #retirement-calc #results #resultcalc .scenario--bar-graph {
+        margin: 15px 0px;
+        position: relative;
+        overflow: hidden; }
+      #retirement-calc #results #resultcalc .scenario--bar-graph div {
+        font-weight: bold;
+        padding: 10px;
+        text-align: right; }
+      #retirement-calc #results #resultcalc .scenario--bar-graph--estimated {
+        background: #319236;
+        color: #ffffff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: left !important; }
+      #retirement-calc #results #resultcalc .scenario--bar-graph--potential {
+        background: #666666;
+        color: white; }
+  #retirement-calc .error {
+    color: red;
+    font-size: 1.3rem;
+    text-transform: capitalize; }
+  #retirement-calc .appear {
+    opacity: 1 !important;
+    width: 100% !important;
+    height: 100% !important; }
+  #retirement-calc .disappear {
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(300px); }
+    #retirement-calc .disappear:hover {
+      cursor: auto; }
+  @media screen and (max-width: 500px) {
+    #retirement-calc #calc {
+      padding: 10px; }
+      #retirement-calc #calc .form-group .form-row label {
+        outline: none;
+        border: none;
+        font-family: "Oswald", sans-serif;
+        color: black;
+        font-size: 1.5rem;
+        text-align: center; }
+        #retirement-calc #calc .form-group .form-row label span {
+          display: none; }
+      #retirement-calc #calc .form-group .form-row input {
+        text-align: right;
+        font-family: "Oswald", sans-serif;
+        color: black;
+        font-size: 1rem; }
+    #retirement-calc #results {
+      transition: all 1s ease-in-out;
+      transform: translateX(-300px);
+      opacity: 0; }
+    #retirement-calc .appear {
+      opacity: 1 !important;
+      transform: translateX(0px) !important; }
+    #retirement-calc .disappear {
+      transition: all 1s ease-in-out;
+      opacity: 0; }
+      #retirement-calc .disappear:hover {
+        cursor: auto; } }
+  @media screen and (min-width: 992px) and (max-width: 1170px) {
+    #retirement-calc #calc {
+      padding: 10px; }
+      #retirement-calc #calc .form-group .form-row label {
+        outline: none;
+        border: none;
+        font-family: "Oswald", sans-serif;
+        color: black;
+        font-size: 1.2rem;
+        text-align: left; }
+        #retirement-calc #calc .form-group .form-row label span {
+          display: none; }
+      #retirement-calc #calc .form-group .form-row input {
+        font-family: "Oswald", sans-serif;
+        color: black;
+        font-size: 1rem; }
+    #retirement-calc #results {
+      padding: 10px;
+      transition: all 1s ease-in-out;
+      opacity: 0; }
+      #retirement-calc #results .boxes {
+        margin-bottom: 24px;
+        text-align: center;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        #retirement-calc #results .boxes:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          cursor: pointer; }
+        #retirement-calc #results .boxes:last-child {
+          padding: 10px !important; }
+        #retirement-calc #results .boxes h2 {
+          font-weight: 700;
+          background: #f3af19;
+          padding: 10px;
+          margin: 0px;
+          font-size: 1.7rem; }
+        #retirement-calc #results .boxes h1 {
+          font-size: 1.7rem;
+          font-weight: 700;
+          padding: 0px 10px; }
+        #retirement-calc #results .boxes p {
+          padding: 10px;
+          font-family: "Oswald", sans-serif;
+          font-size: 1.1rem; }
+        #retirement-calc #results .boxes i {
+          font-size: 0.8rem;
+          padding: 20px !important; }
+      #retirement-calc #results #resultcalc {
+        padding: 20px; }
+        #retirement-calc #results #resultcalc .scenario--bar-graph {
+          margin: 15px 0px;
+          position: relative;
+          overflow: hidden; }
+        #retirement-calc #results #resultcalc .scenario--bar-graph div {
+          font-weight: bold;
+          padding: 10px;
+          text-align: right; }
+        #retirement-calc #results #resultcalc .scenario--bar-graph--estimated {
+          background: #319236;
+          color: #ffffff;
+          position: absolute;
+          left: 0;
+          top: 0;
+          text-align: left !important; }
+        #retirement-calc #results #resultcalc .scenario--bar-graph--potential {
+          background: #666666;
+          color: white; } }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    #retirement-calc #calc {
+      padding: 10px; }
+      #retirement-calc #calc .form-group .form-row label {
+        outline: none;
+        border: none;
+        font-family: "Oswald", sans-serif;
+        color: black;
+        font-size: 1.7rem; }
+        #retirement-calc #calc .form-group .form-row label span {
+          display: none; }
+      #retirement-calc #calc .form-group .form-row input {
+        text-align: right;
+        font-family: "Oswald", sans-serif;
+        color: black;
+        font-size: 1rem; } }
+
 body {
   background: #f4f4f4; }
 

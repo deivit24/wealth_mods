@@ -1,7 +1,17 @@
 let past = document.querySelector(" #blogs");
 
-let post = [
+let post = [{
 
+    title: 'The Retirement MOD Calculator',
+    tag: 'Wealth MODs 101',
+    date: 'May 10th 2019',
+    sub: 'A simple but powerful tool',
+    src: 'dist/img/blog/calculator.jpg',
+    author: 'David Salazar',
+    link: 'retirement-mod-calculator.html',
+    preview: 'Time and time and again, research from Morningstar shows that planning for "retirement" is still the top financial goal for an individual. As a matter of fact, planning for retirement is... ',
+    class: 'blog-card alt'
+  },
   {
 
     title: 'The Traditional IRA MOD 2019',

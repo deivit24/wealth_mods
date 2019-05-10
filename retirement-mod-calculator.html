@@ -5,67 +5,514 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Interactive Retirement Calculator - Although this may seem intimidating or insignificant due to how young or old one may be, it is essential to find a realistic estimate of where you are now and where you want to be in the future. Use the results as a mere starting point to see if you are on track." />
 
+  <meta property="og:url" content="https://wealthmods.com/retirement-mod-calculator" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Retirement MOD Calculator" />
+  <meta property="og:description"
+    content="Interactive Retirement Calculator - Although this may seem intimidating or insignificant due to how young or old one may be, it is essential to find a realistic estimate of where you are now and where you want to be in the future. Use the results as a mere starting point to see if you are on track." />
+  <meta property="og:image" content="https://wealthmods.com/dist/img/blog/retirement2.jpg" />
+
+  <link rel="canonical" href="https://wealthmods.com/retirement-mod-calculator" />
+
+  <!-- Share this -->
+
+
+  <!-- End Share This -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138714388-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138714388-1');
+  </script>
+
+  <!-- Google Ads -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: 'ca-pub-3679926018927231',
+      enable_page_level_ads: true
+    });
+  </script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
-    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous" />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
   <!-- Google Fonts -->
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:400,700" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../dist/css/main.css" />
+  <link rel="stylesheet" href="../../dist/css/main.css" />
 
-  <link rel="shortcut icon" href="../dist/img/logo.png" type="image/x-icon" />
+  <!-- noUISlider CSS -->
+  <link rel="stylesheet" href="nouislider/distribute/nouislider.css">
+
+  <link rel="shortcut icon" href="../../dist/img/logo.png" type="image/x-icon" />
 
   <title>Retirement MOD Calculator | Wealth MODs</title>
 </head>
 
 <body>
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3679926018927231">
+  </amp-auto-ads>
 
-
-  <section class="coming-soon">
-
-    <img src="../dist/img/wealthmods.png" alt="">
+  <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
     <div class="container">
+      <a class="navbar-brand" href="../../index.html"><img class="bigImage" src="../../dist/img/wealthmods.png"
+          alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wealthmodNav"
+        aria-controls="wealthmodNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="wealthmodNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link" href="../../start-here.html">Start Here</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../about.html">About</a>
+          </li>
+
+          <li class="nav-item  dropdown">
+            <a class="nav-link  dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">MODs</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown07">
+              <a class="dropdown-item" href="../wealth-mods-101.html">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../../dist/img/wmod101-small.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <p>Wealth MODs 101</p>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item " href="../retirement-mod-calculator.html">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../../dist/img/rmod-small.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <p class="active">Retirement MOD</p>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item" href="../risk-profile-mod-calculator.html">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../../dist/img/riskmod-small.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <p>Risk Profile MOD</p>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item" href="../financial-planning-mods.html">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="../../dist/img/fmod-small.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <p>
+                      Financial Planning MOD
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!-- Button trigger modal -->
+        <form class="form-inline my-2 my-lg-0">
+          <div class="form-group">
+            <input class="form-control mr-sm-2" type="email" placeholder="email" aria-label="email" />
+
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              I Want Wealth MODs
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section id="blog-post" style="background: #f4f4f4;">
+    <div class="container" style="max-width: 800px;">
+
+      <p class="desc">
+        <i class="fas fa-user"></i> David Salazar
+        <i class="fas fa-calendar"></i> May 10th 2019
+        <i class="fas fa-tag"></i> Wealth MODs 101
+      </p>
+      <div class="title">
+        <h1>Retirement MOD Calculator</h1>
+      </div>
+      <div class="sub">
+        <h3>Simple But Powerful</h3>
+      </div>
+      <div class="img-con">
+        <img src="dist/img/blog/calculator.jpg" alt="" />
+      </div>
+
+      <header class="breadcrumbs" style="z-index: 1 !important;">
+        <ul>
+          <li>
+            <a href="../../index.html"><i class="fas fa-home"></i></a>
+          </li>
+          <li><i class="fas fa-caret-right"></i></li>
+          <li><a href="../wealth-mods-101.html">Wealth MODs 101</a></li>
+          <li><i class="fas fa-caret-right d-none d-sm-block"></i></li>
+          <li class="d-none d-sm-block">Retirement MOD Calculator</li>
+        </ul>
+      </header>
+
+      <p class="body">
+        Time and time and again, research from Morningstar shows that planning for "retirement" is still the top
+        financial goal for an individual. As a matter of fact, planning for retirement is cited 2 ½ times more
+        often than any top financial goal while "financial security," and "other" goals are a distant second.
+      </p>
+      <p class="body">Planning for retirement is a necessity for many individuals, but most of us put that in our
+        back of our mind and procrastinate saving. I am guilty of it as well. It's a critical time now more than
+        ever to be fully prepared for retirement due to the demographic and economic changes. These changes have
+        transformed the retirement landscape by systematically bearing most of the responsibility and risk to
+        individuals and away from employers and the government.</p>
+      <p class="body">As a consequence, about half of working-age households are "at risk" of not being able to
+        maintain and sustain their pre-retirement standard of living in retirement. However, there are tools and
+        resources to fix the problem. This website/blog was created to help individuals and families have financial
+        independence and clarity.
+        One of the tools is having a Retirement Calculator and asking yourself, "Will I have enough money in saved
+        in retirement the way I'm currently saving today?" </p>
+      <p class="body">Although this may seem intimidating or insignificant due to how young or old one may be, it is
+        essential to find a realistic estimate of where you are now and where you want to be in the future. Use the
+        results as a mere starting point to see if you are on track. </p>
+      <p class="body">You can type in the information that it's asking you or click and drag the scroll bar if that
+        is easier for you. Once that is complete, click on the "Calculate Results" button on the bottom of the
+        calculator. You will see the results on the left ff you are using a desktop/laptop or on the bottom if you
+        are using a tablet/smartphone. You can click and drag the scroll bar all you'd like, and the results will
+        update in real-time. Enjoy!</p>
+
+      <h2 style="font-size: 2.5rem; text-align:center; margin: 15px auto;">Where are you today?</h2>
+
+    </div>
+  </section>
+  <section id="retirement-calc">
+    <div class="container" style="z-index: 20  !important;">
       <div class="row">
-        <div class="col-6">
-          <h1> Retirement MOD Calculator is coming soon! </h1>
-        </div>
-        <div class="col-6"><img src="../dist/img/rmod.png" alt=""></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%;"
-          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-      </div>
-      <p>Leave your email and we will let you know once this MOD goes live! </p>
-      <form class="form-inline my-2 my-lg-0">
-        <div class="form-group">
-          <input class="form-control mr-sm-2" type="email" placeholder="email" aria-label="email" />
 
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Notify Me!
-          </button>
+        <div class="col-lg-6">
+          <div id="calc">
+
+            <form>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-sm-6"> <label for="age" class="form-control">Enter Current Age:</label></div>
+                  <div class="col-sm-6"> <input title="Current Age" class="form-control" id="age"></div>
+
+
+                </div>
+
+
+                <div class="form-row">
+                  <div class="col-sm-6"> <label for="retireAge" class="form-control">Enter Retirement Age:</label>
+                  </div>
+                  <div class="col-sm-6"> <input title="RetirementAge" class="form-control" id="retireAge"></div>
+
+
+                </div>
+
+                <div id="timeHorizonSlider" data-slider-type="slider">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-sm-6"> <label for="conAge" class="form-control">Beginning
+                      Contribution:</label></div>
+                  <div class="col-sm-6"> <input title="Beginning Contribution Age" class="form-control" id="conAge">
+                  </div>
+
+
+                </div>
+                <div id="conSlider" data-slider-type="slider">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-sm-6"> <label for="return" class="form-control">Rate of Return:</label></div>
+                  <div class="col-sm-6"> <input title="Annual Rate of Return" class="form-control" id="return"></div>
+
+
+                </div>
+                <div id="returnSlider" data-slider-type="slider">
+
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col"> <label for="maxConFormat" class="form-control">Total Annual Contribution:
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col"> <input title="Minimal Contribution" class="form-control" id="minCon"
+                      placeholder="Minimum">
+                    <small class="form-text text-muted">Minimal Annual Contribution</small>
+                  </div>
+                  <div class="col">
+                    <input title="Maximum Contribution" class="form-control" id="maxCon" placeholder="Maximum">
+                    <small class="form-text text-muted">Maximum Annual Contribution</small></div>
+
+                </div>
+                <div id="annualConSlider" data-slider-type="slider">
+
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-sm-6"> <label for="currentVal" class="form-control">Current Portfolio
+                      Value:</label></div>
+                  <div class="col-sm-6"> <input title="Current Portfolio Value" class="form-control" id="currentVal">
+                  </div>
+
+
+                </div>
+                <div id="currentValSlider" data-slider-type="slider">
+
+                </div>
+              </div>
+            </form>
+
+
+            <button id="resultButton" class="btn" onclick="something();"> Calculate Results</button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div id="results">
+            <div class="boxes">
+              <h2>Hypothetical 1: </h2>
+              <p>Potential value of your portfolio at retirement in <span class="timeHorizon1"></span>. </p>
+              <h1 id="minValue"></h1>
+
+
+
+
+
+              <p>if you contribute <span id="min"></span> at <span class="returnRateValue1"></span> annually for <span
+                  class="conYears1"></span> years.</p>
+            </div>
+            <div class="boxes">
+              <h2>Hypothetical 2: </h2>
+              <p>Potential value of your portfolio at retirement in <span class="timeHorizon2"></span>. </p>
+              <h1 id="maxValue"></h1>
+
+              <p>if you contribute <span id="max"></span> at <span class="returnRateValue2"></span> annually for <span
+                  class="conYears2"></span> years.</p>
+            </div>
+            <div class="boxes">
+              <div id="resultcalc">
+                <div class="scenario--bar-graph" aria-hidden="true" role="presentation">
+                  <div id="maxPotentialRetirementAmount"
+                    style="position: absolute; z-index: 25; right: 0px; color: white;">
+                    $5.00
+                  </div>
+                  <div id="deferredMaximum" style="width: 24%; " class="scenario--bar-graph--estimated"
+                    data-value="384058">
+                    $5.00
+                  </div>
+                  <div id="deferredMaximums" style="position: absolute; z-index: 30; left: 0px; color: white; ">
+                    $5.00
+                  </div>
+                  <div id="maximumValueAtRetirement" class="scenario--bar-graph--potential">
+                    $5.00
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="boxes">
+              <i>Important Information:</i>
+              <br>
+              <i>This calculator is for illustrative purposes only and does not reflect the performance of any
+                specific
+                investment. It does not take into effect the deduction of any fees or taxes. There is no guarantee
+                that
+                the rate of return selected can actually be achieved. Investments offering the potential for higher
+                rates
+                of return also involve a higher degree of risk.</i>
+              <br>
+              <i>*Source: LIMRA, Across Generations: Retirement Savings, Attitudes and Engagement, 2015</i>
+            </div>
+
+
+
+
+
+
+          </div>
+
         </div>
 
-      </form>
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else and we won't spam
-        you!</small>
+
+      </div>
+
+    </div>
+  </section>
+  <section id="blog-post" style="background: #f4f4f4;">
+    <div class="container" style="max-width: 800px">
+      <h2 style="font-size: 2.5rem; text-align:center; margin: 15px auto;"> Is this where you want to be? </h2>
+      <p class="body"> <br>
+        If you are on track, then congratulations! There are not a ton of individuals that are on the right course
+        towards their goals.
+      </p>
+      <p class="body">
+        If you feel like you can do better or you can't find a way to start saving more, don't worry, it's never too
+        late to start investing in your future. If you are a Millennial or retirement is still ways away, then time is
+        on your side. Starting early gives you more time to save, but more importantly, the power of compounding
+        magnifies. That is when you begin generating gains from your previous gains.
+      </p>
+      <p class="body">
+        Get on the calculator and drag the "beginning contribution" slider to the left and look at how the numbers grow!
+      </p>
+      <p class="body">
+        If you are nearer to retirement, now is a necessary time to get specific about your financial goals, desired
+        lifestyle, income sources and how much you can spend.
+      </p>
+      <p class="body">
+        I am going to outline three things you can do right now if you "feel" like it's too late:
+      </p>
+      <ul>
+        <li><strong>Find Out Your Flexibility - </strong> When you sit down, and I mean really sit down and take a look
+          at your cashflows (money coming in and out), you will be surprised how flexible you are in how you spend.
+          Increasing savings while decreasing your discretionary spending. </li>
+        <li><strong>Capitalize on "Catch-up" Provisions - </strong> Once you reach the tender age of 50, you can start
+          contributing more to your <a class="link"
+            href="3-Main-Differences-Between-Roth-IRA-and-Traditional-IRA-2019.html">Individual Retirement Accounts
+            (IRAs) and 401(k)</a> . </li>
+
+        <li><strong>Make Sure Your Goals and Investments Are Aligned - </strong> Individuals usually feel the need to
+          save aggressively, which is perfect but they often want to invest aggressively as well. Those are two
+          different things. You don't want to take a higher risk to make up for the lost time, that could increase the
+          risk of not reaching your goal! </li>
+      </ul>
+
+      <p class="body">
+        I am currently working on the ultimate budget web application and spreadsheet that will help you find where you
+        can be flexible with your spending. It will be different than your traditional divide your spending into
+        "necessary" and "discretionary" spending columns. I am a big believer in enjoying the process or the journey to
+        your retirement. For the majority of individuals, the accumulation phase is the most prolonged phase of their
+        lives. There are some expenses that, although they aren't necessary to live, they are essential to YOUR
+        happiness.
+      </p>
+      <p class="body">
+        For those that
+        feel
+        the need that you need tailored advice feel free to <a href="https://armisfinancial.com" class="link"
+          target="a_blank">reach out</a>. Content to look out
+        for in the future:
+      </p>
+      <ul>
+        <li>The Roth IRA MOD 2019</li>
+        <li>The 401(k) MOD 2019</li>
+        <li><a class="link" href="Traditional-IRA-MOD-2019.html">The Traditional IRA MOD 2019</a></li>
+        <li>Asset Allocation MOD for DIYs </li>
+        <li>The Rebalancing Portfolio MOD for DIYs</li>
+      </ul>
+      <p class="body">If you want to be up to date with our latest content, feel free to subscribe to our
+        Newsletter.
+      </p>
+
+      <p class="body"><i>If you enjoyed this post, please consider sharing it on social media. Thank you!</i></p>
     </div>
 
+    </div>
+  </section>
+
+  <section id="sign-up-now">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Let's Start Adding MODs To Your Wealth Today!</h3>
+          <p>
+            Get first dibs on tips and tools to help your financial situation
+            today and the future.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <!-- Sign up Mail Chimp -->
+          <div id="mc_embed_signup">
+            <form
+              action="https://wealthmods.us20.list-manage.com/subscribe/post?u=5159cea3047318618f866957e&amp;id=7777e5b831"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group form-group">
+                  <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL"
+                    placeholder="Email Address*" />
+                </div>
+
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_5159cea3047318618f866957e_7777e5b831" tabindex="-1" value="" />
+                </div>
+
+                <input type="submit" value="Notify Me!" name="subscribe" id="mc-embedded-subscribe" class="btn" />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else and we
+                  won't
+                  spam you!</small>
+              </div>
+            </form>
+          </div>
+          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+          <script type="text/javascript">
+            (function ($) {
+              window.fnames = new Array();
+              window.ftypes = new Array();
+              fnames[0] = 'EMAIL';
+              ftypes[0] = 'email';
+              fnames[1] = 'FNAME';
+              ftypes[1] = 'text';
+              fnames[2] = 'LNAME';
+              ftypes[2] = 'text';
+            })(jQuery);
+            var $mcj = jQuery.noConflict(true);
+          </script>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-sm-3"><a href="../index.html">Home</a></div>
-        <div class="col-sm-3"><a href="../about.html">About</a></div>
-        <div class="col-sm-3"><a href="../start-here.html">Start Here</a></div>
+        <div class="col-sm-3"><a href="../../index.html">Home</a></div>
+        <div class="col-sm-3"><a href="../../about.html">About</a></div>
+        <div class="col-sm-3">
+          <a href="../../start-here.html">Start Here</a>
+        </div>
         <div class="col-sm-3">
           <a href="https://armisfinancial.com" target="_blank">Armis Financial</a>
         </div>
@@ -73,14 +520,15 @@
       <br />
       <p>
         Copyright&copy; 2019 Wealth MODs. All Rights Reserved.
-        <a href="disclaimer.html">Disclaimer</a>|<a href="privacy-policy.html">Privacy Policy</a>
+        <a href="important-info/disclaimer.html">Disclaimer</a>|<a href="important-info/privacy-policy.html">Privacy
+          Policy</a>
       </p>
       <p>
         All written content on this site is for information purposes only.
         Opinions expressed herein are solely those of Armis Financial LLC,
         unless otherwise specifically cited. Material presented is believed to
-        be from reliable sources and no representations are made by our firm
-        as to another parties’ informational accuracy or completeness. All
+        be from reliable sources, and no representations are made by our firm
+        as to other parties’ informational accuracy or completeness. All
         information or ideas provided should be discussed in detail with an
         advisor, accountant or legal counsel prior to implementation.
       </p>
@@ -92,7 +540,7 @@
         Nor is Armis Financial LLC liable for any direct or indirect technical
         or system issues or any consequences arising out of your access to or
         your use of third-party technologies, web sites, information and
-        programs made available through this web site. When you access one of
+        Programs made available through this web site. When you access one of
         these web sites, you are leaving our web site and assume total
         responsibility and risk for your use of the web sites you are linking
         to.
@@ -101,9 +549,8 @@
   </footer>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
@@ -119,8 +566,11 @@
       "></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <!-- Optional JavaScript -->
-  <script src="../dist/js/main.js"></script>
-
+  <script src="dist/js/main.js"></script>
+  <script src="dist/js/blog-post.js"></script>
+  <script src="nouislider/distribute/nouislider.js"></script>
+  <script src="dist/js/wNumb.js"></script>
+  <script src="dist/js/calc.js"></script>
 
 </body>
 
