@@ -3,12 +3,12 @@ let past = document.querySelector(" #blogs");
 let post = [{
 
     title: 'The Retirement MOD Calculator',
-    tag: 'Wealth MODs 101',
+    tag: 'Tools',
     date: 'May 10th 2019',
     sub: 'A simple but powerful tool',
     src: 'dist/img/blog/calculator.jpg',
     author: 'David Salazar',
-    link: 'retirement-mod-calculator.html',
+    link: 'tools/retirement-mod-calculator.html',
     preview: 'Time and time and again, research from Morningstar shows that planning for "retirement" is still the top financial goal for an individual. As a matter of fact, planning for retirement is... ',
     class: 'blog-card alt'
   },
@@ -20,7 +20,7 @@ let post = [{
     sub: 'A complete guide',
     src: 'dist/img/blog/retirement2.jpg',
     author: 'David Salazar',
-    link: 'Traditional-IRA-MOD-2019.html',
+    link: 'wealth-mods-101/Traditional-IRA-MOD-2019.html',
     preview: 'There are many investment and savings vehicles out there that are designed to help you prepare for one of the most challenging financial goals you can have - retirement. You can save... ',
     class: 'blog-card'
   },
@@ -32,7 +32,7 @@ let post = [{
     sub: 'But We Can Do Better ',
     src: 'dist/img/blog/young2.jpg',
     author: 'David Salazar',
-    link: '3-Millennial-Money-Habits-Stereotypes-That-Have-Been-Debunked.html',
+    link: 'wealth-mods-101/3-Millennial-Money-Habits-Stereotypes-That-Have-Been-Debunked.html',
     preview: '“Foolish when it comes to money,” “They don’t plan for the long-term,” “They are self-centered,” “They still depend on their parents.” Those are the typical stereotypes... ',
     class: 'blog-card alt'
   },
@@ -44,7 +44,7 @@ let post = [{
     sub: 'Which Should Millennials Choose?',
     src: 'dist/img/blog/young1.jpg',
     author: 'David Salazar',
-    link: '3-Main-Differences-Between-Roth-IRA-and-Traditional-IRA-2019.html',
+    link: 'wealth-mods-101/3-Main-Differences-Between-Roth-IRA-and-Traditional-IRA-2019.html',
     preview: 'Ever since I can remember, I would listen to some guy in a suit on the news mentioned the word IRA. I would hear it from my parents every once in a while, talk about it as ...',
     class: 'blog-card '
   },
