@@ -2,6 +2,18 @@ let past = document.querySelector(" #blogs");
 
 let post = [{
 
+    title: 'The Roth IRA MOD 2019',
+    tag: 'Wealth MODs 101',
+    date: 'May 16th 2019',
+    sub: 'A complete guide',
+    src: 'dist/img/blog/retirement1.jpg',
+    author: 'David Salazar',
+    link: 'wealth-mods-101/Roth-IRA-MOD-2019.html',
+    preview: 'The Roth IRA is a savings vehicle that is designed to help you prepare for one of the most challenging financial goals you can have - retirement. It’s an investment vehicle that...',
+    class: 'blog-card'
+  },
+  {
+
     title: 'The Retirement MOD Calculator',
     tag: 'Tools',
     date: 'May 10th 2019',
@@ -47,20 +59,9 @@ let post = [{
     link: 'wealth-mods-101/3-Main-Differences-Between-Roth-IRA-and-Traditional-IRA-2019.html',
     preview: 'Ever since I can remember, I would listen to some guy in a suit on the news mentioned the word IRA. I would hear it from my parents every once in a while, talk about it as ...',
     class: 'blog-card '
-  },
-
-  {
-
-    title: 'The Roth IRA MOD 2019',
-    tag: 'Wealth MODs 101',
-    date: 'Coming Soon',
-    sub: 'A complete guide',
-    src: 'dist/img/blog/retirement1.jpg',
-    author: 'David Salazar',
-    link: '#',
-    preview: 'This article is coming soon.',
-    class: 'blog-card alt'
   }
+
+
 ];
 
 
