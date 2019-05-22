@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mod": "node-sass -w scss/ -o dist/css/ --recursive"
+    "mods": "node-sass  scss/main.scss  dist/css/main.css "
   },
   "author": "David Salazar",
   "license": "MIT",
