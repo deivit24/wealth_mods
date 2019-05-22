@@ -1063,7 +1063,7 @@ nav {
   transition: all 1s ease-in-out; }
   nav img {
     width: 200px;
-    transition: all .5s ease-in-out; }
+    transition: all 0.5s ease-in-out; }
   nav .d-zero {
     opacity: 1 !important;
     width: 100px !important; }
@@ -1674,7 +1674,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     height: 800px;
-    transform: translateY(300px);
+    transform: translateX(300px);
     opacity: 0;
     transition: all 2s ease-in-out; }
     #sec7 .row .col-md-8 ul li {
@@ -1895,7 +1895,7 @@ nav {
   padding-top: 0px;
   text-transform: capitalize;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #f7c862 65%);
-  transition: all .5s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
   .link:hover {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #f3af19 65%);
     color: black; }
@@ -2025,7 +2025,7 @@ footer {
     height: 10px;
     z-index: -10; }
   #fourofour hr:after {
-    content: "\2022";
+    content: '\2022';
     display: inline-block;
     position: relative;
     top: -0.75em;
@@ -2035,12 +2035,12 @@ footer {
   #fourofour .cloud {
     width: 350px;
     height: 120px;
-    background: #FFF;
-    background: linear-gradient(top, #FFF 100%);
-    background: -webkit-linear-gradient(top, #FFF 100%);
-    background: -moz-linear-gradient(top, #FFF 100%);
-    background: -ms-linear-gradient(top, #FFF 100%);
-    background: -o-linear-gradient(top, #FFF 100%);
+    background: #fff;
+    background: linear-gradient(top, #fff 100%);
+    background: -webkit-linear-gradient(top, #fff 100%);
+    background: -moz-linear-gradient(top, #fff 100%);
+    background: -ms-linear-gradient(top, #fff 100%);
+    background: -o-linear-gradient(top, #fff 100%);
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -2052,7 +2052,7 @@ footer {
   #fourofour .cloud:before {
     content: '';
     position: absolute;
-    background: #FFF;
+    background: #fff;
     z-index: -1; }
   #fourofour .cloud:after {
     width: 100px;
