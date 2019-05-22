@@ -1,13 +1,13 @@
 // making cards in start here page a link!
 
-document.getElementById('about').onclick = function () {
+document.getElementById('about').onclick = function() {
   location.href = 'https://armisfinancial.com';
 };
-document.getElementById('tool').onclick = function () {
+document.getElementById('tool').onclick = function() {
   location.href = 'index.html#discover';
 };
-document.getElementById('blog').onclick = function () {
-  location.href = 'mods/wealth-mods-101.html';
+document.getElementById('blog').onclick = function() {
+  location.href = 'wealth-mods-101.html';
 };
 
 // var nav = new ScrollMagic.Controller();
@@ -67,9 +67,9 @@ document.getElementById('blog').onclick = function () {
 var why = new ScrollMagic.Controller();
 
 var aboutwhy = new ScrollMagic.Scene({
-    triggerElement: '#why',
-    triggerHook: 0.8
-  })
+  triggerElement: '#why',
+  triggerHook: 0.8
+})
   .setClassToggle('#why', 'why-appear')
 
   .addTo(why);
@@ -79,9 +79,9 @@ var aboutwhy = new ScrollMagic.Scene({
 var confused = new ScrollMagic.Controller();
 
 var aboutconfused = new ScrollMagic.Scene({
-    triggerElement: '#why',
-    triggerHook: 0.8
-  })
+  triggerElement: '#why',
+  triggerHook: 0.8
+})
   .setClassToggle('#sec7 img', 'why-appear')
 
   .addTo(confused);
@@ -89,9 +89,9 @@ var aboutconfused = new ScrollMagic.Scene({
 var confusedWords = new ScrollMagic.Controller();
 
 var aboutconfusedWords = new ScrollMagic.Scene({
-    triggerElement: '#why',
-    triggerHook: 0.8
-  })
+  triggerElement: '#why',
+  triggerHook: 0.8
+})
   .setClassToggle('#sec7 .col-md-8', 'why-appear')
 
   .addTo(confusedWords);
@@ -101,9 +101,9 @@ var aboutconfusedWords = new ScrollMagic.Scene({
 var hated = new ScrollMagic.Controller();
 
 var abouthated = new ScrollMagic.Scene({
-    triggerElement: '#hated',
-    triggerHook: 0.8
-  })
+  triggerElement: '#hated',
+  triggerHook: 0.8
+})
   .setClassToggle('#hated', 'why-appear')
 
   .addTo(hated);
@@ -113,9 +113,9 @@ var abouthated = new ScrollMagic.Scene({
 var love = new ScrollMagic.Controller();
 
 var aboutlove = new ScrollMagic.Scene({
-    triggerElement: '#loved',
-    triggerHook: 0.8
-  })
+  triggerElement: '#loved',
+  triggerHook: 0.8
+})
   .setClassToggle('#loved', 'why-appear')
 
   .addTo(love);
@@ -125,9 +125,9 @@ var aboutlove = new ScrollMagic.Scene({
 var mission = new ScrollMagic.Controller();
 
 var aboutmission = new ScrollMagic.Scene({
-    triggerElement: '#mission',
-    triggerHook: 0.8
-  })
+  triggerElement: '#mission',
+  triggerHook: 0.8
+})
   .setClassToggle('#mission', 'why-appear')
 
   .addTo(mission);
@@ -135,9 +135,9 @@ var aboutmission = new ScrollMagic.Scene({
 var sec10 = new ScrollMagic.Controller();
 
 var aboutsec10 = new ScrollMagic.Scene({
-    triggerElement: '#sec10',
-    triggerHook: 0.8
-  })
+  triggerElement: '#sec10',
+  triggerHook: 0.8
+})
   .setClassToggle('#sec10', 'why-appear')
 
   .addTo(sec10);
@@ -182,15 +182,14 @@ function expand8() {
   element.classList.toggle('expand');
 }
 
-
-// Navigation Image Slide 
+// Navigation Image Slide
 
 var imageSlideSmall = new ScrollMagic.Controller();
 
 var imageSM = new ScrollMagic.Scene({
-    triggerElement: 'section',
-    triggerHook: 0
-  })
+  triggerElement: 'section',
+  triggerHook: 0
+})
   .setClassToggle('.smallImage', 'd-appear')
 
   .addTo(imageSlideSmall);
@@ -198,9 +197,9 @@ var imageSM = new ScrollMagic.Scene({
 var imageSlideBig = new ScrollMagic.Controller();
 
 var imageSM = new ScrollMagic.Scene({
-    triggerElement: 'section',
-    triggerHook: 0
-  })
+  triggerElement: 'section',
+  triggerHook: 0
+})
 
   .setClassToggle('.bigImage', 'd-zero')
 
