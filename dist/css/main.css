@@ -410,7 +410,7 @@ p {
     left: 0;
     background-size: cover;
     background-position: top center;
-    transition: transform .2s; }
+    transition: transform 0.2s; }
   #mods101 .blog-card .details,
   #mods101 .blog-card .details ul {
     margin: auto;
@@ -422,12 +422,12 @@ p {
     bottom: 0;
     left: -100%;
     margin: auto;
-    transition: left .2s;
+    transition: left 0.2s;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
     width: 100%;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-family: "Oswald", sans-serif; }
     #mods101 .blog-card .details ul li {
       display: inline-block; }
@@ -456,7 +456,9 @@ p {
       margin-top: 5px;
       font-family: "Montserrat", sans-serif; }
     #mods101 .blog-card .description .read-more {
-      text-align: right; }
+      text-align: right;
+      margin-top: 16px;
+      margin-bottom: 0px; }
       #mods101 .blog-card .description .read-more .btn {
         border: 2px solid #319236;
         border-radius: 2em;
@@ -467,13 +469,13 @@ p {
         #mods101 .blog-card .description .read-more .btn:hover {
           background: #319236;
           color: white; }
-  #mods101 .blog-card p {
+  #mods101 .blog-card .preview {
     position: relative;
     margin: 1rem 0 0; }
-    #mods101 .blog-card p:first-of-type {
+    #mods101 .blog-card .preview:first-of-type {
       margin-top: 1.25rem; }
-      #mods101 .blog-card p:first-of-type:before {
-        content: "";
+      #mods101 .blog-card .preview:first-of-type:before {
+        content: '';
         position: absolute;
         height: 5px;
         background: #319236;
@@ -485,7 +487,7 @@ p {
   @media (min-width: 640px) {
     #mods101 .blog-card {
       flex-direction: row;
-      max-width: 700px; }
+      min-width: 700px; }
       #mods101 .blog-card .meta {
         flex-basis: 40%;
         height: auto; }
@@ -493,7 +495,7 @@ p {
         flex-basis: 60%; }
         #mods101 .blog-card .description:before {
           transform: skewX(-3deg);
-          content: "";
+          content: '';
           background: #fff;
           width: 30px;
           position: absolute;
@@ -511,6 +513,125 @@ p {
           transform: skew(3deg); }
         #mods101 .blog-card.alt .details {
           padding-left: 25px; } }
+
+#pastBlogs .past-blog-card {
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  height: 450px; }
+  #pastBlogs .past-blog-card a {
+    color: inherit; }
+    #pastBlogs .past-blog-card a:hover {
+      color: #319236; }
+  #pastBlogs .past-blog-card:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
+    #pastBlogs .past-blog-card:hover .photo {
+      transform: scale(1.3) rotate(3deg); }
+  #pastBlogs .past-blog-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px; }
+  #pastBlogs .past-blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: top center;
+    transition: transform 0.2s; }
+  #pastBlogs .past-blog-card .details,
+  #pastBlogs .past-blog-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none; }
+  #pastBlogs .past-blog-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left 0.2s;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-family: "Oswald", sans-serif; }
+    #pastBlogs .past-blog-card .details ul li {
+      display: inline-block; }
+    #pastBlogs .past-blog-card .details .author i {
+      margin-right: 10px; }
+    #pastBlogs .past-blog-card .details .date i {
+      margin-right: 10px; }
+    #pastBlogs .past-blog-card .details .tags ul li i {
+      margin-right: 10px; }
+  #pastBlogs .past-blog-card .description {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top center;
+    height: 250px; }
+    #pastBlogs .past-blog-card .description h1 {
+      margin: 0;
+      font-size: 1.7rem;
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      text-transform: capitalize;
+      text-align: center; }
+    #pastBlogs .past-blog-card .description h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: capitalize;
+      color: #4c51f7;
+      margin-top: 5px;
+      font-family: "Montserrat", sans-serif;
+      text-align: center; }
+    #pastBlogs .past-blog-card .description .read-more {
+      text-align: right;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      #pastBlogs .past-blog-card .description .read-more .btn {
+        border: 2px solid #319236;
+        border-radius: 2em;
+        padding: 10px 20px;
+        color: #319236;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700; }
+        #pastBlogs .past-blog-card .description .read-more .btn:hover {
+          background: #319236;
+          color: white; }
+  #pastBlogs .past-blog-card .preview {
+    position: relative;
+    margin: 1rem 0 0;
+    display: none; }
+    #pastBlogs .past-blog-card .preview:first-of-type {
+      margin-top: 1.25rem; }
+      #pastBlogs .past-blog-card .preview:first-of-type:before {
+        content: '';
+        position: absolute;
+        height: 5px;
+        background: #319236;
+        width: 35px;
+        top: -0.75rem;
+        border-radius: 3px; }
+  #pastBlogs .past-blog-card:hover .details {
+    left: 0%; }
 
 .signup-card {
   display: flex;
@@ -530,7 +651,7 @@ p {
     text-align: left;
     text-transform: capitalize; }
   .signup-card p {
-    font-size: .9rem; }
+    font-size: 0.9rem; }
   .signup-card form .btn {
     margin-top: 10px;
     background: #fff;

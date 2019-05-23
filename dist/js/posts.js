@@ -1,4 +1,5 @@
-let past = document.querySelector(' #blogs');
+let recent = document.querySelector(' #blogs');
+let past = document.querySelector('#pastBlogs');
 
 let post = [
   {
@@ -11,7 +12,7 @@ let post = [
     link: 'wealth-mods-101/401k-MOD-2019.html',
     preview:
       'A 401(k) is a retirement plan that is provided to you by your employer. It allows employees to save a piece of their paycheck and invest it before taxes are taken out. You are hence...',
-    class: 'blog-card alt'
+    class: 'blog-card '
   },
   {
     title: 'The Roth IRA MOD 2019',
@@ -23,7 +24,7 @@ let post = [
     link: 'wealth-mods-101/Roth-IRA-MOD-2019.html',
     preview:
       'The Roth IRA is a savings vehicle that is designed to help you prepare for one of the most challenging financial goals you can have - retirement. It’s an investment vehicle that...',
-    class: 'blog-card'
+    class: 'blog-card alt'
   },
   {
     title: 'The Retirement MOD Calculator',
@@ -35,7 +36,7 @@ let post = [
     link: 'tools/retirement-mod-calculator.html',
     preview:
       'Time and time and again, research from Morningstar shows that planning for "retirement" is still the top financial goal for an individual. As a matter of fact, planning for retirement is... ',
-    class: 'blog-card alt'
+    class: 'blog-card'
   },
   {
     title: 'The Traditional IRA MOD 2019',
@@ -60,7 +61,7 @@ let post = [
       'wealth-mods-101/3-Millennial-Money-Habits-Stereotypes-That-Have-Been-Debunked.html',
     preview:
       '“Foolish when it comes to money,” “They don’t plan for the long-term,” “They are self-centered,” “They still depend on their parents.” Those are the typical stereotypes... ',
-    class: 'blog-card alt'
+    class: 'blog-card'
   },
   {
     title: '3 Main Differences Between Roth IRA and Traditional IRA 2019',
@@ -77,10 +78,10 @@ let post = [
   }
 ];
 
-function allPost() {
+function recentPost() {
   let output = ' ';
 
-  for (let i = 0; i < post.length; i++) {
+  for (let i = 0; i < 3; i++) {
     output += `
     <div class="${post[i].class}">
             <div class="meta">
@@ -104,7 +105,48 @@ function allPost() {
             <div class="description">
               <h1>${post[i].title}</h1>
               <h2>${post[i].sub}</h2>
-              <p>
+              <p class="preview">
+              ${post[i].preview}
+              </p>
+              <p class="read-more">
+                <a class="btn" href="${post[i].link}">Read More</a>
+              </p>
+            </div>
+          </div>
+    `;
+    recent.innerHTML = output;
+  }
+}
+recentPost();
+
+function pastPost() {
+  let output = ' ';
+
+  for (let i = 3; i < post.length; i++) {
+    output += `
+    <div class="past-${post[i].class}">
+            <div class="meta">
+              <div class="photo" style="background-image: url(${
+                post[i].src
+              })"></div>
+              <ul class="details">
+                <li class="author">
+                  <i class="fas fa-user"></i> ${post[i].author}
+                </li>
+                <li class="date">
+                  <i class="fas fa-calendar-alt"></i>${post[i].date}
+                </li>
+                <li class="tags">
+                  <ul>
+                    <li><i class="fas fa-tag"></i>${post[i].tag}</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <h1>${post[i].title}</h1>
+              <h2>${post[i].sub}</h2>
+              <p class="preview">
               ${post[i].preview}
               </p>
               <p class="read-more">
@@ -116,7 +158,7 @@ function allPost() {
     past.innerHTML = output;
   }
 }
-allPost();
+pastPost();
 
 // Navigation Image Slide
 
