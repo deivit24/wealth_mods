@@ -251,11 +251,9 @@ p {
     #sec6 .container-fluid .col-md-6 p {
       margin-bottom: 25px; }
   #why {
-    transition: all .5s ease-in-out !important; }
+    transition: all 0.5s ease-in-out !important; }
     #why h3 {
       font-size: 1.3rem; }
-  #sec7 .row .col-md-4 {
-    height: 600px !important; }
   #sec8 .container #accordionSad .card .card-header .btn {
     font-size: 1.2rem !important; }
   #sec9 .container #accordionHappy .card .card-header .btn {
@@ -292,16 +290,18 @@ p {
     .coming-soon .container form .form-group button {
       width: 100% !important; }
   #mods101 .signup-card {
-    height: 420px; }
-  #mods101 #retirecal-card p {
-    text-indent: -9999px;
-    line-height: 0;
-    /* Collapse the original line */ }
-  #mods101 #retirecal-card p:after {
-    content: 'Retirement Calculator';
-    text-indent: 0;
-    display: block;
-    line-height: initial; }
+    height: 350px; }
+  #mods101 #retirecal-card {
+    height: 130px; }
+    #mods101 #retirecal-card p {
+      text-indent: -9999px;
+      line-height: 0;
+      /* Collapse the original line */ }
+    #mods101 #retirecal-card p:after {
+      content: 'Retirement Calculator';
+      text-indent: 0;
+      display: block;
+      line-height: initial; }
   #fourofour ._404 {
     font-size: 100px !important;
     height: 150px !important; }
@@ -487,7 +487,8 @@ p {
   @media (min-width: 640px) {
     #mods101 .blog-card {
       flex-direction: row;
-      max-width: 700px; }
+      max-width: 800px;
+      height: auto; }
       #mods101 .blog-card .meta {
         flex-basis: 40%;
         height: auto; }
@@ -1789,7 +1790,8 @@ nav {
     #sec7 .row .col-md-4 img {
       transform: translateX(-300px);
       opacity: 0;
-      transition: all 2s ease-in-out; }
+      transition: all 2s ease-in-out;
+      margin-bottom: 10px; }
   #sec7 .row .col-md-8 {
     display: flex;
     flex-direction: column;

@@ -122,8 +122,6 @@
   }
 
   #mods101 {
-
-
     #rprofile-card {
       img {
         height: 100px;
@@ -131,7 +129,6 @@
     }
 
     #retirecal-card {
-
       img {
         height: 100px;
       }
@@ -147,18 +144,13 @@
         text-indent: 0;
         display: block;
         line-height: initial;
-
       }
     }
-
-
   }
 }
 
 // Tablets
 @include mediaMd {
-
-
   #sec2 {
     .container {
       h1 {
@@ -247,9 +239,6 @@
     }
 
     #retirecal-card {
-
-
-
       p {
         text-indent: -9999px;
         line-height: 0;
@@ -261,19 +250,14 @@
         text-indent: 0;
         display: block;
         line-height: initial;
-
       }
     }
-
-
   }
 }
 
 // Smart Phones
 @include mediaSm {
   nav {
-
-
     #black {
       width: 0px;
       opacity: 0;
@@ -354,7 +338,6 @@
         }
 
         .dropdown-menu {
-
           .col-4,
           .col-8 {
             img {
@@ -504,10 +487,7 @@
   }
 
   #why {
-
-
-    transition: all .5s ease-in-out !important;
-
+    transition: all 0.5s ease-in-out !important;
 
     h3 {
       font-size: 1.3rem;
@@ -517,12 +497,9 @@
   #sec7 {
     .row {
       .col-md-4 {
-        height: 600px !important;
       }
     }
   }
-
-
 
   #sec8 {
     .container {
@@ -567,9 +544,7 @@
     }
   }
 
-
   .coming-soon {
-
     img {
       width: 250px !important;
     }
@@ -590,7 +565,6 @@
       }
 
       .progress {
-
         width: 100% !important;
         margin: 0 auto;
 
@@ -598,7 +572,6 @@
           font-family: $second;
           font-weight: 700;
           font-size: 1.3rem;
-
         }
       }
 
@@ -613,12 +586,10 @@
 
           input {
             width: 100% !important;
-
           }
 
           button {
             width: 100% !important;
-
           }
         }
       }
@@ -627,13 +598,11 @@
 
   #mods101 {
     .signup-card {
-      height: 420px;
+      height: 350px;
     }
 
     #retirecal-card {
-
-
-
+      height: 130px;
       p {
         text-indent: -9999px;
         line-height: 0;
@@ -645,24 +614,18 @@
         text-indent: 0;
         display: block;
         line-height: initial;
-
       }
     }
-
-
   }
 
   #fourofour {
     ._404 {
       font-size: 100px !important;
       height: 150px !important;
-
     }
 
     ._1 {
-
       font-size: 2em !important;
-
     }
 
     hr {
@@ -670,11 +633,7 @@
     }
 
     ._2 {
-
       font-size: 1.5em !important;
-
-
-
     }
 
     .btn {
