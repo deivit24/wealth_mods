@@ -487,7 +487,7 @@ p {
   @media (min-width: 640px) {
     #mods101 .blog-card {
       flex-direction: row;
-      min-width: 700px; }
+      max-width: 700px; }
       #mods101 .blog-card .meta {
         flex-basis: 40%;
         height: auto; }
