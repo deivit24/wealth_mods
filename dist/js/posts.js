@@ -5,7 +5,7 @@ let post = [
   {
     title: 'I quit my job, so what happens to my 401(k) now?',
     tag: 'Wealth MODs 101',
-    thdate: 'May 22nd 2019',
+    date: 'May 27th 2019',
     sub: 'Here are the four options you have',
     src: 'dist/img/blog/shock.jpg',
     author: 'David Salazar',
