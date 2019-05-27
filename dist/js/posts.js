@@ -3,6 +3,18 @@ let past = document.querySelector('#pastBlogs');
 
 let post = [
   {
+    title: 'I quit my job, so what happens to my 401(k) now?',
+    tag: 'Wealth MODs 101',
+    thdate: 'May 22nd 2019',
+    sub: 'Here are the four options you have',
+    src: 'dist/img/blog/shock.jpg',
+    author: 'David Salazar',
+    link: 'wealth-mods-101/What-Happens-To-My-401k-Now.html',
+    preview:
+      'There will come a time where you have to part ways with your employer – whether you quit your job to find a better one or you simply get fired. Regardless of how it happens...',
+    class: 'blog-card '
+  },
+  {
     title: 'The 401(k) MOD 2019',
     tag: 'Wealth MODs 101',
     date: 'May 22nd 2019',
@@ -12,7 +24,7 @@ let post = [
     link: 'wealth-mods-101/401k-MOD-2019.html',
     preview:
       'A 401(k) is a retirement plan that is provided to you by your employer. It allows employees to save a piece of their paycheck and invest it before taxes are taken out. You are hence...',
-    class: 'blog-card '
+    class: 'blog-card alt'
   },
   {
     title: 'The Roth IRA MOD 2019',
@@ -24,7 +36,7 @@ let post = [
     link: 'wealth-mods-101/Roth-IRA-MOD-2019.html',
     preview:
       'The Roth IRA is a savings vehicle that is designed to help you prepare for one of the most challenging financial goals you can have - retirement. It’s an investment vehicle that...',
-    class: 'blog-card alt'
+    class: 'blog-card '
   },
   {
     title: 'The Retirement MOD Calculator',

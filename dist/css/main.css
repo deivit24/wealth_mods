@@ -756,13 +756,14 @@ p {
       color: #4c51f7;
       text-align: center;
       margin-bottom: 15px;
-      margin-top: 5px; }
+      margin-top: 5px;
+      text-transform: capitalize; }
   #blog-post .container .breadcrumbs {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     z-index: 5;
     padding: 10px 0;
     opacity: 0; }
@@ -770,14 +771,14 @@ p {
       list-style: none;
       display: inline-flex;
       margin: 0 auto;
-      transition: all .8s ease-in-out; }
+      transition: all 0.8s ease-in-out; }
       #blog-post .container .breadcrumbs ul li {
         margin-right: 10px;
         font-size: 1rem;
         font-family: "Oswald", sans-serif;
         text-transform: capitalize;
         color: #333;
-        transition: all .8s ease-in-out; }
+        transition: all 0.8s ease-in-out; }
         #blog-post .container .breadcrumbs ul li .fa-caret-right {
           color: #4c51f7; }
         #blog-post .container .breadcrumbs ul li a {
@@ -855,6 +856,44 @@ p {
     text-align: center; }
     #blog-post .container .col-sm-6 ul {
       text-align: left; }
+  #blog-post #accordionSad {
+    width: 90%;
+    margin: 25px auto;
+    transition: all 1s ease-in-out; }
+    #blog-post #accordionSad .card {
+      background: white;
+      border: none;
+      width: 95%;
+      margin: 0 auto; }
+      #blog-post #accordionSad .card .card-header {
+        background: #4c51f7;
+        margin: 0 auto;
+        width: 95%;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transform: translateX(-300px);
+        opacity: 0;
+        text-align: center; }
+        #blog-post #accordionSad .card .card-header:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          width: 100%; }
+        #blog-post #accordionSad .card .card-header:active {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        #blog-post #accordionSad .card .card-header:focus {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        #blog-post #accordionSad .card .card-header .btn {
+          color: white;
+          text-decoration: none;
+          text-transform: capitalize;
+          width: 100%;
+          font-size: 2rem; }
+      #blog-post #accordionSad .card .card-appear {
+        transform: translateX(0px);
+        opacity: 1; }
+      #blog-post #accordionSad .card img {
+        padding: 20px;
+        width: 100%; }
 
 #sign-up-now {
   background: #319236;
@@ -918,9 +957,10 @@ p {
       color: #4c51f7;
       text-align: center;
       margin-bottom: 15px;
-      margin-top: 5px; }
+      margin-top: 5px;
+      text-transform: capitalize; }
   #blog-post .container .desc {
-    font-size: .6rem; }
+    font-size: 0.6rem; }
   #blog-post .container .img-con {
     float: none;
     margin: 20px auto 20px auto;

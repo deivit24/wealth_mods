@@ -3,9 +3,6 @@
   padding-bottom: 25px;
 
   .container {
-
-
-
     .desc {
       i {
         margin-right: 5px;
@@ -27,13 +24,14 @@
         line-height: 50px;
         padding-top: 0px;
         text-transform: capitalize;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 20) 20%);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 65%,
+          lighten($blue, 20) 20%
+        );
         display: inline;
       }
-
     }
-
-
 
     .sub {
       margin-top: 10px;
@@ -42,12 +40,12 @@
       margin: 0 auto;
 
       h3 {
-
         font-size: 1.8rem;
         color: $blue;
         text-align: center;
         margin-bottom: 15px;
         margin-top: 5px;
+        text-transform: capitalize;
       }
     }
 
@@ -57,7 +55,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
       z-index: 5;
       padding: 10px 0;
       opacity: 0;
@@ -66,7 +64,7 @@
         list-style: none;
         display: inline-flex;
         margin: 0 auto;
-        transition: all .8s ease-in-out;
+        transition: all 0.8s ease-in-out;
 
         li {
           margin-right: 10px;
@@ -74,7 +72,7 @@
           font-family: $main;
           text-transform: capitalize;
           color: #333;
-          transition: all .8s ease-in-out;
+          transition: all 0.8s ease-in-out;
 
           .fa-caret-right {
             color: $blue;
@@ -97,20 +95,25 @@
     .white {
       background: white;
       opacity: 1;
-
     }
 
     .debunked {
-
       text-transform: capitalize;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($green, 20) 20%);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 65%,
+        lighten($green, 20) 20%
+      );
       display: inline;
-
     }
 
     .bad {
       text-transform: capitalize;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten(red, 20) 20%);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 65%,
+        lighten(red, 20) 20%
+      );
       display: inline;
     }
 
@@ -135,12 +138,10 @@
         span {
           font-weight: normal;
         }
-
       }
     }
 
     .img-con {
-
       max-width: 500px;
       margin: 0px auto;
 
@@ -153,26 +154,23 @@
         /* as the half of the width */
         border-radius: 25%;
 
-
-
         border-bottom: 0;
-
-
       }
 
       .small {
         color: gray;
         text-align: center;
-
-
       }
     }
 
     h2 {
       text-transform: capitalize;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 20) 20%);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 65%,
+        lighten($blue, 20) 20%
+      );
       display: inline;
-
     }
 
     h3 {
@@ -184,7 +182,6 @@
       font-family: $second;
       color: black;
       font-weight: 500;
-
     }
 
     table {
@@ -200,7 +197,6 @@
         text-align: center;
         background: $green;
         color: white;
-
       }
 
       td {
@@ -221,13 +217,68 @@
       }
     }
   }
+  #accordionSad {
+    width: 90%;
+    margin: 25px auto;
+    transition: all 1s ease-in-out;
 
+    .card {
+      background: white;
+      border: none;
+      width: 95%;
+      margin: 0 auto;
+
+      .card-header {
+        background: $blue;
+        margin: 0 auto;
+        width: 95%;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transform: translateX(-300px);
+        opacity: 0;
+        text-align: center;
+
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+          width: 100%;
+        }
+
+        &:active {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+            0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        &:focus {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+            0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .btn {
+          color: white;
+          text-decoration: none;
+          text-transform: capitalize;
+          width: 100%;
+          font-size: 2rem;
+        }
+      }
+
+      .card-appear {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+      img {
+        padding: 20px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 #sign-up-now {
   background: $green;
   padding: 25px 25px;
-
 
   h3 {
     color: white;
@@ -239,7 +290,6 @@
 
   #mc_embed_signup {
     .btn {
-
       color: $green;
       font-family: $main;
       font-weight: 700;
@@ -253,7 +303,6 @@
         border: white solid 3px;
         color: white;
       }
-
     }
 
     .text-muted {
@@ -277,7 +326,6 @@
   }
 }
 
-
 @include mediaMd {
   #blog-post {
     .container {
@@ -286,10 +334,8 @@
         margin: 20px auto 20px auto;
         width: 75%;
 
-
         img {
           width: 100%;
-
         }
       }
     }
@@ -303,20 +349,20 @@
         width: 100%;
         text-align: center;
 
-
         h1 {
           font-size: 2rem;
           font-weight: 700;
           line-height: 30px;
           padding-top: 0px;
           text-transform: capitalize;
-          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, lighten($blue, 20) 20%);
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 65%,
+            lighten($blue, 20) 20%
+          );
           display: inline;
         }
-
       }
-
-
 
       .sub {
         width: 100%;
@@ -324,17 +370,17 @@
         margin-top: 10px;
 
         h3 {
-
           font-size: 1.5rem;
           color: $blue;
           text-align: center;
           margin-bottom: 15px;
           margin-top: 5px;
+          text-transform: capitalize;
         }
       }
 
       .desc {
-        font-size: .6rem;
+        font-size: 0.6rem;
       }
 
       .img-con {
@@ -342,14 +388,10 @@
         margin: 20px auto 20px auto;
         width: 75%;
 
-
         img {
           width: 100%;
-
         }
       }
-
-
     }
   }
 }
