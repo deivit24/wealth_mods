@@ -289,6 +289,15 @@ p {
       width: 100% !important; }
     .coming-soon .container form .form-group button {
       width: 100% !important; }
+  #mods101 .blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center !important;
+    transition: transform 0.2s; }
   #mods101 .signup-card {
     height: 350px; }
   #mods101 #retirecal-card {
