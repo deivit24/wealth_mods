@@ -3,6 +3,18 @@ let past = document.querySelector('#pastBlogs');
 
 let post = [
   {
+    title: 'The Budget MOD: Enjoy Life While Using The 50/30/20 Method',
+    tag: 'Wealth MODs 101',
+    date: 'June 2nd 2019',
+    sub: 'Saving and Enjoying Life Can Coexist',
+    src: 'dist/img/blog/budget.jpg',
+    author: 'David Salazar',
+    link: 'wealth-mods-101/50-30-20-Budget-Method.html',
+    preview:
+      'During my college years, when I would hear the word "budget," I would always translate it to "suffer." I just thought that they go hand in hand. For the longest time, I avoided...',
+    class: 'blog-card '
+  },
+  {
     title: 'I quit my job, so what happens to my 401(k) now?',
     tag: 'Wealth MODs 101',
     date: 'May 27th 2019',
@@ -12,7 +24,7 @@ let post = [
     link: 'wealth-mods-101/What-Happens-To-My-401k-Now.html',
     preview:
       'There will come a time where you have to part ways with your employer – whether you quit your job to find a better one or you simply get fired. Regardless of how it happens...',
-    class: 'blog-card '
+    class: 'blog-card alt'
   },
   {
     title: 'The 401(k) MOD 2019',
@@ -24,7 +36,7 @@ let post = [
     link: 'wealth-mods-101/401k-MOD-2019.html',
     preview:
       'A 401(k) is a retirement plan that is provided to you by your employer. It allows employees to save a piece of their paycheck and invest it before taxes are taken out. You are hence...',
-    class: 'blog-card alt'
+    class: 'blog-card'
   },
   {
     title: 'The Roth IRA MOD 2019',
