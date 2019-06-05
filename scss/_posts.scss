@@ -276,126 +276,127 @@
   }
   #ads {
     box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
-    &:hover{
+    &:hover {
       box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+      cursor: pointer;
     }
-}
-
-#sign-up-now {
-  background: $green;
-  padding: 25px 25px;
-
-  h3 {
-    color: white;
   }
 
-  p {
-    color: white;
-  }
+  #sign-up-now {
+    background: $green;
+    padding: 25px 25px;
 
-  #mc_embed_signup {
-    .btn {
-      color: $green;
-      font-family: $main;
-      font-weight: 700;
-      font-size: 20px;
-      border: lighten($color: $green, $amount: 10) solid 3px;
-      background: white;
-      width: 100%;
-
-      &:hover {
-        background: lighten($color: $green, $amount: 10);
-        border: white solid 3px;
-        color: white;
-      }
-    }
-
-    .text-muted {
-      color: whitesmoke !important;
-    }
-
-    #mce-error-response {
-      color: red;
-      text-align: left;
-      font-family: $main;
-      padding: 5px;
-      background: white;
-      margin-bottom: 10px;
-    }
-
-    #mce-success-response {
+    h3 {
       color: white;
-      font-family: $main;
-      margin-bottom: 10px;
+    }
+
+    p {
+      color: white;
+    }
+
+    #mc_embed_signup {
+      .btn {
+        color: $green;
+        font-family: $main;
+        font-weight: 700;
+        font-size: 20px;
+        border: lighten($color: $green, $amount: 10) solid 3px;
+        background: white;
+        width: 100%;
+
+        &:hover {
+          background: lighten($color: $green, $amount: 10);
+          border: white solid 3px;
+          color: white;
+        }
+      }
+
+      .text-muted {
+        color: whitesmoke !important;
+      }
+
+      #mce-error-response {
+        color: red;
+        text-align: left;
+        font-family: $main;
+        padding: 5px;
+        background: white;
+        margin-bottom: 10px;
+      }
+
+      #mce-success-response {
+        color: white;
+        font-family: $main;
+        margin-bottom: 10px;
+      }
     }
   }
-}
 
-@include mediaMd {
-  #blog-post {
-    .container {
-      .img-con {
-        float: none;
-        margin: 20px auto 20px auto;
-        width: 75%;
+  @include mediaMd {
+    #blog-post {
+      .container {
+        .img-con {
+          float: none;
+          margin: 20px auto 20px auto;
+          width: 75%;
 
-        img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @include mediaSm {
+    #blog-post {
+      .container {
+        .title {
           width: 100%;
-        }
-      }
-    }
-  }
-}
-
-@include mediaSm {
-  #blog-post {
-    .container {
-      .title {
-        width: 100%;
-        text-align: center;
-
-        h1 {
-          font-size: 2rem;
-          font-weight: 700;
-          line-height: 30px;
-          padding-top: 0px;
-          text-transform: capitalize;
-          background: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0) 65%,
-            lighten($blue, 20) 20%
-          );
-          display: inline;
-        }
-      }
-
-      .sub {
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-
-        h3 {
-          font-size: 1.5rem;
-          color: $blue;
           text-align: center;
-          margin-bottom: 15px;
-          margin-top: 5px;
-          text-transform: capitalize;
+
+          h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 30px;
+            padding-top: 0px;
+            text-transform: capitalize;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0) 65%,
+              lighten($blue, 20) 20%
+            );
+            display: inline;
+          }
         }
-      }
 
-      .desc {
-        font-size: 0.6rem;
-      }
-
-      .img-con {
-        float: none;
-        margin: 20px auto 20px auto;
-        width: 75%;
-
-        img {
+        .sub {
           width: 100%;
+          text-align: center;
+          margin-top: 10px;
+
+          h3 {
+            font-size: 1.5rem;
+            color: $blue;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            text-transform: capitalize;
+          }
+        }
+
+        .desc {
+          font-size: 0.6rem;
+        }
+
+        .img-con {
+          float: none;
+          margin: 20px auto 20px auto;
+          width: 75%;
+
+          img {
+            width: 100%;
+          }
         }
       }
     }
