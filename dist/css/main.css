@@ -903,6 +903,8 @@ p {
       #blog-post #accordionSad .card img {
         padding: 20px;
         width: 100%; }
+  #blog-post #ads {
+    border: 2px solid #4c51f7; }
 
 #sign-up-now {
   background: #319236;
