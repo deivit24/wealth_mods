@@ -524,3 +524,12 @@ $color_white: #fff;
     }
   }
 }
+
+#ads {
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
+  &:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+}
