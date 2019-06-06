@@ -27,7 +27,6 @@ $(function() {
   })
 
     .setPin('#longads')
-    .addIndicators()
 
     .addTo(adpin);
 });
