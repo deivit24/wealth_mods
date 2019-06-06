@@ -1,31 +1,45 @@
 var pinning = new ScrollMagic.Controller();
 
-$(function () {
+$(function() {
   // build a pinning scence
   var pin1 = new ScrollMagic.Scene({
-      triggerElement: ".breadcrumbs",
-      duration: 0,
-      triggerHook: 0,
-      offset: -73
+    triggerElement: '.breadcrumbs',
+    duration: 0,
+    triggerHook: 0,
+    offset: -73
+  })
 
-    })
-
-    .setPin(".breadcrumbs")
-    .setClassToggle(".breadcrumbs", "white")
+    .setPin('.breadcrumbs')
+    .setClassToggle('.breadcrumbs', 'white')
 
     .addTo(pinning);
-
 });
 
+var adpin = new ScrollMagic.Controller();
 
-// Navigation Image Slide 
+$(function() {
+  // build a adpin scence
+  var pin2 = new ScrollMagic.Scene({
+    triggerElement: '#longads',
+    duration: 2000,
+    triggerHook: 0,
+    offset: -80
+  })
+
+    .setPin('#longads')
+    .addIndicators()
+
+    .addTo(adpin);
+});
+
+// Navigation Image Slide
 
 var imageSlideSmall = new ScrollMagic.Controller();
 
 var imageSM = new ScrollMagic.Scene({
-    triggerElement: 'section',
-    triggerHook: 0
-  })
+  triggerElement: 'section',
+  triggerHook: 0
+})
   .setClassToggle('.smallImage', 'd-appear')
 
   .addTo(imageSlideSmall);
@@ -33,9 +47,9 @@ var imageSM = new ScrollMagic.Scene({
 var imageSlideBig = new ScrollMagic.Controller();
 
 var imageSM = new ScrollMagic.Scene({
-    triggerElement: 'section',
-    triggerHook: 0
-  })
+  triggerElement: 'section',
+  triggerHook: 0
+})
 
   .setClassToggle('.bigImage', 'd-zero')
 
