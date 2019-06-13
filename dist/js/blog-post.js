@@ -53,3 +53,7 @@ var imageSM = new ScrollMagic.Scene({
   .setClassToggle('.bigImage', 'd-zero')
 
   .addTo(imageSlideBig);
+
+document.getElementById('armisfin').onclick = function() {
+  location.href = 'https://armisfinancial.com';
+};

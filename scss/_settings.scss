@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap');
+
 // Fonts
-$main: 'Oswald',
-sans-serif;
-$second:'Montserrat',
-sans-serif;
+$main: 'Oswald', sans-serif;
+$second: 'Montserrat', sans-serif;
+$armis: 'Ubuntu', sans-serif;
 
 // Colors
 $blue: #4c51f7;
 $green: #319236;
 $gold: #f3af19;
 $purple: #9d4dbb;
-
 
 h1,
 h2,
@@ -23,7 +23,6 @@ h6 {
 p {
   font-family: $second;
 }
-
 
 // Media Query Mixin
 

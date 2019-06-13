@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap");
 h1,
 h2,
 h3,
@@ -918,6 +919,36 @@ p {
       cursor: pointer; }
   #blog-post .container #longads {
     margin: 1rem auto; }
+  #blog-post .container #armisfin {
+    background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../img/austin.jpg);
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    border-radius: 25px;
+    padding: 15px;
+    text-decoration: none !important; }
+    #blog-post .container #armisfin:hover {
+      filter: brightness(80%);
+      cursor: pointer; }
+    #blog-post .container #armisfin img {
+      width: 100%;
+      margin-top: 25px; }
+    #blog-post .container #armisfin h3 {
+      text-align: center;
+      text-decoration: none !important;
+      color: #f3af19;
+      font-size: 2.5rem;
+      margin-top: 20px;
+      font-family: "Ubuntu", sans-serif; }
+      #blog-post .container #armisfin h3 span {
+        color: white; }
+    #blog-post .container #armisfin p {
+      text-align: center;
+      text-decoration: none !important;
+      color: white;
+      font-size: 1.5rem;
+      margin-top: 15px;
+      font-family: "Ubuntu", sans-serif; }
 
 #sign-up-now {
   background: #319236 !important;
