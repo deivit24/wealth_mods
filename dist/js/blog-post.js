@@ -15,21 +15,21 @@ $(function() {
     .addTo(pinning);
 });
 
-var adpin = new ScrollMagic.Controller();
+// var adpin = new ScrollMagic.Controller();
 
-$(function() {
-  // build a adpin scence
-  var pin2 = new ScrollMagic.Scene({
-    triggerElement: '#longads',
-    duration: 2000,
-    triggerHook: 0,
-    offset: -80
-  })
+// $(function() {
+//   // build a adpin scence
+//   var pin2 = new ScrollMagic.Scene({
+//     triggerElement: '#longads',
+//     duration: 2000,
+//     triggerHook: 0,
+//     offset: -80
+//   })
 
-    .setPin('#longads')
+//     .setPin('#longads')
 
-    .addTo(adpin);
-});
+//     .addTo(adpin);
+// });
 
 // Navigation Image Slide
 
