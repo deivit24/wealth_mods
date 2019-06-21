@@ -3,6 +3,19 @@ let past = document.querySelector('#pastBlogs');
 
 let post = [
   {
+    title:
+      'Investing MOD 101: The Ultimate Guide If You Know Nothing About Investing',
+    tag: 'Wealth MODs 101',
+    date: 'June 21st 2019',
+    sub: 'Literally, If You Know Nothing…',
+    src: 'dist/img/blog/begininvest.jpg',
+    author: 'David Salazar',
+    link: 'wealth-mods-101/Investing-Mod-101-Ultimate-Beginners-Guide.html',
+    preview:
+      "Over the last decade, it seems like everyone is making money by 'investing.' It probably feels like you are being left out and you want in, but you don't know how...",
+    class: 'blog-card alt '
+  },
+  {
     title: 'The Budget MOD: Enjoy Life While Using The 50/30/20 Method',
     tag: 'Wealth MODs 101',
     date: 'June 2nd 2019',
