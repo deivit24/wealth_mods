@@ -1,0 +1,578 @@
+$hover: all 0.2s ease-in;
+$slide: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+//COLORS
+$grey: #4f4f4f;
+$white: #ffffff;
+$gold: #d89e04;
+$transparent: rgba(255, 255, 255, 0);
+$black-05: rgba(0, 0, 0, 0.05);
+#riskProfile {
+  text-align: center;
+  img {
+    width: 500px;
+  }
+
+  #startQuizBtn {
+    width: 30%;
+    font-family: $main;
+    color: black;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    border: 3px solid $gold;
+    text-align: center;
+    margin: 50px auto;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background: white;
+      color: #000;
+      font-weight: 700;
+      width: 35%;
+    }
+  }
+  #calc {
+    width: 50%;
+    font-family: $main;
+    color: black;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    border: 3px solid $gold;
+    text-align: center;
+    margin: 50px auto;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background: white;
+      color: #000;
+      font-weight: 700;
+      width: 55%;
+    }
+  }
+  #form-con {
+    transition: all 2s ease-in-out;
+    margin: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: left;
+    overflow: visible;
+  }
+
+  .form-contain {
+    margin: auto auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    transition: transform 0.1s ease-in-out;
+    width: 600px;
+
+    #input-progress {
+      border-bottom: 3px solid $gold;
+      width: 0;
+      transition: width 0.6s ease-in-out;
+    }
+
+    #progress-bar {
+      background: lighten($gold, 30%);
+      height: 10px;
+      width: 100%;
+      transition: width 0.5s ease-in-out;
+      margin-bottom: 25px;
+    }
+
+    .question {
+      transition: all 0.5s ease-in-out;
+      opacity: 1;
+      transform: translateY(0);
+      h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5rem;
+        background: #d89e04;
+        padding: 10px 10px;
+        margin-bottom: 0px;
+        color: black;
+        width: 50%;
+        border-top-right-radius: 25px;
+
+        span {
+          color: #333;
+          font-size: 1rem;
+        }
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-family: 'Raleway';
+        margin-bottom: 15px;
+        background: black;
+        color: white;
+        padding: 15px 10px;
+
+        width: 100%;
+      }
+
+      .contain {
+        position: relative;
+        padding-left: 35px;
+
+        cursor: pointer;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        .checkmark {
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #eee;
+          border-radius: 50%;
+          position: absolute;
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: none;
+          }
+        }
+
+        .checkmark:after {
+          transition: all 0.5s ease-in-out;
+          top: 6px;
+          left: 6px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+        }
+
+        &:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+
+          &:checked ~ .checkmark {
+            background-color: #d89e04;
+
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #result-form {
+    transition: all 1s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    box-shadow: inset 0px 0px 13px 5px rgba(68, 68, 68, 0.2);
+  }
+
+  .invisible {
+    display: none;
+  }
+  .faded {
+    opacity: 0 !important;
+    transform: translateX(-500px);
+  }
+  .faded-r {
+    opacity: 0 !important;
+    transform: translateX(500px);
+  }
+  #loading,
+  #answer {
+    display: none;
+    text-align: center;
+
+    img {
+      width: 250px;
+      text-align: center;
+    }
+  }
+
+  .redd {
+    color: red;
+  }
+
+  // reset and next question buttons
+  #quiz {
+    .row {
+      margin-top: 25px;
+    }
+
+    #reset {
+      font-family: $main;
+      color: black;
+      font-weight: 400;
+      font-size: 1rem;
+      padding: 10px 10px;
+      border: 3px solid #333;
+      text-align: center;
+
+      background: transparent;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background: #333;
+        color: white;
+        font-weight: 700;
+      }
+    }
+
+    #confirm_answer {
+      margin-left: 400px;
+      transition: all 0.5s ease-in-out;
+
+      a {
+        font-size: 2rem;
+        color: #d89e04;
+        span {
+          font-size: 2rem;
+        }
+        &:hover {
+          cursor: pointer;
+          color: darken($color: #d89e04, $amount: 10);
+        }
+      }
+    }
+  }
+
+  #question10 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border-bottom: 1px solid black;
+
+    th {
+      padding: 5px;
+      border-bottom: darken(#d89e04, 20) solid 1px;
+      border-top: darken(#d89e04, 20) solid 1px;
+      border-right: darken(#d89e04, 20) solid 1px;
+      border-left: darken(#d89e04, 20) solid 1px;
+    }
+
+    .t-row {
+      background: lighten(#d89e04, 40);
+    }
+
+    td {
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .gain {
+      color: green;
+      font-weight: bold;
+    }
+
+    .loss {
+      color: red;
+      font-weight: bold;
+    }
+  }
+
+  #table {
+    text-align: center;
+    margin-top: 000px;
+
+    h2 {
+      font-family: 'Raleway';
+    }
+
+    input {
+      visibility: visible;
+    }
+
+    #new-form {
+      h1 {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+
+      h3 {
+        text-align: left;
+      }
+
+      h2 {
+        font-family: $main;
+        margin-top: 50px;
+      }
+
+      h4 {
+        text-align: left;
+        margin-top: 25px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        text-align: left;
+        font-family: $second;
+        font-size: 1rem;
+      }
+      img {
+        width: 100%;
+      }
+      .col-lg-5,
+      .col-lg-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .box {
+          box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
+          background: white;
+          padding: 10px;
+        }
+      }
+      .fa-plus {
+        font-size: 5rem;
+        padding: 20px;
+      }
+      .profile-box {
+        margin-top: 50px;
+        h1 {
+          text-align: center;
+          font-size: 2.5rem;
+        }
+        img {
+          max-width: 500px;
+        }
+      }
+      #rcTotalScore,
+      #rtTotalScore,
+      #rpTotalScore {
+        font-size: 2rem;
+        font-weight: 700;
+        color: black;
+      }
+    }
+  }
+
+  // netlify form at the bottom
+
+  .show {
+    display: block;
+  }
+}
+
+@include mediaSm {
+  #riskProfile {
+    img {
+      width: 100%;
+    }
+
+    #third-p {
+      display: none;
+    }
+
+    .form-contain {
+      padding: 25px 20px;
+      margin: auto auto;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      transition: transform 0.1s ease-in-out;
+      width: 350px;
+
+      #input-progress {
+        border-bottom: 3px solid #d89e04;
+        width: 0;
+        transition: width 0.6s ease-in-out;
+      }
+
+      #progress-bar {
+        background: lighten(#d89e04, 30%);
+        height: 10px;
+        width: 100%;
+        transition: width 0.5s ease-in-out;
+        margin-bottom: 25px;
+      }
+
+      .question {
+        h1 {
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 1.3rem;
+          background: #d89e04;
+          padding: 10px 10px;
+          margin-bottom: 0px;
+          color: black;
+          width: 100%;
+          border-top-right-radius: 25px;
+
+          span {
+            color: #333;
+            font-size: 1rem;
+          }
+        }
+
+        h2 {
+          font-size: 1rem;
+          font-family: 'Raleway';
+          margin-bottom: 15px;
+          background: black;
+          color: white;
+          padding: 15px 10px;
+          width: 100%;
+        }
+
+        .contain {
+          position: relative;
+          padding-left: 35px;
+
+          cursor: pointer;
+
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          .checkmark {
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+            border-radius: 50%;
+            position: absolute;
+
+            &:after {
+              content: '';
+              position: absolute;
+              display: none;
+            }
+          }
+
+          .checkmark:after {
+            transition: all 0.5s ease-in-out;
+            top: 6px;
+            left: 6px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+          }
+
+          &:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .checkmark {
+              background-color: #d89e04;
+
+              &:after {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #table {
+      #new-form {
+        padding-top: 0px;
+        margin-top: 0px;
+      }
+    }
+    #calc {
+      font-size: 1.2rem;
+    }
+    #quiz {
+      #confirm_answer {
+        margin-left: 150px;
+
+        a {
+          font-size: 2rem;
+          color: #d89e04;
+
+          &:hover {
+            cursor: pointer;
+            color: darken($color: #d89e04, $amount: 10);
+          }
+        }
+      }
+    }
+
+    #riskTable,
+    #riskLevel {
+      display: none;
+    }
+
+    #risk-capacity,
+    #risk-tolerance {
+    }
+    #form-con {
+      transition: all 2s ease-in-out;
+      margin: 100px 0px 200px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      text-align: left;
+      overflow: visible;
+    }
+    #risk-profile {
+      padding: 5px;
+
+      margin-bottom: 15px;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+
+    #risk-contact,
+    #client-risk-contact {
+      padding: 5px 5px 20px 5px;
+      text-align: left;
+
+      label {
+        padding: 5px;
+        margin-bottom: 0px;
+        font-size: 1rem;
+        width: 75%;
+        border-top-left-radius: 0px;
+      }
+    }
+
+    #question10 {
+      tr {
+        padding: 0px;
+        font-size: 0.8rem;
+      }
+
+      th {
+        padding: 1px;
+      }
+
+      td {
+        padding: 0px;
+      }
+    }
+  }
+}
