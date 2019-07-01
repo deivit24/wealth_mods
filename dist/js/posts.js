@@ -9,7 +9,7 @@ let post = [
     sub: 'Risk Is Subjective And Objective',
     src: 'dist/img/blog/rtp.jpg',
     author: 'David Salazar',
-    link: 'wealth-mods-101/risk-profile-mod-calculator.html',
+    link: 'tools/risk-profile-mod-calculator.html',
     preview:
       'Most financial service firms have Risk Tolerance Questionnaires that are designed to get you invested in their products. They sometimes only measure one aspect of... ',
     class: 'blog-card '
