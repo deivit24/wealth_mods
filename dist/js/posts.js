@@ -3,6 +3,18 @@ let past = document.querySelector('#pastBlogs');
 
 let post = [
   {
+    title: 'The Risk Profile MOD Calculator',
+    tag: 'Tools',
+    date: 'June 30th 2019',
+    sub: 'Risk Is Subjective And Objective',
+    src: 'dist/img/blog/rtp.jpg',
+    author: 'David Salazar',
+    link: 'wealth-mods-101/risk-profile-mod-calculator.html',
+    preview:
+      'Most financial service firms have Risk Tolerance Questionnaires that are designed to get you invested in their products. They sometimes only measure one aspect of... ',
+    class: 'blog-card '
+  },
+  {
     title:
       'Investing MOD 101: The Ultimate Guide If You Know Nothing About Investing',
     tag: 'Wealth MODs 101',
