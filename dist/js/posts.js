@@ -9,8 +9,7 @@ let post = [
     sub: 'How to plan for the future in the "gig economy"',
     src: 'dist/img/blog/parttime.jpg',
     author: 'David Salazar',
-    link:
-      'wealth-mods-101/I-Have-A-Part-Time-Job- So-How-Do-I-Plan-For-Retirement.html',
+    link: 'wealth-mods-101/Part-Time-Jobs-And-Retirement.html',
     preview:
       "Let's face it, over the last couple of decades, the definition of 'career' has changed. It's rare to find people that have been working for the same employer from the start of their career.",
     class: 'blog-card alt '
