@@ -3,6 +3,19 @@ let past = document.querySelector('#pastBlogs');
 
 let post = [
   {
+    title: 'I Have A Part-time Job(s), So How Do I Plan For Retirement?',
+    tag: 'Wealth MODs 101',
+    date: 'Sept 19th 2019',
+    sub: 'How to plan for the future in the "gig economy"',
+    src: 'dist/img/blog/parttime.jpg',
+    author: 'David Salazar',
+    link:
+      'wealth-mods-101/I-Have-A-Part-Time-Job- So-How-Do-I-Plan-For-Retirement.html',
+    preview:
+      "Let's face it, over the last couple of decades, the definition of 'career' has changed. It's rare to find people that have been working for the same employer from the start of their career.",
+    class: 'blog-card alt '
+  },
+  {
     title: 'The Risk Profile MOD Calculator',
     tag: 'Tools',
     date: 'June 30th 2019',
@@ -134,9 +147,7 @@ function recentPost() {
     output += `
     <div class="${post[i].class}">
             <div class="meta">
-              <div class="photo" style="background-image: url(${
-                post[i].src
-              })"></div>
+              <div class="photo" style="background-image: url(${post[i].src})"></div>
               <ul class="details">
                 <li class="author">
                   <i class="fas fa-user"></i> ${post[i].author}
@@ -175,9 +186,7 @@ function pastPost() {
     output += `
     <div class="past-${post[i].class}">
             <div class="meta">
-              <div class="photo" style="background-image: url(${
-                post[i].src
-              })"></div>
+              <div class="photo" style="background-image: url(${post[i].src})"></div>
               <ul class="details">
                 <li class="author">
                   <i class="fas fa-user"></i> ${post[i].author}
