@@ -216,7 +216,54 @@
         text-align: left;
       }
     }
-
+    .snow-col {
+      padding: 0px;
+      .snow-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $blue;
+        padding: 3px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 60px;
+        font-weight: bold;
+      }
+      .row-snow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #f4f4f4;
+        padding: 3px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        width: 100%;
+        height: 60px;
+      }
+      .row-total {
+        background: lighten($blue, 5);
+        color: white;
+      }
+      .row-done {
+        background: lighten($green, 10);
+        color: white;
+        text-decoration: line-through;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        padding: 3px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        width: 100%;
+        height: 60px;
+      }
+    }
     #accordionSad {
       width: 90%;
       margin: 25px auto;
@@ -445,6 +492,13 @@
 
         img {
           width: 100%;
+        }
+      }
+      .snow-col {
+        padding: 0px;
+
+        p {
+          font-size: 0.8rem;
         }
       }
     }

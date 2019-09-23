@@ -3,6 +3,18 @@ let past = document.querySelector('#pastBlogs');
 
 let post = [
   {
+    title: 'Does The Snowball Method Actually Work To Get Out Of Debt?',
+    tag: 'Wealth MODs 101',
+    date: 'Sept 22nd 2019',
+    sub: 'Hope vs Math',
+    src: 'dist/img/blog/snowball.jpg',
+    author: 'David Salazar',
+    link: 'wealth-mods-101/Snow-Ball-Budget-Method.html',
+    preview:
+      'It may sound counterintuitive, especially for logical individuals, but this strategy involves paying off your smallest to largest debt. Here is the kicker; the interest rate doesn’t matter.',
+    class: 'blog-card '
+  },
+  {
     title: 'I Have A Part-time Job(s), So How Do I Plan For Retirement?',
     tag: 'Wealth MODs 101',
     date: 'Sept 19th 2019',
