@@ -109,10 +109,10 @@ $(document).on('click', "a[href^='#']", function(e) {
 
     controller.scrollTo(id);
 
-    if (window.history && window.history.pushState) {
-      history.pushState('', document.title, id);
+      if (window.history && window.history.pushState) {
+        history.pushState('', document.title, id);
+      }
     }
-  }
 });
 
 // Navigation Image Slide
